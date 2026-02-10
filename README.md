@@ -121,4 +121,4 @@ MIT License
 
 ## Links
 
-- [NeoMind Platform](https://github.com/camthink-ai)
+- [NeoMind Platform](https://github.com/camthink-ai/NeoMind)
