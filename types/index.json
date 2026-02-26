@@ -1,0 +1,24 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-02-26T00:00:00Z",
+  "device_types": [
+    {
+      "device_type": "ne301_camera",
+      "name": "CamThink Edge AI Camera",
+      "description": "CamThink NE301 Edge AI Camera with built-in YOLOv8 Nano object detection model supporting 80-class recognition. Features WiFi connectivity and battery power.",
+      "categories": ["Camera", "AI", "Edge Computing"],
+      "version": "1.0.0",
+      "author": "CamThink",
+      "homepage": "https://github.com/camthink-ai/NeoMind-DeviceTypes/tree/main/types/ne301_camera.json"
+    },
+    {
+      "device_type": "ne101_camera",
+      "name": "CamThink Sensing Camera",
+      "description": "CamThink NE101 sensing camera with low-power battery support and button-triggered capture. Ideal for remote monitoring and photo capture scenarios.",
+      "categories": ["Camera", "Sensing"],
+      "version": "1.0.0",
+      "author": "CamThink",
+      "homepage": "https://github.com/camthink-ai/NeoMind-DeviceTypes/tree/main/types/ne101_camera.json"
+    }
+  ]
+}
