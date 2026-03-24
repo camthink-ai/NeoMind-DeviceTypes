@@ -241,6 +241,7 @@
     {
       "name": "capture",
       "display_name": "Capture",
+      "description": "Capture an image from the camera with optional AI detection",
       "payload_template": "{\"cmd\": \"capture\", \"request_id\": \"${request_id}\", \"params\": {\"enable_ai\": ${enable_ai}, \"chunk_size\": ${chunk_size}, \"store_to_sd\": ${store_to_sd}}}",
       "parameters": [
         {
@@ -275,6 +276,7 @@
     {
       "name": "sleep",
       "display_name": "Sleep",
+      "description": "Put the camera into sleep mode for a specified duration",
       "payload_template": "{\"cmd\": \"sleep\", \"request_id\": \"${request_id}\", \"params\": {\"duration_sec\": ${duration_sec}}}",
       "parameters": [
         {
