@@ -1,0 +1,822 @@
+{
+  "device_type": "milesight_ts601",
+  "name": "Milesight TS601",
+  "description": "Milesight TS601 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "airplane_mode_state",
+      "display_name": "Airplane Mode State (Options: 0=enter airplane mode, 1=exit airplane mode)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.command",
+      "display_name": "Data Type(Airplane Mode Time Period) (Options: 0=Flight Mode Enable Mode, 1=Start Time, 2=End Time)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.enable",
+      "display_name": "Flight Mode Enable Mode(Airplane Mode Time Period)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.end_timestamp.day",
+      "display_name": "End Day(End Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.end_timestamp.hour",
+      "display_name": "End Hour(End Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.end_timestamp.minute",
+      "display_name": "End Minute(End Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.end_timestamp.month",
+      "display_name": "End Month(End Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.end_timestamp.second",
+      "display_name": "End Second(End Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.end_timestamp.year",
+      "display_name": "End Year(End Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.start_timestamp.day",
+      "display_name": "Start  Day(Start Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.start_timestamp.hour",
+      "display_name": "Start  Hour(Start Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.start_timestamp.minute",
+      "display_name": "Start  Minute(Start Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.start_timestamp.month",
+      "display_name": "Start Month(Start Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.start_timestamp.second",
+      "display_name": "Start Second(Start Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "airplane_mode_time_period_settings.start_timestamp.year",
+      "display_name": "Start Year(Start Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "alarm_deactivation_enable",
+      "display_name": "Alarm Threshold Release",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "alarm_reporting_times",
+      "display_name": "Alarm Max Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "auto_p_enable",
+      "display_name": "AutoP Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "base_station_position_enable",
+      "display_name": "Base Station Positioning",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "base_station_position.latitude",
+      "display_name": "Latitude(Base station positioning)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°"
+    },
+    {
+      "name": "base_station_position.longitude",
+      "display_name": "Longitude(Base station positioning)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°"
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "battery_alarm.lower_battery_alarm.battery",
+      "display_name": "Current Battery Left(Low Battery Alarm)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "battery_alarm.type",
+      "display_name": "Alarm Type(Battery Alarm) (Options: 16=Low Battery Alarm, 16=Low Battery Alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "button_lock.collect_report_enable",
+      "display_name": "Collect And Report(Button\nLock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_lock.enable",
+      "display_name": "Button\nLock Enable(Button\nLock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_lock.power_off_enable",
+      "display_name": "Turn off(Button\nLock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "cellular_status.command",
+      "display_name": "Cellular Status(Cellular Status) (Options: 0=Register Status, 1=SIM State, 2=IMEI, 3=IMSI, 4=ICCID, 5=Signal Strength, 6=Server Status, 17=Milesight MQTT Status, 21=Milesight DTLS Status)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.connected_status",
+      "display_name": "Server Status(Cellular Status) (Options: 0=Connect Failed, 1=Connect Success)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.csq",
+      "display_name": "Signal Strength(Cellular Status)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "cellular_status.iccid",
+      "display_name": "ICCID(Cellular Status)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.imei",
+      "display_name": "IMEI(Cellular Status)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.imsi",
+      "display_name": "IMSI(Cellular Status)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.milesight_dtls_status",
+      "display_name": "Milesight DTLS Status(Cellular Status) (Options: 0=Connect Failed, 1=Connect Success)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.milesight_mqtt_status",
+      "display_name": "Milesight MQTT Status(Cellular Status) (Options: 0=Connect Failed, 1=Connect Success)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.register_status",
+      "display_name": "Register Status(Cellular Status) (Options: 0=Register Failed, 1=Register Success)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cellular_status.sim_status",
+      "display_name": "SIM State(Cellular Status) (Options: 0=Card Status Reservation, 1=SIM Card Recognition Successful, 2=SIM Card Not Recognized, 3=PIN Code Required, 4=PIN Incorrect, 5=Need PUK Code, 6=SIM Card Not Inserted)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "celsius_temperature",
+      "display_name": "Celsius Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "collection_interval.minutes_of_time",
+      "display_name": "Collecting Interval(Collecting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "collection_interval.seconds_of_time",
+      "display_name": "Collecting Interval(Collecting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "collection_interval.unit",
+      "display_name": "Collecting Interval Unit(Collecting Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cumulative_times",
+      "display_name": "Cumulative Numbers",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.command",
+      "display_name": "Sub-command(Data Storage Settings) (Options: 0=Data Storage Enable, 1=Data Retransmission Enable, 2=Retransmission Interval, 3=Retrieval Interval)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.enable",
+      "display_name": "Data Storage Enable(Data Storage Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.retransmission_enable",
+      "display_name": "Data Retransmission Enable(Data Storage Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.retransmission_interval",
+      "display_name": "Retransmission Interval(Data Storage Settings)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "daylight_saving_time.daylight_saving_time_offset",
+      "display_name": "DST Bias(Daylight Saving Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.enable",
+      "display_name": "Daylight Saving Time(Daylight Saving Time)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_hour_min",
+      "display_name": "Time(Daylight Saving Time) (Options: 0=00:00, 60=01:00, 120=02:00, 180=03:00, 240=04:00, 300=05:00, 360=06:00, 420=07:00, 480=08:00, 540=09:00, 600=10:00, 660=11:00, 720=12:00, 780=13:00, 840=14:00, 900=15:00, 960=16:00, 1020=17:00, 1080=18:00, 1140=19:00, 1200=20:00, 1260=21:00, 1320=22:00, 1380=23:00)",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.end_month",
+      "display_name": "Month(Daylight Saving Time) (Options: 1=Jan., 2=Feb., 3=Mar., 4=Apr., 5=May, 6=Jun., 7=Jul., 8=Aug., 9=Sep., 10=Oct., 11=Nov., 12=Dec.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_week_day",
+      "display_name": "Week(Daylight Saving Time) (Options: 1=Mon., 2=Tues., 3=Wed., 4=Thurs., 5=Fri., 6=Sat., 7=Sun.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_week_num",
+      "display_name": "Number of Week(Daylight Saving Time) (Options: 1=1st, 2=2nd, 3=3rd, 4=4th, 5=last)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_hour_min",
+      "display_name": "Time(Daylight Saving Time) (Options: 0=00:00, 60=01:00, 120=02:00, 180=03:00, 240=04:00, 300=05:00, 360=06:00, 420=07:00, 480=08:00, 540=09:00, 600=10:00, 660=11:00, 720=12:00, 780=13:00, 840=14:00, 900=15:00, 960=16:00, 1020=17:00, 1080=18:00, 1140=19:00, 1200=20:00, 1260=21:00, 1320=22:00, 1380=23:00)",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.start_month",
+      "display_name": "Month(Daylight Saving Time) (Options: 1=Jan., 2=Feb., 3=Mar., 4=Apr., 5=May, 6=Jun., 7=Jul., 8=Aug., 9=Sep., 10=Oct., 11=Nov., 12=Dec.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_week_day",
+      "display_name": "Week(Daylight Saving Time) (Options: 1=Mon., 2=Tues., 3=Wed., 4=Thurs., 5=Fri., 6=Sat., 7=Sun.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_week_num",
+      "display_name": "Number of Week(Daylight Saving Time) (Options: 1=1st, 2=2nd, 3=3rd, 4=4th, 5=last)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "fahrenheit_temperature",
+      "display_name": "Fahrenheit Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "falling_alarm_settings.enable",
+      "display_name": "Falling Alarm Enable(Falling Alarm Config)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "historical_data_report.mode",
+      "display_name": "Historical Data Mode(Historical Data) (Options: 0=target time, 1=historical time)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_report.timestamp",
+      "display_name": "Historical Data Timestamps(Historical Data)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "humidity_alarm_settings.enable",
+      "display_name": "Humidity Threshold Alarm(Humidity Threshold Alarm)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm_settings.threshold_condition",
+      "display_name": "Threshold Condition(Humidity Threshold Alarm) (Options: 0=disable, 1=condition: x<A, 2=condition: x>B, 3=condition: A<x<B, 4=condition: x<A or x>B)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm_settings.threshold_max",
+      "display_name": "Value B(Humidity Threshold Alarm)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "humidity_alarm_settings.threshold_min",
+      "display_name": "Value A(Humidity Threshold Alarm)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "humidity_alarm_types",
+      "display_name": "Humidity  Alarm Type (Options: 0=Collection Error, 1=Out of Low Range, 2=Out of High Range, 3=No Data, 16=humidity Below Alarm Released, 17=humidity Below Alarm, 18=humidity Above Alarm Released, 19=humidity Above Alarm, 20=humidity Between Alarm Released, 21=humidity Between Alarm, 22=humidity Exceed Tolerance Alarm Released, 23=humidity Exceed Tolerance Alarm, 48=humidity Shift Threshold, 32=humidity Shift Threshold)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm.mutation_alarm_trigger.saltation",
+      "display_name": "Shift Humidity(Humidity Shift Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "humidity_calibration_settings.calibration_value",
+      "display_name": "Calibration Value(Humidity Calibration)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "humidity_calibration_settings.enable",
+      "display_name": "Calibration Enable(Humidity Calibration)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_mutation_alarm_settings.enable",
+      "display_name": "Humidity Shift Threshold(Humidity Mutation Alarm Config)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_mutation_alarm_settings.mutation_max",
+      "display_name": "Humidity change greater than(Humidity Mutation Alarm Config)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "ipso_device_upgrade_result.value",
+      "display_name": "OTA Response(OTA Response) (Options: 0=Upgrade Successfully, 1=URL Error, 2=Download Failed, 3=Packet Too Big, 4=Version Error, 5=Device Error, 6=Patch Format Error, 7=CRC Check Failed, 8=Product Error, 9=Patch Upgrade Failed, 255=Upgrade Pending)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "light_alarm_settings.enable",
+      "display_name": "Threshold Alarm Config Enable(Light  Threshold Alarm Config)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "light_alarm_settings.threshold_condition",
+      "display_name": "Threshold Condition(Light  Threshold Alarm Config) (Options: 0=disable, 2=condition: x>B)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "light_alarm_settings.threshold_max",
+      "display_name": "Threshold Value(Light  Threshold Alarm Config)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "lx"
+    },
+    {
+      "name": "light_alarm_types",
+      "display_name": "Light  Alarm Type (Options: 0=Collection Error, 1=Exceed the Range Lower Limit, 2=Exceed the Range Upper Limit, 3=No Data, 16=Bright to dark, 17=Dark to bright)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "oem_id",
+      "display_name": "OEM ID",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "probe_connect_status",
+      "display_name": "Probe Connect Status Alarm (Options: 0=disconnect, 1=connect)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "product_sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "relative_surface_info.angle_x",
+      "display_name": "Angle X Value(Get The Relative Initial Surface Angle Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°"
+    },
+    {
+      "name": "relative_surface_info.angle_y",
+      "display_name": "Angle X Value(Get The Relative Initial Surface Angle Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°"
+    },
+    {
+      "name": "relative_surface_info.angle_z",
+      "display_name": "Angle Z Value(Get The Relative Initial Surface Angle Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°"
+    },
+    {
+      "name": "report_package_type",
+      "display_name": "Report package type (Options: 0=Normal cycle package, 1=Key cycle package)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.minutes_of_time",
+      "display_name": "Reporting Interval(Reporting Interval)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.seconds_of_time",
+      "display_name": "Reporting Interval(Reporting Interval)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.unit",
+      "display_name": "Reporting Interval Unit(Reporting Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sensor_id.id",
+      "display_name": "Sensor ID(Sensor ID)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sensor_id.type",
+      "display_name": "Sensor Type(Sensor ID) (Options: 0=none, 1=PT100, 2=SHT41, 3=DS18B20)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_settings.celsius_threshold_max",
+      "display_name": "Celsius Value B(Temperature Threshold Alarm Config)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_settings.celsius_threshold_min",
+      "display_name": "Celsius Value A(Temperature Threshold Alarm Config)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_settings.enable",
+      "display_name": "Temperature Threshold Alarm(Temperature Threshold Alarm Config)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_settings.fahrenheit_threshold_max",
+      "display_name": "Fahrenheit Value B(Temperature Threshold Alarm Config)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "temperature_alarm_settings.fahrenheit_threshold_min",
+      "display_name": "Fahrenheit Value A(Temperature Threshold Alarm Config)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "temperature_alarm_settings.threshold_condition",
+      "display_name": "Threshold Condition(Temperature Threshold Alarm Config) (Options: 0=disable, 1=condition: x<A, 2=condition: x>B, 3=condition: A<x<B, 4=condition: x<A or x>B)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_settings.threshold_max",
+      "display_name": "Value B(Temperature Threshold Alarm Config)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_settings.threshold_min",
+      "display_name": "Value A(Temperature Threshold Alarm Config)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_types",
+      "display_name": "Temperature  Alarm Type (Options: 0=Collection Error, 1=Out of Low Range, 2=Out of High Range, 3=No Data, 16=Temperature Below Alarm Released, 17=Temperature Below Alarm, 18=Temperature Above Alarm Released, 19=Temperature Above Alarm, 20=Temperature Between Alarm Released, 21=Temperature Between Alarm, 22=Temperature Exceed Tolerance Alarm Released, 23=Temperature Exceed Tolerance Alarm, 48=Temperature Shift Threshold, 32=Temperature Shift Threshold)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.calibration_value",
+      "display_name": "Calibration Value(Temperature Calibration)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_calibration_settings.celsius_calibration_value",
+      "display_name": "Celsius Calibration Value(Temperature Calibration)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_calibration_settings.enable",
+      "display_name": "Calibration Enable(Temperature Calibration)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.fahrenheit_calibration_value",
+      "display_name": "Fahrenheit Calibration Value(Temperature Calibration)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "temperature_mutation_alarm_settings.celsius_mutation_max",
+      "display_name": "Celsius Temperature change greater than(Temperature Shift Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_mutation_alarm_settings.enable",
+      "display_name": "Temperature Shift Threshold(Temperature Shift Threshold)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_mutation_alarm_settings.fahrenheit_mutation_max",
+      "display_name": "Fahrenheit Temperature change greater than(Temperature Shift Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "temperature_mutation_alarm_settings.mutation_max",
+      "display_name": "Temperature change greater than(Temperature Shift Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_unit",
+      "display_name": "Temperature Unit (Options: 0=℃, 1=℉)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tilt_alarm_settings.duration",
+      "display_name": "Duration(Tilt Threshold Alarm Config)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "tilt_alarm_settings.enable",
+      "display_name": "Threshold Alarm Config Enable(Tilt Threshold Alarm Config)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "tilt_alarm_settings.threshold_condition",
+      "display_name": "Threshold Condition(Tilt Threshold Alarm Config) (Options: 0=disable, 2=condition: x>B)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tilt_alarm_settings.threshold_max",
+      "display_name": "Threshold Value(Tilt Threshold Alarm Config)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "°"
+    },
+    {
+      "name": "tilt_alarm_types",
+      "display_name": "Tilt  Alarm Type (Options: 0=Collection Error, 1=Exceed the Range Lower Limit, 2=Exceed the Range Upper Limit, 3=No Data, 16=Tilt  Alam Release, 17=Tilt Alam, 33=Falling  Alam)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -720=UTC-12(IDLW), -660=UTC-11(SST), -600=UTC-10(HST), -570=UTC-9:30(MIT), -540=UTC-9(AKST), -480=UTC-8(PST), -420=UTC-7(MST), -360=UTC-6(CST), -300=UTC-5(EST), -240=UTC-4(AST), -210=UTC-3:30(NST), -180=UTC-3(BRT), -120=UTC-2(FNT), -60=UTC-1(CVT), 0=UTC(WET), 60=UTC+1(CET), 120=UTC+2(EET), 180=UTC+3(MSK), 210=UTC+3:30(IRST), 240=UTC+4(GST), 270=UTC+4:30(AFT), 300=UTC+5(PKT), 330=UTC+5:30(IST), 345=UTC+5:45(NPT), 360=UTC+6(BHT), 390=UTC+6:30(MMT), 420=UTC+7(ICT), 480=UTC+8(CT/CST), 540=UTC+9(JST), 570=UTC+9:30(ACST), 600=UTC+10(AEST), 630=UTC+10:30(LHST), 660=UTC+11(VUT), 720=UTC+12(NZST), 765=UTC+12:45(CHAST), 780=UTC+13(PHOT), 840=UTC+14(LINT))",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.firmware_version",
+      "display_name": "Firmware Version(Product Version)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.hardware_version",
+      "display_name": "Hardware Version(Product Version)",
+      "data_type": "String",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "clear_alarm_item",
+          "display_name": "Clear Alarm Item",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_historical_data",
+          "display_name": "Clear Data",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_device_status",
+          "display_name": "Query Device Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time_range.end_time",
+          "display_name": "End Time(Retrieval(Time Period))",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time_range.start_time",
+          "display_name": "Start Time(Retrieval(Time Period))",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time.time",
+          "display_name": "Time Point(Retrieval(Time Period))",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "set_retrieval_initial_surface.operation",
+          "display_name": "Set Relative Initial Surface(Set Relative Initial Surface)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "set_zero_calibration.operation",
+          "display_name": "Zero Calibration(Zero Calibration)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "stop_historical_data_retrieval",
+          "display_name": "Stop Retrieval",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "synchronize_time",
+          "display_name": "Time Synchronize",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

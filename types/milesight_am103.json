@@ -1,0 +1,429 @@
+{
+  "device_type": "milesight_am103",
+  "name": "Milesight AM103",
+  "description": "Milesight AM103 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "co2",
+      "display_name": "CO2",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "sensor_enable.temperature",
+      "display_name": "Sensor Enable (Temperature)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "sensor_enable.humidity",
+      "display_name": "Sensor Enable (Humidity)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "sensor_enable.co2",
+      "display_name": "Sensor Enable (CO2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -120=UTC-12, -110=UTC-11, -100=UTC-10, -95=UTC-9:30, -90=UTC-9, -80=UTC-8, -70=UTC-7, -60=UTC-6, -50=UTC-5, -40=UTC-4, -35=UTC-3:30, -30=UTC-3, -20=UTC-2, -10=UTC-1, 0=UTC, 10=UTC+1, 20=UTC+2, 30=UTC+3, 35=UTC+3:30, 40=UTC+4, 45=UTC+4:30, 50=UTC+5, 55=UTC+5:30, 57=UTC+5:45, 60=UTC+6, 65=UTC+6:30, 70=UTC+7, 80=UTC+8, 90=UTC+9, 95=UTC+9:30, 100=UTC+10, 105=UTC+10:30, 110=UTC+11, 120=UTC+12, 127=UTC+12:45, 130=UTC+13, 140=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "timestamp",
+      "display_name": "Timestamp",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "time_sync_enable",
+      "display_name": "Time Sync Enable (Options: 0=disable, 2=enable)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "screen_display_enable",
+      "display_name": "Screen Display Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_display_time_enable",
+      "display_name": "Screen Display Time Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_intelligent_enable",
+      "display_name": "Screen Intelligent Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_last_refresh_interval",
+      "display_name": "Screen Last Refresh Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "screen_refresh_interval",
+      "display_name": "Screen Refresh Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "screen_display_element_settings.temperature",
+      "display_name": "Screen Display Element Settings (Temperature)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_display_element_settings.humidity",
+      "display_name": "Screen Display Element Settings (Humidity)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_display_element_settings.co2",
+      "display_name": "Screen Display Element Settings (CO2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_display_element_settings.smile",
+      "display_name": "Screen Display Element Settings (Smile)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "led_indicator_mode",
+      "display_name": "LED Indicator Mode (Options: 0=off, 2=blink)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.condition",
+      "display_name": "Temperature Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.threshold_min",
+      "display_name": "Temperature Alarm Config (Threshold Min)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_config.threshold_max",
+      "display_name": "Temperature Alarm Config (Threshold Max)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "co2_calibration_settings.mode",
+      "display_name": "CO2 Calibration Settings (Mode) (Options: 0=factory, 1=abc, 2=manual, 3=background, 4=zero)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "co2_calibration_settings.calibration_value",
+      "display_name": "CO2 Calibration Settings (Calibration Value)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "co2_alarm_config.enable",
+      "display_name": "CO2 Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "co2_alarm_config.threshold_1",
+      "display_name": "CO2 Alarm Config (Threshold 1)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "co2_alarm_config.threshold_2",
+      "display_name": "CO2 Alarm Config (Threshold 2)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "co2_abc_calibration_settings.enable",
+      "display_name": "CO2 ABC Calibration Settings (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "co2_abc_calibration_settings.period",
+      "display_name": "CO2 ABC Calibration Settings (Period)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "h"
+    },
+    {
+      "name": "co2_abc_calibration_settings.calibration_value",
+      "display_name": "CO2 ABC Calibration Settings (Calibration Value)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "altitude_calibration_settings.enable",
+      "display_name": "Altitude Calibration Settings (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "altitude_calibration_settings.calibration_value",
+      "display_name": "Altitude Calibration Settings (Calibration Value)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "m"
+    },
+    {
+      "name": "hibernate_config.enable",
+      "display_name": "Hibernate Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.lora_uplink_enable",
+      "display_name": "Hibernate Config (LoRa Uplink Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.start_time",
+      "display_name": "Hibernate Config (Start Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "hibernate_config.end_time",
+      "display_name": "Hibernate Config (End Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "hibernate_config.weekdays.monday",
+      "display_name": "Hibernate Config (Weekdays Monday)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.weekdays.tuesday",
+      "display_name": "Hibernate Config (Weekdays Tuesday)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.weekdays.wednesday",
+      "display_name": "Hibernate Config (Weekdays Wednesday)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.weekdays.thursday",
+      "display_name": "Hibernate Config (Weekdays Thursday)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.weekdays.friday",
+      "display_name": "Hibernate Config (Weekdays Friday)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.weekdays.saturday",
+      "display_name": "Hibernate Config (Weekdays Saturday)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.weekdays.sunday",
+      "display_name": "Hibernate Config (Weekdays Sunday)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_interval",
+      "display_name": "Retransmit Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_report_schedule",
+          "display_name": "Clear Report Schedule",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reset_battery",
+          "display_name": "Reset Battery",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_history",
+          "display_name": "Clear History",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "device_type": "milesight_uc511",
+  "name": "Milesight UC511",
+  "description": "Milesight UC511 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event (Options: 0=normal, 1=reset)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "valve_1",
+      "display_name": "Valve 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_1_result",
+      "display_name": "Valve 1 Delay Control Result",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_2",
+      "display_name": "Valve 2",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_2_result",
+      "display_name": "Valve 2 Delay Control Result",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_1_pulse",
+      "display_name": "Valve 1 pulse",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_2_pulse",
+      "display_name": "Valve 2 pulse",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "gpio_1",
+      "display_name": "GPIO 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_2",
+      "display_name": "GPIO 2",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure",
+      "display_name": "Pressure",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_sensor_status",
+      "display_name": "Pressure Sensor Status (Options: 1=sensor error, 2=sensor normal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "custom_message",
+      "display_name": "Custom Message",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_interval",
+      "display_name": "Retransmit Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -120=UTC-12, -110=UTC-11, -100=UTC-10, -95=UTC-9:30, -90=UTC-9, -80=UTC-8, -70=UTC-7, -60=UTC-6, -50=UTC-5, -40=UTC-4, -35=UTC-3:30, -30=UTC-3, -20=UTC-2, -10=UTC-1, 0=UTC, 10=UTC+1, 20=UTC+2, 30=UTC+3, 35=UTC+3:30, 40=UTC+4, 45=UTC+4:30, 50=UTC+5, 55=UTC+5:30, 57=UTC+5:45, 60=UTC+6, 65=UTC+6:30, 70=UTC+7, 80=UTC+8, 90=UTC+9, 95=UTC+9:30, 100=UTC+10, 105=UTC+10:30, 110=UTC+11, 120=UTC+12, 127=UTC+12:45, 130=UTC+13, 140=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sync_time_type",
+      "display_name": "Sync Time Type (Options: 1=v1.0.2, 2=v1.0.3, 3=v1.1.0)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "d2d_key",
+      "display_name": "D2D Key",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "response_enable",
+      "display_name": "Response Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "class_a_response_time",
+      "display_name": "Class A Response Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_task.valve_index",
+      "display_name": "Valve Task (Valve Index) (Options: 1=valve 1, 2=valve 2, 3=valve 3, 4=valve 4, 5=valve 5, 6=valve 6, 7=valve 7, 8=all valves)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_task.sequence_id",
+      "display_name": "Valve Task (Sequence ID)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_task.valve_status",
+      "display_name": "Valve Task (Valve Status)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_task.time_rule_enable",
+      "display_name": "Valve Task (Time Rule Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_task.pulse_rule_enable",
+      "display_name": "Valve Task (Pulse Rule Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_task.duration",
+      "display_name": "Valve Task (Duration)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_task.valve_pulse",
+      "display_name": "Valve Task (Valve Pulse)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_task.rain_stop_plan",
+      "display_name": "Valve Task (Rain Stop Plan)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_task.start_time",
+      "display_name": "Valve Task (Start Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pulse_filter_config.mode",
+      "display_name": "Pulse Filter Config (Mode) (Options: 1=hardware, 2=software)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pulse_filter_config.time",
+      "display_name": "Pulse Filter Config (Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "gpio_jitter_time",
+      "display_name": "GPIO Jitter Time",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_power_supply_config.counts",
+      "display_name": "Valve Power Supply Config (Counts)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_power_supply_config.control_pulse_time",
+      "display_name": "Valve Power Supply Config (Control Pulse Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "valve_power_supply_config.power_time",
+      "display_name": "Valve Power Supply Config (Power Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "pressure_calibration_settings.enable",
+      "display_name": "Pressure Calibration (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_calibration_settings.calibration_value",
+      "display_name": "Pressure Calibration (Calibration Value)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_threshold_alarm.pressure_type",
+      "display_name": "Pressure Threshold Alarm (Pressure Type) (Options: 0=always, 1=valve 1 open, 2=valve 2 open, 3=valve 1 open or valve 2 open)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_threshold_alarm.threshold_type",
+      "display_name": "Pressure Threshold Alarm (Threshold Type) (Options: 0=below, 1=above, 2=between, 3=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_threshold_alarm.threshold_min",
+      "display_name": "Pressure Threshold Alarm (Min Threshold)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_threshold_alarm.threshold_max",
+      "display_name": "Pressure Threshold Alarm (Max Threshold)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_threshold_alarm.current_pressure",
+      "display_name": "Pressure Threshold Alarm (Current Pressure)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_threshold_alarm.alarm_status",
+      "display_name": "Pressure Threshold Alarm (Alarm Status) (Options: 0=trigger alarm, 1=release alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class_switch_response.timestamp",
+      "display_name": "LoRaWAN Class Switch Response (Timestamp)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "lorawan_class_switch_response.continuous",
+      "display_name": "LoRaWAN Class Switch Response (Continuous)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "lorawan_class_switch_response.class_type",
+      "display_name": "LoRaWAN Class Switch Response (Class Type) (Options: 0=class A, 1=class B, 2=class C, 3=class CtoB, 255=cancel)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class_switch_response.code",
+      "display_name": "LoRaWAN Class Switch Response (Response Code) (Options: 0=success, 1=not allowed, 2=invalid parameter, 16=continuous is 0, the device does not support, 17=continuous is greater than the maximum allowed by the device, 18=instruction expired (start time + continuous <= current time), 255=other error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "query_valve_task_status_response.index",
+      "display_name": "Query Valve Task Status Response (Valve Index) (Options: 0=valve 1, 1=valve 2)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "query_valve_task_status_response.code",
+      "display_name": "Query Valve Task Status Response (Response Code) (Options: 0=success, 1=not allowed, 2=valve index out of range)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "schedule_device_config_response.id",
+      "display_name": "Schedule Device Config Response (Schedule ID)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "schedule_device_config_response.type",
+      "display_name": "Schedule Device Config Response (Config Type)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "schedule_device_config_response.code",
+      "display_name": "Schedule Device Config Response (Response Code) (Options: 0=schedule command executed successfully, 1=schedule task not found, 2=schedule command expired, 3=schedule command time invalid, 4=Lora channel parameter invalid, 5=Lora frequency parameter invalid, 6=unsupported parameter, 7=schedule time not reached, 8=task storage memory not enough, 9=schedule task already exists, 255=other error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_task_status.task_status",
+      "display_name": "Valve 1 Task Status (Task Status) (Options: 0=free task, 1=normal local plan, 2=force local plan, 3=rain stop plan, 4=IPSO temporary control plan)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_task_status.real_status",
+      "display_name": "Valve 1 Task Status (Real Status) (Options: 0=valve is currently closed, 1=valve is currently open)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_task_status.cmd_status",
+      "display_name": "Valve 1 Task Status (Command Status) (Options: 0=valve is currently commanded to close, 1=valve is currently commanded to open)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_task_status.task_status",
+      "display_name": "Valve 2 Task Status (Task Status) (Options: 0=free task, 1=normal local plan, 2=force local plan, 3=rain stop plan, 4=IPSO temporary control plan)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_task_status.real_status",
+      "display_name": "Valve 2 Task Status (Real Status) (Options: 0=valve is currently closed, 1=valve is currently open)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_task_status.cmd_status",
+      "display_name": "Valve 2 Task Status (Command Status) (Options: 0=valve is currently commanded to close, 1=valve is currently commanded to open)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "read_schedule_config_response.id",
+      "display_name": "Read Schedule Config Response (Schedule ID)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "read_schedule_config_response.type",
+      "display_name": "Read Schedule Config Response (Parameter Type)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "read_schedule_config_response.code",
+      "display_name": "Read Schedule Config Response (Response Code) (Options: 0=success, 1=not allowed, 2=schedule task not found)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "multicast_command_response.eui",
+      "display_name": "Multicast Command Response (EUI)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "multicast_command_response.code",
+      "display_name": "Multicast Command Response (Response Code) (Options: 0=execute successfully, 1=not allowed, 2=service not supported, 255=other error)",
+      "data_type": "String",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_valve_1_pulse",
+          "display_name": "Clear Valve 1 Pulse",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_valve_2_pulse",
+          "display_name": "Clear Valve 2 Pulse",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_history",
+          "display_name": "Clear History",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "lorawan_class_switch.timestamp",
+          "display_name": "LoRaWAN Class Switch (Timestamp)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "lorawan_class_switch.continuous",
+          "display_name": "LoRaWAN Class Switch (Continuous)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "min"
+        },
+        {
+          "name": "lorawan_class_switch.class_type",
+          "display_name": "LoRaWAN Class Switch (Class Type)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "query_valve_task_status.index",
+          "display_name": "Query Valve Task Status (Valve Index)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "schedule_device_config.id",
+          "display_name": "Schedule Device Config (Schedule ID)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "schedule_device_config.type",
+          "display_name": "Schedule Device Config (Config Type)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "schedule_device_config.timestamp",
+          "display_name": "Schedule Device Config (Timestamp)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "schedule_device_config.continuous",
+          "display_name": "Schedule Device Config (Continuous)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "min"
+        },
+        {
+          "name": "schedule_device_config.channel_index",
+          "display_name": "Schedule Device Config (Channel Index)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "schedule_device_config.frequency",
+          "display_name": "Schedule Device Config (Frequency)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "ai_collection_config.id",
+          "display_name": "AI Collection Config (Collection ID)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "ai_collection_config.enable",
+          "display_name": "AI Collection Config (Enable)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "ai_collection_config.collect",
+          "display_name": "AI Collection Config (Non-irrigation Interval)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "ai_collection_config.collect_irrigation",
+          "display_name": "AI Collection Config (Irrigation Interval)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "ai_collection_config.open_delay_collect_time",
+          "display_name": "AI Collection Config (Valve Open Delay Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "min"
+        },
+        {
+          "name": "read_schedule_config.id",
+          "display_name": "Read Schedule Config (Schedule ID)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "read_schedule_config.type",
+          "display_name": "Read Schedule Config (Parameter Type)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "multicast_command.channel",
+          "display_name": "Multicast Command (Channel)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "multicast_command.time",
+          "display_name": "Multicast Command (Response Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "multicast_command.len",
+          "display_name": "Multicast Command (Length)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "multicast_command.data",
+          "display_name": "Multicast Command (Data Payload Hex)",
+          "data_type": "String",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

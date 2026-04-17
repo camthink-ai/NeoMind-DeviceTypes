@@ -1,0 +1,123 @@
+{
+  "device_type": "milesight_uc11_n1",
+  "name": "Milesight UC11-N1",
+  "description": "Milesight UC11-N1 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "gpio_1",
+      "display_name": "GPIO 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_2",
+      "display_name": "GPIO 2",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_counter",
+      "display_name": "Counter",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "adc_1",
+      "display_name": "ADC 1",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_1_max",
+      "display_name": "ADC Max (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_1_min",
+      "display_name": "ADC Min (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_1_avg",
+      "display_name": "ADC Avg (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2",
+      "display_name": "ADC 2",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2_max",
+      "display_name": "ADC Max (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2_min",
+      "display_name": "ADC Min (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2_avg",
+      "display_name": "ADC Avg (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": []
+}

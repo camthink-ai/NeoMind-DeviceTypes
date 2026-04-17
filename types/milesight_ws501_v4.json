@@ -1,0 +1,305 @@
+{
+  "device_type": "milesight_ws501_v4",
+  "name": "Milesight WS501-V4",
+  "description": "Milesight WS501-V4 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Work Mode (Options: 2=Class C, 2=Class C)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "voltage",
+      "display_name": "Voltage",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "electric_power",
+      "display_name": "Electric Power",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "W"
+    },
+    {
+      "name": "power_factor",
+      "display_name": "Power Factor",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "power_consumption",
+      "display_name": "Power Consumption",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "current_rating",
+      "display_name": "Current Rating",
+      "data_type": "Float",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "button_status.button1",
+      "display_name": "Button1 (Options: 0=Off, 1=On)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "overcurrent_alarm.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "overcurrent_alarm.status",
+      "display_name": "Status (Options: 1=Overcurrent, 1=Overcurrent)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_abnormal_alarm.status",
+      "display_name": "Status (Options: 1=Abnormal, 1=Abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm.status",
+      "display_name": "Status (Options: 1=Overtemperature, 1=Overtemperature)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "voltage_collect_error.type",
+      "display_name": "Type (Options: 1=Collect_error, 1=Collect_error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "electric_power_collect_error.type",
+      "display_name": "Type (Options: 1=Collect_error, 1=Collect_error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "power_factor_collect_error.type",
+      "display_name": "Type (Options: 1=Collect_error, 1=Collect_error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "power_consumption_collect_error.type",
+      "display_name": "Type (Options: 1=Collect_error, 1=Collect_error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_collect_error.type",
+      "display_name": "Type (Options: 1=Collect_error, 1=Collect_error)",
+      "data_type": "String",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reporting_interval",
+          "display_name": "Reporting Interval",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "power_switch_mode",
+          "display_name": "When Power is Restored",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "led_mode",
+          "display_name": "LED Indicator",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "button_lock_config.enable",
+          "display_name": "On/Off Lock Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "button_reset_config",
+          "display_name": "Reset Lock Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "power_consumption_3w",
+          "display_name": "Power Consumption",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "overcurrent_alarm_config.enable",
+          "display_name": "Overcurrent Alarm Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "overcurrent_alarm_config.threshold",
+          "display_name": "Overcurrent Alarm Value",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "A"
+        },
+        {
+          "name": "overcurrent_protection.enable",
+          "display_name": "Overcurrent Protection Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "overcurrent_protection.threshold",
+          "display_name": "Overcurrent Protection Value",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "A"
+        },
+        {
+          "name": "button_status_control.button_status1",
+          "display_name": "Button1",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "d2d_settings.d2d_controller_enable",
+          "display_name": "D2D Controller Enable",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "d2d_settings.d2d_agent_enable",
+          "display_name": "D2D Agent Enable",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "time_zone",
+          "display_name": "Time Zone",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.enable",
+          "display_name": "Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.start_month",
+          "display_name": "Month",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.start_week_num",
+          "display_name": "Number of Week",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.start_week_day",
+          "display_name": "Week",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.start_hour_min",
+          "display_name": "Time",
+          "data_type": "String",
+          "required": false,
+          "unit": "min"
+        },
+        {
+          "name": "daylight_saving_time.end_month",
+          "display_name": "Month",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.end_week_num",
+          "display_name": "Number of Week",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.end_week_day",
+          "display_name": "Week",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "daylight_saving_time.end_hour_min",
+          "display_name": "Time",
+          "data_type": "String",
+          "required": false,
+          "unit": "min"
+        },
+        {
+          "name": "daylight_saving_time.dst_bias",
+          "display_name": "DST Bias",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "min"
+        }
+      ]
+    }
+  ]
+}

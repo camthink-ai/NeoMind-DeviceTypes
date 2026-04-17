@@ -1,0 +1,427 @@
+{
+  "device_type": "milesight_ds3604",
+  "name": "Milesight DS3604",
+  "description": "Milesight DS3604 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "button_status",
+      "display_name": "Button Status (Options: 0=single_click, 1=double_click, 2=short_press, 3=long_press)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_template_id",
+      "display_name": "Current Template ID",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "template_1.text_1",
+      "display_name": "Template 1 (Text 1)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_2",
+      "display_name": "Template 1 (Text 2)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_3",
+      "display_name": "Template 1 (Text 3)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_4",
+      "display_name": "Template 1 (Text 4)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_5",
+      "display_name": "Template 1 (Text 5)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_6",
+      "display_name": "Template 1 (Text 6)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_7",
+      "display_name": "Template 1 (Text 7)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_8",
+      "display_name": "Template 1 (Text 8)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_9",
+      "display_name": "Template 1 (Text 9)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.text_10",
+      "display_name": "Template 1 (Text 10)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_1.qrcode",
+      "display_name": "Template 1 (QRCode)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_1",
+      "display_name": "Template 2 (Text 1)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_2",
+      "display_name": "Template 2 (Text 2)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_3",
+      "display_name": "Template 2 (Text 3)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_4",
+      "display_name": "Template 2 (Text 4)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_5",
+      "display_name": "Template 2 (Text 5)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_6",
+      "display_name": "Template 2 (Text 6)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_7",
+      "display_name": "Template 2 (Text 7)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_8",
+      "display_name": "Template 2 (Text 8)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_9",
+      "display_name": "Template 2 (Text 9)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.text_10",
+      "display_name": "Template 2 (Text 10)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "template_2.qrcode",
+      "display_name": "Template 2 (QRCode)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "buzzer_enable",
+      "display_name": "Buzzer Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_visible",
+      "display_name": "Button Visible",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_enable",
+      "display_name": "Button Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_1",
+      "display_name": "Block Visible (Text 1)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_2",
+      "display_name": "Block Visible (Text 2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_3",
+      "display_name": "Block Visible (Text 3)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_4",
+      "display_name": "Block Visible (Text 4)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_5",
+      "display_name": "Block Visible (Text 5)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_6",
+      "display_name": "Block Visible (Text 6)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_7",
+      "display_name": "Block Visible (Text 7)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_8",
+      "display_name": "Block Visible (Text 8)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_9",
+      "display_name": "Block Visible (Text 9)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.text_10",
+      "display_name": "Block Visible (Text 10)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.qrcode",
+      "display_name": "Block Visible (QRCode)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.image_1",
+      "display_name": "Block Visible (Image 1)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.image_2",
+      "display_name": "Block Visible (Image 2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.battery_status",
+      "display_name": "Block Visible (Battery Status)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "block_visible.connect_status",
+      "display_name": "Block Visible (Connect Status)",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "beep",
+          "display_name": "Beep",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "refresh_display",
+          "display_name": "Refresh Display",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_battery",
+          "display_name": "Report Battery",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_buzzer",
+          "display_name": "Report Buzzer",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_current_template_id",
+          "display_name": "Report Current Template ID",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_current_display",
+          "display_name": "Report Current Display",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_image.background_image",
+          "display_name": "Clear Image (Background Image)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_image.logo_1",
+          "display_name": "Clear Image (Logo 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_image.logo_2",
+          "display_name": "Clear Image (Logo 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "switch_template_button_enable",
+          "display_name": "Switch Template Button Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "multicast_config.group_1",
+          "display_name": "Multicast Config (Group 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "multicast_config.group_2",
+          "display_name": "Multicast Config (Group 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "multicast_config.group_3",
+          "display_name": "Multicast Config (Group 3)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "multicast_config.group_4",
+          "display_name": "Multicast Config (Group 4)",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "device_type": "milesight_em300_cl",
+  "name": "Milesight EM300-CL",
+  "description": "Milesight EM300-CL LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "liquid",
+      "display_name": "Liquid (Options: 0=uncalibrated, 1=full, 2=empty)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "calibration_result",
+      "display_name": "Calibration Result",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "liquid_alarm",
+      "display_name": "Liquid Alarm (Options: 0=empty alarm release, 1=empty alarm, 255=read error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "alarm_config.enable",
+      "display_name": "Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "alarm_config.alarm_release_enable",
+      "display_name": "Alarm Config (Alarm Release Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "alarm_config.alarm_interval",
+      "display_name": "Alarm Config (Alarm Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "alarm_config.alarm_counts",
+      "display_name": "Alarm Config (Alarm Counts)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "capacitor_config.c1",
+      "display_name": "Capacitor Config (C1)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "capacitor_config.c2",
+      "display_name": "Capacitor Config (C2)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "capacitor_config.delta",
+      "display_name": "Capacitor Config (Delta)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "capacitor_judge_config.c1",
+      "display_name": "Capacitor Judge Config (C1)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "capacitor_judge_config.c2",
+      "display_name": "Capacitor Judge Config (C2)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "capacitor_judge_config.delta",
+      "display_name": "Capacitor Judge Config (Delta)",
+      "data_type": "Integer",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_capacitor_calibration_value",
+          "display_name": "Query Capacitor Calibration Value",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_capacitor_value",
+          "display_name": "Query Capacitor Value",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_capacitor_judge_value",
+          "display_name": "Query Capacitor Judge Value",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "calibrate",
+          "display_name": "Calibrate",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "calibrate_delay_time",
+          "display_name": "Calibrate Delay Time",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        }
+      ]
+    }
+  ]
+}

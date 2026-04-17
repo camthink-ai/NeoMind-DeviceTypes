@@ -1,0 +1,419 @@
+{
+  "device_type": "milesight_ct310",
+  "name": "Milesight CT310",
+  "description": "Milesight CT310 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn1_total",
+      "display_name": "Current Channel 1 Total",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "current_chn2_total",
+      "display_name": "Current Channel 2 Total",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "current_chn3_total",
+      "display_name": "Current Channel 3 Total",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "current_chn1",
+      "display_name": "Current Channel 1",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn2",
+      "display_name": "Current Channel 2",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn3",
+      "display_name": "Current Channel 3",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn1_sensor_status",
+      "display_name": "Current Channel 1 Sensor Status (Options: 0=normal, 1=over range alarm, 2=read failed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_chn2_sensor_status",
+      "display_name": "Current Channel 2 Sensor Status (Options: 0=normal, 1=over range alarm, 2=read failed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_chn3_sensor_status",
+      "display_name": "Current Channel 3 Sensor Status (Options: 0=normal, 1=over range alarm, 2=read failed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_chn1_max",
+      "display_name": "Current Channel 1 Max",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn1_min",
+      "display_name": "Current Channel 1 Min",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn2_max",
+      "display_name": "Current Channel 2 Max",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn2_min",
+      "display_name": "Current Channel 2 Min",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn3_max",
+      "display_name": "Current Channel 3 Max",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn3_min",
+      "display_name": "Current Channel 3 Min",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_chn1_alarm.current_threshold_alarm",
+      "display_name": "Current Channel 1 Alarm (Current Threshold Alarm)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn1_alarm.current_threshold_alarm_release",
+      "display_name": "Current Channel 1 Alarm (Current Threshold Alarm Release)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn1_alarm.current_over_range_alarm",
+      "display_name": "Current Channel 1 Alarm (Current Over Range Alarm)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn1_alarm.current_over_range_alarm_release",
+      "display_name": "Current Channel 1 Alarm (Current Over Range Alarm Release)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm.current_threshold_alarm",
+      "display_name": "Current Channel 2 Alarm (Current Threshold Alarm)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm.current_threshold_alarm_release",
+      "display_name": "Current Channel 2 Alarm (Current Threshold Alarm Release)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm.current_over_range_alarm",
+      "display_name": "Current Channel 2 Alarm (Current Over Range Alarm)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm.current_over_range_alarm_release",
+      "display_name": "Current Channel 2 Alarm (Current Over Range Alarm Release)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm.current_threshold_alarm",
+      "display_name": "Current Channel 3 Alarm (Current Threshold Alarm)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm.current_threshold_alarm_release",
+      "display_name": "Current Channel 3 Alarm (Current Threshold Alarm Release)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm.current_over_range_alarm",
+      "display_name": "Current Channel 3 Alarm (Current Over Range Alarm)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm.current_over_range_alarm_release",
+      "display_name": "Current Channel 3 Alarm (Current Over Range Alarm Release)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_sensor_status",
+      "display_name": "Temperature Sensor Status (Options: 0=normal, 1=over range alarm, 2=read failed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm",
+      "display_name": "Temperature Alarm (Options: 0=temperature threshold alarm release, 1=temperature threshold alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "current_chn1_alarm_config.condition",
+      "display_name": "Current Channel 1 Threshold Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_chn1_alarm_config.threshold_min",
+      "display_name": "Current Channel 1 Threshold Alarm Config (Min Threshold)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn1_alarm_config.threshold_max",
+      "display_name": "Current Channel 1 Threshold Alarm Config (Max Threshold)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn1_alarm_config.alarm_interval",
+      "display_name": "Current Channel 1 Threshold Alarm Config (Alarm Interval)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn1_alarm_config.alarm_counts",
+      "display_name": "Current Channel 1 Threshold Alarm Config (Alarm Counts)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm_config.condition",
+      "display_name": "Current Channel 2 Threshold Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm_config.threshold_min",
+      "display_name": "Current Channel 2 Threshold Alarm Config (Min Threshold)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm_config.threshold_max",
+      "display_name": "Current Channel 2 Threshold Alarm Config (Max Threshold)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm_config.alarm_interval",
+      "display_name": "Current Channel 2 Threshold Alarm Config (Alarm Interval)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn2_alarm_config.alarm_counts",
+      "display_name": "Current Channel 2 Threshold Alarm Config (Alarm Counts)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm_config.condition",
+      "display_name": "Current Channel 3 Threshold Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm_config.threshold_min",
+      "display_name": "Current Channel 3 Threshold Alarm Config (Min Threshold)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm_config.threshold_max",
+      "display_name": "Current Channel 3 Threshold Alarm Config (Max Threshold)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm_config.alarm_interval",
+      "display_name": "Current Channel 3 Threshold Alarm Config (Alarm Interval)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_chn3_alarm_config.alarm_counts",
+      "display_name": "Current Channel 3 Threshold Alarm Config (Alarm Counts)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.condition",
+      "display_name": "Temperature Threshold Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.threshold_min",
+      "display_name": "Temperature Threshold Alarm Config (Min Threshold)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.threshold_max",
+      "display_name": "Temperature Threshold Alarm Config (Max Threshold)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "alarm_report_counts",
+      "display_name": "Alarm Report Counts",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "alarm_report_interval",
+      "display_name": "Alarm Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_current_chn1_cumulative",
+          "display_name": "Clear Current Channel 1 Cumulative",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_current_chn2_cumulative",
+          "display_name": "Clear Current Channel 2 Cumulative",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_current_chn3_cumulative",
+          "display_name": "Clear Current Channel 3 Cumulative",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

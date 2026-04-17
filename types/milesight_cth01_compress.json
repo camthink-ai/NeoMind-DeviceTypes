@@ -1,0 +1,2050 @@
+{
+  "device_type": "milesight_cth01_compress",
+  "name": "Milesight CTH01-COMPRESS",
+  "description": "Milesight CTH01-COMPRESS LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "active_power1.group1_value",
+      "display_name": "Active Power a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.group1.chan1",
+      "display_name": "Active Power1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.group1.chan2",
+      "display_name": "Active Power2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.group1.chan3",
+      "display_name": "Active Power3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.group2_value",
+      "display_name": "Active Power b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.group2.chan1",
+      "display_name": "Active Power4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.group2.chan2",
+      "display_name": "Active Power5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.group2.chan3",
+      "display_name": "Active Power6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power1.mask1",
+      "display_name": "Active Power (Options: 0=Active Power a, 1=Active Power, 0=Active Power b, 1=Active Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "active_power1.mask2",
+      "display_name": "Active Power (Options: 0=Active Power a, 1=Active Power, 0=Active Power b, 1=Active Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "active_power2.group1_value",
+      "display_name": "Active Power c",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.group1.chan1",
+      "display_name": "Active Power7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.group1.chan2",
+      "display_name": "Active Power8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.group1.chan3",
+      "display_name": "Active Power9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.group2_value",
+      "display_name": "Active Power d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.group2.chan1",
+      "display_name": "Active Power10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.group2.chan2",
+      "display_name": "Active Power11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.group2.chan3",
+      "display_name": "Active Power12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kW"
+    },
+    {
+      "name": "active_power2.mask1",
+      "display_name": "Active Power (Options: 0=Active Power c, 1=Active Power, 0=Active Power d, 1=Active Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "active_power2.mask2",
+      "display_name": "Active Power (Options: 0=Active Power c, 1=Active Power, 0=Active Power d, 1=Active Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "alarm_global_settings.interval",
+      "display_name": "Alarm Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "alarm_global_settings.release_enable",
+      "display_name": "Threshold Released Report Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "alarm_global_settings.times",
+      "display_name": "Alarm Times",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "apparent_energy1.group1_value",
+      "display_name": "Apparent Energy a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.group1.chan1",
+      "display_name": "Apparent Energy1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.group1.chan2",
+      "display_name": "Apparent Energy2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.group1.chan3",
+      "display_name": "Apparent Energy3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.group2_value",
+      "display_name": "Apparent Energy b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.group2.chan1",
+      "display_name": "Apparent Energy4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.group2.chan2",
+      "display_name": "Apparent Energy5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.group2.chan3",
+      "display_name": "Apparent Energy6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy1.mask1",
+      "display_name": "Apparent Energy (Options: 0=Apparent Energy a, 1=Apparent Energy, 0=Apparent Energy b, 1=Apparent Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "apparent_energy1.mask2",
+      "display_name": "Apparent Energy (Options: 0=Apparent Energy a, 1=Apparent Energy, 0=Apparent Energy b, 1=Apparent Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "apparent_energy2.group1_value",
+      "display_name": "Apparent Energy c",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.group1.chan1",
+      "display_name": "Apparent Energy7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.group1.chan2",
+      "display_name": "Apparent Energy8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.group1.chan3",
+      "display_name": "Apparent Energy9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.group2_value",
+      "display_name": "Apparent Energy d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.group2.chan1",
+      "display_name": "Apparent Energy10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.group2.chan2",
+      "display_name": "Apparent Energy11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.group2.chan3",
+      "display_name": "Apparent Energy12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVAh"
+    },
+    {
+      "name": "apparent_energy2.mask1",
+      "display_name": "Apparent Energy (Options: 0=Apparent Energy c, 1=Apparent Energy, 0=Apparent Energy d, 1=Apparent Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "apparent_energy2.mask2",
+      "display_name": "Apparent Energy (Options: 0=Apparent Energy c, 1=Apparent Energy, 0=Apparent Energy d, 1=Apparent Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "apparent_power1.group1_value",
+      "display_name": "Apparent Power a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.group1.chan1",
+      "display_name": "Apparent Power1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.group1.chan2",
+      "display_name": "Apparent Power2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.group1.chan3",
+      "display_name": "Apparent Power3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.group2_value",
+      "display_name": "Apparent Power b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.group2.chan1",
+      "display_name": "Apparent Power4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.group2.chan2",
+      "display_name": "Apparent Power5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.group2.chan3",
+      "display_name": "Apparent Power6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power1.mask1",
+      "display_name": "Apparent Power (Options: 0=Apparent Power a, 1=Apparent Power, 0=Apparent Power b, 1=Apparent Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "apparent_power1.mask2",
+      "display_name": "Apparent Power (Options: 0=Apparent Power a, 1=Apparent Power, 0=Apparent Power b, 1=Apparent Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "apparent_power2.group1_value",
+      "display_name": "Apparent Power c",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.group1.chan1",
+      "display_name": "Apparent Power7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.group1.chan2",
+      "display_name": "Apparent Power8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.group1.chan3",
+      "display_name": "Apparent Power9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.group2_value",
+      "display_name": "Apparent Power d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.group2.chan1",
+      "display_name": "Apparent Power10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.group2.chan2",
+      "display_name": "Apparent Power11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.group2.chan3",
+      "display_name": "Apparent Power12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVA"
+    },
+    {
+      "name": "apparent_power2.mask1",
+      "display_name": "Apparent Power (Options: 0=Apparent Power c, 1=Apparent Power, 0=Apparent Power d, 1=Apparent Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "apparent_power2.mask2",
+      "display_name": "Apparent Power (Options: 0=Apparent Power c, 1=Apparent Power, 0=Apparent Power d, 1=Apparent Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "bluetooth_name.content",
+      "display_name": "Name",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "bluetooth_name.length",
+      "display_name": "Name Length",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_alarm.channel",
+      "display_name": "Alarm Channel",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "current_alarm.info.exceed_range_alarm_deactivation.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.exceed_range_alarm_trigger.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.lower_range_alarm_deactivation.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.lower_range_alarm_trigger.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.lower_range_error.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.over_range_alarm_deactivation.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.over_range_alarm_trigger.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.over_range_error.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.over_range_release.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.type",
+      "display_name": "Alarm Type (Options: 0=Collection Error, 1=Overrange (Lower Limit), 2=Overrange (Upper Limit), 3=No Data, 4=Overrange Release, 16=Current Below Threshold Alarm Released, 17=Current Below Threshold Alarm, 18=Current Exceeds Threshold Alarm Released, 19=Current Exceeds Threshold Alarm, 20=Current in-Range Thresholds Alarm Released, 21=Current in-Range Thresholds Alarm, 22=Current Out-of-Range Thresholds Alarm Released, 23=Current Out-of-Range Thresholds Alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_alarm.info.within_range_alarm_deactivation.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_alarm.info.within_range_alarm_trigger.current",
+      "display_name": "Current",
+      "data_type": "Float",
+      "required": false,
+      "unit": "a"
+    },
+    {
+      "name": "current_interface1.type",
+      "display_name": "Circuit Type (Options: 0=one_phase, 1=three_phase)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_interface2.type",
+      "display_name": "Circuit Type (Options: 0=one_phase, 1=three_phase)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_interface3.type",
+      "display_name": "Circuit Type (Options: 0=one_phase, 1=three_phase)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_interface4.type",
+      "display_name": "Circuit Type (Options: 0=one_phase, 1=three_phase)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.command",
+      "display_name": "Sub-command (Options: 0=Data Storage Enable, 1=Data Retransmission Enable, 2=Retransmission Interval, 3=Retrieval Interval)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.enable",
+      "display_name": "Data Storage Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.retransmission_enable",
+      "display_name": "Data Retransmission Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "data_storage_settings.retransmission_interval",
+      "display_name": "Retransmission Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "data_storage_settings.retrieval_interval",
+      "display_name": "Retrieval Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "daylight_saving_time.daylight_saving_time_offset",
+      "display_name": "DST Bias",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.enable",
+      "display_name": "Daylight Saving Time",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_hour_min",
+      "display_name": "Time (Options: 0=00:00, 60=01:00, 120=02:00, 180=03:00, 240=04:00, 300=05:00, 360=06:00, 420=07:00, 480=08:00, 540=09:00, 600=10:00, 660=11:00, 720=12:00, 780=13:00, 840=14:00, 900=15:00, 960=16:00, 1020=17:00, 1080=18:00, 1140=19:00, 1200=20:00, 1260=21:00, 1320=22:00, 1380=23:00)",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.end_month",
+      "display_name": "Month (Options: 1=Jan., 2=Feb., 3=Mar., 4=Apr., 5=May, 6=Jun., 7=Jul., 8=Aug., 9=Sep., 10=Oct., 11=Nov., 12=Dec.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_week_day",
+      "display_name": "Week (Options: 1=Mon., 2=Tues., 3=Wed., 4=Thurs., 5=Fri., 6=Sat., 7=Sun.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_week_num",
+      "display_name": "Number of Week (Options: 1=1st, 2=2nd, 3=3rd, 4=4th, 5=last)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_hour_min",
+      "display_name": "Time (Options: 0=00:00, 60=01:00, 120=02:00, 180=03:00, 240=04:00, 300=05:00, 360=06:00, 420=07:00, 480=08:00, 540=09:00, 600=10:00, 660=11:00, 720=12:00, 780=13:00, 840=14:00, 900=15:00, 960=16:00, 1020=17:00, 1080=18:00, 1140=19:00, 1200=20:00, 1260=21:00, 1320=22:00, 1380=23:00)",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.start_month",
+      "display_name": "Month (Options: 1=Jan., 2=Feb., 3=Mar., 4=Apr., 5=May, 6=Jun., 7=Jul., 8=Aug., 9=Sep., 10=Oct., 11=Nov., 12=Dec.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_week_day",
+      "display_name": "Week (Options: 1=Mon., 2=Tues., 3=Wed., 4=Thurs., 5=Fri., 6=Sat., 7=Sun.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_week_num",
+      "display_name": "Number of Week (Options: 1=1st, 2=2nd, 3=3rd, 4=4th, 5=last)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_active_energy1.group1_value",
+      "display_name": "Imported Active Energy a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.group1.chan1",
+      "display_name": "Imported Active Energy1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.group1.chan2",
+      "display_name": "Imported Active Energy2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.group1.chan3",
+      "display_name": "Imported Active Energy3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.group2_value",
+      "display_name": "Imported Active Energy b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.group2.chan1",
+      "display_name": "Imported Active Energy4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.group2.chan2",
+      "display_name": "Imported Active Energy5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.group2.chan3",
+      "display_name": "Imported Active Energy6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy1.mask1",
+      "display_name": "Imported Active Energy (Options: 0=Imported Active Energy a, 1=Imported Active Energy, 0=Imported Active Energy b, 1=Imported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_active_energy1.mask2",
+      "display_name": "Imported Active Energy (Options: 0=Imported Active Energy a, 1=Imported Active Energy, 0=Imported Active Energy b, 1=Imported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_active_energy2.group1_value",
+      "display_name": "Imported Active Energy c",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.group1.chan1",
+      "display_name": "Imported Active Energy7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.group1.chan2",
+      "display_name": "Imported Active Energy8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.group1.chan3",
+      "display_name": "Imported Active Energy9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.group2_value",
+      "display_name": "Imported Active Energy d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.group2.chan1",
+      "display_name": "Imported Active Energy10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.group2.chan2",
+      "display_name": "Imported Active Energy11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.group2.chan3",
+      "display_name": "Imported Active Energy12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "forward_active_energy2.mask1",
+      "display_name": "Imported Active Energy (Options: 0=Imported Active Energy c, 1=Imported Active Energy, 0=Imported Active Energy d, 1=Imported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_active_energy2.mask2",
+      "display_name": "Imported Active Energy (Options: 0=Imported Active Energy c, 1=Imported Active Energy, 0=Imported Active Energy d, 1=Imported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_reactive_energy1.group1_value",
+      "display_name": "Imported Reactive Energy a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.group1.chan1",
+      "display_name": "Imported Reactive Energy1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.group1.chan2",
+      "display_name": "Imported Reactive Energy2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.group1.chan3",
+      "display_name": "Imported Reactive Energy3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.group2_value",
+      "display_name": "Imported Reactive Energy b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.group2.chan1",
+      "display_name": "Imported Reactive Energy4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.group2.chan2",
+      "display_name": "Imported Reactive Energy5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.group2.chan3",
+      "display_name": "Imported Reactive Energy6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy1.mask1",
+      "display_name": "Imported Reactive Energy (Options: 0=Imported Reactive Energy a, 1=Imported Reactive Energy, 0=Imported Reactive Energy b, 1=Imported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_reactive_energy1.mask2",
+      "display_name": "Imported Reactive Energy (Options: 0=Imported Reactive Energy a, 1=Imported Reactive Energy, 0=Imported Reactive Energy b, 1=Imported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_reactive_energy2.group1_value",
+      "display_name": "Imported Reactive Energy c",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.group1.chan1",
+      "display_name": "Imported Reactive Energy7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.group1.chan2",
+      "display_name": "Imported Reactive Energy8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.group1.chan3",
+      "display_name": "Imported Reactive Energy9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.group2_value",
+      "display_name": "Imported Reactive Energy d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.group2.chan1",
+      "display_name": "Imported Reactive Energy10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.group2.chan2",
+      "display_name": "Imported Reactive Energy11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.group2.chan3",
+      "display_name": "Imported Reactive Energy12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "forward_reactive_energy2.mask1",
+      "display_name": "Imported Reactive Energy (Options: 0=Imported Reactive Energy c, 1=Imported Reactive Energy, 0=Imported Reactive Energy d, 1=Imported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "forward_reactive_energy2.mask2",
+      "display_name": "Imported Reactive Energy (Options: 0=Imported Reactive Energy c, 1=Imported Reactive Energy, 0=Imported Reactive Energy d, 1=Imported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_report.mode",
+      "display_name": "Historical Data Mode (Options: 0=target time, 1=historical time)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_report.timestamp",
+      "display_name": "Historical Data Timestamps",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "history_type.type",
+      "display_name": "Historical Data Type (Options: 1=month energy, 2=month min, 3=month max)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "month_statistics_settings.day",
+      "display_name": "day",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "month_statistics_settings.hour",
+      "display_name": "hour",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "month_statistics_settings.minute",
+      "display_name": "minute",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "oem_id",
+      "display_name": "OEM ID",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "power_factor.group1_value",
+      "display_name": "Power Factor a",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group1.chan1",
+      "display_name": "Power Factor1",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group1.chan2",
+      "display_name": "Power Factor2",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group1.chan3",
+      "display_name": "Power Factor3",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group2_value",
+      "display_name": "Power Factorb",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group2.chan1",
+      "display_name": "Power Factor4",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group2.chan2",
+      "display_name": "Power Factor5",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group2.chan3",
+      "display_name": "Power Factor6",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group3_value",
+      "display_name": "Power Factor c",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group3.chan1",
+      "display_name": "Power Factor7",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group3.chan2",
+      "display_name": "Power Factor8",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group3.chan3",
+      "display_name": "Power Factor9",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group4_value",
+      "display_name": "Power Factor d",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group4.chan1",
+      "display_name": "Power Factor10",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group4.chan2",
+      "display_name": "Power Factor11",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.group4.chan3",
+      "display_name": "Power Factor12",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "power_factor.mask1",
+      "display_name": "Power Factor (Options: 0=Power Factor a, 1=Power Factor, 0=Power Factorb, 1=Power Factor, 0=Power Factor c, 1=Power Factor, 0=Power Factor d, 1=Power Factor)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "power_factor.mask2",
+      "display_name": "Power Factor (Options: 0=Power Factor a, 1=Power Factor, 0=Power Factorb, 1=Power Factor, 0=Power Factor c, 1=Power Factor, 0=Power Factor d, 1=Power Factor)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "power_factor.mask3",
+      "display_name": "Power Factor (Options: 0=Power Factor a, 1=Power Factor, 0=Power Factorb, 1=Power Factor, 0=Power Factor c, 1=Power Factor, 0=Power Factor d, 1=Power Factor)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "power_factor.mask4",
+      "display_name": "Power Factor (Options: 0=Power Factor a, 1=Power Factor, 0=Power Factorb, 1=Power Factor, 0=Power Factor c, 1=Power Factor, 0=Power Factor d, 1=Power Factor)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "product_sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reactive_power1.group1_value",
+      "display_name": "Reactive Power a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.group1.chan1",
+      "display_name": "Reactive Power1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.group1.chan2",
+      "display_name": "Reactive Power2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.group1.chan3",
+      "display_name": "Reactive Power3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.group2_value",
+      "display_name": "Reactive Power b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.group2.chan1",
+      "display_name": "Reactive Power4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.group2.chan2",
+      "display_name": "Reactive Power5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.group2.chan3",
+      "display_name": "Reactive Power6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power1.mask1",
+      "display_name": "Reactive Power (Options: 0=Reactive Power a, 1=Reactive Power, 0=Reactive Power b, 1=Reactive Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reactive_power1.mask2",
+      "display_name": "Reactive Power (Options: 0=Reactive Power a, 1=Reactive Power, 0=Reactive Power b, 1=Reactive Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reactive_power2.group1_value",
+      "display_name": "Reactive Power c",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.group1.chan1",
+      "display_name": "Reactive Power7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.group1.chan2",
+      "display_name": "Reactive Power8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.group1.chan3",
+      "display_name": "Reactive Power9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.group2_value",
+      "display_name": "Reactive Power d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.group2.chan1",
+      "display_name": "Reactive Power10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.group2.chan2",
+      "display_name": "Reactive Power11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.group2.chan3",
+      "display_name": "Reactive Power12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kvar"
+    },
+    {
+      "name": "reactive_power2.mask1",
+      "display_name": "Reactive Power (Options: 0=Reactive Power c, 1=Reactive Power, 0=Reactive Power d, 1=Reactive Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reactive_power2.mask2",
+      "display_name": "Reactive Power (Options: 0=Reactive Power c, 1=Reactive Power, 0=Reactive Power d, 1=Reactive Power)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_enable.active_power",
+      "display_name": "Active Power",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.apparent_energy",
+      "display_name": "Apparent Energy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.apparent_power",
+      "display_name": "Apparent Power",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.current",
+      "display_name": "Current(RMS)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.forward_active_energy",
+      "display_name": "Imported Active Energy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.forward_reactive_energy",
+      "display_name": "Imported Reactive Energy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.power_factor",
+      "display_name": "Power Factor",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.reactive_power",
+      "display_name": "ReActive Power",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.reverse_active_energy",
+      "display_name": "Exported Active Energy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.reverse_reactive_energy",
+      "display_name": "Exported Reactive Energy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.temperature",
+      "display_name": "Temperature",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.thdi",
+      "display_name": "THDi",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.thdv",
+      "display_name": "THDv",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.voltage",
+      "display_name": "Voltage(RMS)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_enable.voltage_unbalance",
+      "display_name": "Voltage Three-phase Unbalance",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.minutes_of_time",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "reporting_interval.seconds_of_time",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "reporting_interval.unit",
+      "display_name": "Report Interval Unit (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_active_energy1.group1_value",
+      "display_name": "Exported Active Energy a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.group1.chan1",
+      "display_name": "Exported Active Energy1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.group1.chan2",
+      "display_name": "Exported Active Energy2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.group1.chan3",
+      "display_name": "Exported Active Energy3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.group2_value",
+      "display_name": "Exported Active Energy b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.group2.chan1",
+      "display_name": "Exported Active Energy4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.group2.chan2",
+      "display_name": "Exported Active Energy5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.group2.chan3",
+      "display_name": "Exported Active Energy6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy1.mask1",
+      "display_name": "Exported Active Energy (Options: 0=Exported Active Energy a, 1=Exported Active Energy, 0=Exported Active Energy b, 1=Exported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_active_energy1.mask2",
+      "display_name": "Exported Active Energy (Options: 0=Exported Active Energy a, 1=Exported Active Energy, 0=Exported Active Energy b, 1=Exported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_active_energy2.group1_value",
+      "display_name": "Exported Active Energy c",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.group1.chan1",
+      "display_name": "Exported Active Energy7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.group1.chan2",
+      "display_name": "Exported Active Energy8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.group1.chan3",
+      "display_name": "Exported Active Energy9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.group2_value",
+      "display_name": "Exported Active Energy d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.group2.chan1",
+      "display_name": "Exported Active Energy10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.group2.chan2",
+      "display_name": "Exported Active Energy11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.group2.chan3",
+      "display_name": "Exported Active Energy12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "reverse_active_energy2.mask1",
+      "display_name": "Exported Active Energy (Options: 0=Exported Active Energy c, 1=Exported Active Energy, 0=Exported Active Energy d, 1=Exported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_active_energy2.mask2",
+      "display_name": "Exported Active Energy (Options: 0=Exported Active Energy c, 1=Exported Active Energy, 0=Exported Active Energy d, 1=Exported Active Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_reactive_energy1.group1_value",
+      "display_name": "Exported Reactive Energy a",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.group1.chan1",
+      "display_name": "Exported Reactive Energy1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.group1.chan2",
+      "display_name": "Exported Reactive Energy2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.group1.chan3",
+      "display_name": "Exported Reactive Energy3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.group2_value",
+      "display_name": "Exported Reactive Energy b",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.group2.chan1",
+      "display_name": "Exported Reactive Energy4",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.group2.chan2",
+      "display_name": "Exported Reactive Energy5",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.group2.chan3",
+      "display_name": "Exported Reactive Energy6",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy1.mask1",
+      "display_name": "Exported Reactive Energy (Options: 0=Exported Reactive Energy a, 1=Exported Reactive Energy, 0=Exported Reactive Energy b, 1=Exported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_reactive_energy1.mask2",
+      "display_name": "Exported Reactive Energy (Options: 0=Exported Reactive Energy a, 1=Exported Reactive Energy, 0=Exported Reactive Energy b, 1=Exported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_reactive_energy2.group1.chan1",
+      "display_name": "Exported Reactive Energy7",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy2.group1.chan2",
+      "display_name": "Exported Reactive Energy8",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy2.group1.chan3",
+      "display_name": "Exported Reactive Energy9",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy2.group2_value",
+      "display_name": "Exported Reactive Energy d",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy2.group2.chan1",
+      "display_name": "Exported Reactive Energy10",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy2.group2.chan2",
+      "display_name": "Exported Reactive Energy11",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy2.group2.chan3",
+      "display_name": "Exported Reactive Energy12",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kVArh"
+    },
+    {
+      "name": "reverse_reactive_energy2.mask1",
+      "display_name": "Exported Reactive Energy (Options: 0=Exported Reactive Energy c, 1=Exported Reactive Energy, 0=Exported Reactive Energy d, 1=Exported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reverse_reactive_energy2.mask2",
+      "display_name": "Exported Reactive Energy (Options: 0=Exported Reactive Energy c, 1=Exported Reactive Energy, 0=Exported Reactive Energy d, 1=Exported Reactive Energy)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_settings.enable",
+      "display_name": "Threshold Alarm Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_settings.threshold_condition",
+      "display_name": "Threshold Mode (Options: 0=disable, 1=condition: x<A, 2=condition: x>B, 3=condition: A≤x≤B, 4=condition: x<A or x>B)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_settings.threshold_max",
+      "display_name": "Value B",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_settings.threshold_min",
+      "display_name": "Value A",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.exceed_range_alarm_deactivation.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.exceed_range_alarm_trigger.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.lower_range_alarm_deactivation.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.lower_range_alarm_trigger.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.over_range_alarm_deactivation.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.over_range_alarm_trigger.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.type",
+      "display_name": "Alarm Type (Options: 0=Collection Error, 1=Overrange (Lower Limit), 2=Overrange (Upper Limit), 3=No Data, 16=Temperature Below Threshold Alarm Released, 17=Temperature Below Threshold Alarm, 18=Temperature Exceeds Threshold Alarm Released, 19=Temperature Exceeds Threshold Alarm, 20=Temperature Between Thresholds Alarm Released, 21=Temperature Between Thresholds Alarm, 22=Temperature Outside Thresholds Alarm Released, 23=Temperature Outside Thresholds Alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm.within_range_alarm_deactivation.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.within_range_alarm_trigger.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_calibration_settings.calibration_value",
+      "display_name": "Calibration Value",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_calibration_settings.enable",
+      "display_name": "Temperature Calibration",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_unit",
+      "display_name": "Temperature Unit (Options: 0=℃, 1=℉)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "thdi_alarm.channel",
+      "display_name": "Alarm Channel",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "thdi_alarm.info.over_range_alarm_deactivation.thdi",
+      "display_name": "THDi",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "thdi_alarm.info.over_range_alarm_trigger.thdi",
+      "display_name": "THDi",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "thdi_alarm.info.type",
+      "display_name": "Alarm Type (Options: 0=Collection Error, 18=THDi Exceeds Threshold Alarm Released, 19=THDi Exceeds Threshold Alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "thdv_alarm.channel",
+      "display_name": "Alarm Channel",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "thdv_alarm.info.over_range_alarm_deactivation.thdv",
+      "display_name": "THDv",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "thdv_alarm.info.over_range_alarm_trigger.thdv",
+      "display_name": "THDv",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "thdv_alarm.info.type",
+      "display_name": "Alarm Type (Options: 0=Collection Error, 18=THDv Exceeds Threshold Alarm Released, 19=THDv Exceeds Threshold Alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -720=UTC-12(IDLW), -660=UTC-11(SST), -600=UTC-10(HST), -570=UTC-9:30(MIT), -540=UTC-9(AKST), -480=UTC-8(PST), -420=UTC-7(MST), -360=UTC-6(CST), -300=UTC-5(EST), -240=UTC-4(AST), -210=UTC-3:30(NST), -180=UTC-3(BRT), -120=UTC-2(FNT), -60=UTC-1(CVT), 0=UTC(WET), 60=UTC+1(CET), 120=UTC+2(EET), 180=UTC+3(MSK), 210=UTC+3:30(IRST), 240=UTC+4(GST), 270=UTC+4:30(AFT), 300=UTC+5(PKT), 330=UTC+5:30(IST), 345=UTC+5:45(NPT), 360=UTC+6(BHT), 390=UTC+6:30(MMT), 420=UTC+7(ICT), 480=UTC+8(CT/CST), 540=UTC+9(JST), 570=UTC+9:30(ACST), 600=UTC+10(AEST), 630=UTC+10:30(LHST), 660=UTC+11(VUT), 720=UTC+12(NZST), 765=UTC+12:45(CHAST), 780=UTC+13(PHOT), 840=UTC+14(LINT))",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "voltage_alarm.channel",
+      "display_name": "Alarm Channel",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "voltage_alarm.info.exceed_range_alarm_deactivation.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.exceed_range_alarm_trigger.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.lower_range_alarm_deactivation.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.lower_range_alarm_trigger.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.lower_range_error.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.over_range_alarm_deactivation.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.over_range_alarm_trigger.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.over_range_error.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.over_range_release.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.type",
+      "display_name": "Alarm Type (Options: 0=Collection Error, 1=Overrange (Lower Limit), 2=Overrange (Upper Limit), 3=No Data, 4=Overrange Release, 16=Voltage Below Threshold Alarm Released, 17=Voltage Below Threshold Alarm, 18=Voltage Exceeds Threshold Alarm Released, 19=Voltage Exceeds Threshold Alarm, 20=Voltage in-Range Thresholds Alarm Released, 21=Voltage in-Range Thresholds Alarm, 22=Voltage Out-of-Range Thresholds Alarm Released, 23=Voltage Out-of-Range Thresholds Alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "voltage_alarm.info.within_range_alarm_deactivation.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_alarm.info.within_range_alarm_trigger.voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "voltage_interface",
+      "display_name": "Voltage Channel (Options: 0=four_wire, 1=three_wire)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "voltage_three_phase_imbalcance",
+      "display_name": "Voltage Three-phase Unbalance",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "voltage_unbalance_alarm_settings.enable",
+      "display_name": "Threshold Alarm Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "voltage_unbalance_alarm_settings.threshold_condition",
+      "display_name": "Threshold Mode (Options: 0=disable, 2=condition: x>B)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "voltage_unbalance_alarm_settings.threshold_max",
+      "display_name": "Value B",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "voltage_unbalance_alarm_settings.threshold_min",
+      "display_name": "Value A",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "voltage_unbalance_alarm.over_range_alarm_deactivation.voltage_unbalance",
+      "display_name": "Voltage Three-phase Unbalance",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "voltage_unbalance_alarm.over_range_alarm_trigger.voltage_unbalance",
+      "display_name": "Voltage Three-phase Unbalance",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "voltage_unbalance_alarm.type",
+      "display_name": "Alarm Type (Options: 0=Collection Error, 18=Voltage Three-phase Unbalance Exceeds Threshold Alarm Released, 19=Voltage Three-phase Unbalance Exceeds Threshold Alarm)",
+      "data_type": "String",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "clear_data.type",
+          "display_name": "Data Type to Clear",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "query_device_status",
+          "display_name": "Query Device Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_history_set",
+          "display_name": "Query Data Storage Configuration",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reconnect",
+          "display_name": "Network Reconnection",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "request_query_all_configurations",
+          "display_name": "Request to Query All Configurations",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reset",
+          "display_name": "Reset",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reset_energy.channel",
+          "display_name": "Channel Number",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time_range.end_time",
+          "display_name": "End Time",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time_range.start_time",
+          "display_name": "Start Time",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time_range.type",
+          "display_name": "Type",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time.time",
+          "display_name": "Time Point",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "retrieve_historical_data_by_time.type",
+          "display_name": "Type",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "stop_historical_data_retrieval.type",
+          "display_name": "Stop Retrieval",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "synchronize_time",
+          "display_name": "Time Synchronize",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "device_type": "milesight_ws302",
+  "name": "Milesight WS302",
+  "description": "Milesight WS302 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "freq_weight",
+      "display_name": "Frequency Weight",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "time_weight",
+      "display_name": "Time Weighting",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "LZeq",
+      "display_name": "LZeq",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LZI",
+      "display_name": "LZI",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LZImax",
+      "display_name": "LZImax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LZF",
+      "display_name": "LZF",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LZFmax",
+      "display_name": "LZFmax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LZS",
+      "display_name": "LZS",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LZSmax",
+      "display_name": "LZSmax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LAeq",
+      "display_name": "LAeq",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LAI",
+      "display_name": "LAI",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LAImax",
+      "display_name": "LAImax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LAF",
+      "display_name": "LAF",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LAFmax",
+      "display_name": "LAFmax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LAS",
+      "display_name": "LAS",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LASmax",
+      "display_name": "LASmax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LCeq",
+      "display_name": "LCeq",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LCI",
+      "display_name": "LCI",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LCImax",
+      "display_name": "LCImax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LCF",
+      "display_name": "LCF",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LCFmax",
+      "display_name": "LCFmax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LCS",
+      "display_name": "LCS",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "LCSmax",
+      "display_name": "LCSmax",
+      "data_type": "Float",
+      "required": false,
+      "unit": "dBA"
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -120=UTC-12, -110=UTC-11, -100=UTC-10, -95=UTC-9:30, -90=UTC-9, -80=UTC-8, -70=UTC-7, -60=UTC-6, -50=UTC-5, -40=UTC-4, -35=UTC-3:30, -30=UTC-3, -20=UTC-2, -10=UTC-1, 0=UTC, 10=UTC+1, 20=UTC+2, 30=UTC+3, 35=UTC+3:30, 40=UTC+4, 45=UTC+4:30, 50=UTC+5, 55=UTC+5:30, 57=UTC+5:45, 60=UTC+6, 65=UTC+6:30, 70=UTC+7, 80=UTC+8, 90=UTC+9, 95=UTC+9:30, 100=UTC+10, 105=UTC+10:30, 110=UTC+11, 120=UTC+12, 127=UTC+12:45, 130=UTC+13, 140=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "time_sync_enable",
+      "display_name": "Time Sync Enable (Options: 0=disable, 2=enable)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "led_indicator_enable",
+      "display_name": "LED Indicator Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

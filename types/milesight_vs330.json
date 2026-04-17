@@ -1,0 +1,150 @@
+{
+  "device_type": "milesight_vs330",
+  "name": "Milesight VS330",
+  "description": "Milesight VS330 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "distance",
+      "display_name": "Distance",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "occupancy",
+      "display_name": "Occupancy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "calibration_status",
+      "display_name": "Calibration Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "human_exist_height",
+      "display_name": "Human Exist Height",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "test_enable",
+      "display_name": "Test Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "test_duration",
+      "display_name": "Test Duration",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "back_test_config.enable",
+      "display_name": "Back Test Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "back_test_config.distance",
+      "display_name": "Back Test Config (Distance)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

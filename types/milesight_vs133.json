@@ -1,0 +1,444 @@
+{
+  "device_type": "milesight_vs133",
+  "name": "Milesight VS133",
+  "description": "Milesight VS133 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "line_1_total_in",
+      "display_name": "Line 1 Total In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_1_total_out",
+      "display_name": "Line 1 Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_1_period_in",
+      "display_name": "Line 1 Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_1_period_out",
+      "display_name": "Line 1 Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_1_child_total_in",
+      "display_name": "Line 1 Child Total In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_1_child_total_out",
+      "display_name": "Line 1 Child Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_1_child_period_in",
+      "display_name": "Line 1 Child Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_1_child_period_out",
+      "display_name": "Line 1 Child Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_total_in",
+      "display_name": "Line 2 Total In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_total_out",
+      "display_name": "Line 2 Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_period_in",
+      "display_name": "Line 2 Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_period_out",
+      "display_name": "Line 2 Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_child_total_in",
+      "display_name": "Line 2 Child Total In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_child_total_out",
+      "display_name": "Line 2 Child Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_child_period_in",
+      "display_name": "Line 2 Child Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_2_child_period_out",
+      "display_name": "Line 2 Child Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_total_in",
+      "display_name": "Line 3 Total In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_total_out",
+      "display_name": "Line 3 Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_period_in",
+      "display_name": "Line 3 Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_period_out",
+      "display_name": "Line 3 Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_child_total_in",
+      "display_name": "Line 3 Child Total In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_child_total_out",
+      "display_name": "Line 3 Child Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_child_period_in",
+      "display_name": "Line 3 Child Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_3_child_period_out",
+      "display_name": "Line 3 Child Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_4_total_out",
+      "display_name": "Line 4 Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_4_period_in",
+      "display_name": "Line 4 Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_4_period_out",
+      "display_name": "Line 4 Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_4_child_total_out",
+      "display_name": "Line 4 Child Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_4_child_period_in",
+      "display_name": "Line 4 Child Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "line_4_child_period_out",
+      "display_name": "Line 4 Child Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_count",
+      "display_name": "Region 1 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_count",
+      "display_name": "Region 2 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_count",
+      "display_name": "Region 3 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_count",
+      "display_name": "Region 4 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_child_count",
+      "display_name": "Region 1 Child Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_child_count",
+      "display_name": "Region 2 Child Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_child_count",
+      "display_name": "Region 3 Child Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_child_count",
+      "display_name": "Region 4 Child Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_avg_dwell",
+      "display_name": "Region 1 Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_max_dwell",
+      "display_name": "Region 1 Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_child_avg_dwell",
+      "display_name": "Region 1 Child Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_child_max_dwell",
+      "display_name": "Region 1 Child Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_avg_dwell",
+      "display_name": "Region 2 Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_max_dwell",
+      "display_name": "Region 2 Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_child_avg_dwell",
+      "display_name": "Region 2 Child Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_child_max_dwell",
+      "display_name": "Region 2 Child Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_avg_dwell",
+      "display_name": "Region 3 Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_max_dwell",
+      "display_name": "Region 3 Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_child_avg_dwell",
+      "display_name": "Region 3 Child Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_child_max_dwell",
+      "display_name": "Region 3 Child Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_avg_dwell",
+      "display_name": "Region 4 Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_max_dwell",
+      "display_name": "Region 4 Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_child_avg_dwell",
+      "display_name": "Region 4 Child Average Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_child_max_dwell",
+      "display_name": "Region 4 Child Maximum Dwell",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "master_occlusion_alarm",
+      "display_name": "Master Occlusion Alarm (Options: 0=alarm_released, 1=alarm_triggered)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_1_occlusion_alarm",
+      "display_name": "Region 1 Occlusion Alarm (Options: 0=alarm_released, 1=alarm_triggered)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_2_occlusion_alarm",
+      "display_name": "Region 2 Occlusion Alarm (Options: 0=alarm_released, 1=alarm_triggered)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_3_occlusion_alarm",
+      "display_name": "Region 3 Occlusion Alarm (Options: 0=alarm_released, 1=alarm_triggered)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "confirm_mode_enable",
+      "display_name": "Confirm Mode Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "adr_enable",
+      "display_name": "ADR Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "wifi_enable",
+      "display_name": "WiFi Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "periodic_report_enable",
+      "display_name": "Periodic Report Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "trigger_report_enable",
+      "display_name": "Trigger Report Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_total_count",
+          "display_name": "Clear Total Count",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

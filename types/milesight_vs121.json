@@ -1,0 +1,320 @@
+{
+  "device_type": "milesight_vs121",
+  "name": "Milesight VS121",
+  "description": "Milesight VS121 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "people_count_all",
+      "display_name": "People Count All",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_count",
+      "display_name": "Region Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1",
+      "display_name": "Region 1",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2",
+      "display_name": "Region 2",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3",
+      "display_name": "Region 3",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4",
+      "display_name": "Region 4",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_5",
+      "display_name": "Region 5",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_6",
+      "display_name": "Region 6",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_7",
+      "display_name": "Region 7",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_8",
+      "display_name": "Region 8",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "people_in",
+      "display_name": "People IN",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "people_out",
+      "display_name": "People OUT",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "people_count_max",
+      "display_name": "People Count Max",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_count",
+      "display_name": "Region 1 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_count",
+      "display_name": "Region 2 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_count",
+      "display_name": "Region 3 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_count",
+      "display_name": "Region 4 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_5_count",
+      "display_name": "Region 5 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_6_count",
+      "display_name": "Region 6 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_7_count",
+      "display_name": "Region 7 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_8_count",
+      "display_name": "Region 8 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_9_count",
+      "display_name": "Region 9 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_10_count",
+      "display_name": "Region 10 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_11_count",
+      "display_name": "Region 11 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_12_count",
+      "display_name": "Region 12 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_13_count",
+      "display_name": "Region 13 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_14_count",
+      "display_name": "Region 14 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_15_count",
+      "display_name": "Region 15 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_16_count",
+      "display_name": "Region 16 Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "a_to_a",
+      "display_name": "A to A",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "a_to_b",
+      "display_name": "A to B",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "a_to_c",
+      "display_name": "A to C",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "a_to_d",
+      "display_name": "A to D",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "b_to_a",
+      "display_name": "B to A",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "b_to_b",
+      "display_name": "B to B",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "b_to_c",
+      "display_name": "B to C",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "b_to_d",
+      "display_name": "B to D",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "c_to_a",
+      "display_name": "C to A",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "c_to_b",
+      "display_name": "C to B",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "c_to_c",
+      "display_name": "C to C",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "c_to_d",
+      "display_name": "C to D",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "d_to_a",
+      "display_name": "D to A",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "d_to_b",
+      "display_name": "D to B",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "d_to_c",
+      "display_name": "D to C",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "d_to_d",
+      "display_name": "D to D",
+      "data_type": "Integer",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": []
+}

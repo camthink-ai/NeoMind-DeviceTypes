@@ -1,0 +1,534 @@
+{
+  "device_type": "milesight_uc300",
+  "name": "Milesight UC300",
+  "description": "Milesight UC300 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "gpio_input_1",
+      "display_name": "GPIO Input (Channel 1)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_input_2",
+      "display_name": "GPIO Input (Channel 2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_input_3",
+      "display_name": "GPIO Input (Channel 3)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_input_4",
+      "display_name": "GPIO Input (Channel 4)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_output_1",
+      "display_name": "GPIO Output (Channel 1)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_output_2",
+      "display_name": "GPIO Output (Channel 2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_counter_1",
+      "display_name": "GPIO Counter (Channel 1)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "gpio_counter_2",
+      "display_name": "GPIO Counter (Channel 2)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "gpio_counter_3",
+      "display_name": "GPIO Counter (Channel 3)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "gpio_counter_4",
+      "display_name": "GPIO Counter (Channel 4)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pt100_1",
+      "display_name": "PT100 (Channel 1)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "pt100_1_max",
+      "display_name": "PT100 Max (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "pt100_1_min",
+      "display_name": "PT100 Min (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "pt100_1_avg",
+      "display_name": "PT100 Avg (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "pt100_2",
+      "display_name": "PT100 (Channel 2)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "pt100_2_max",
+      "display_name": "PT100 Max (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "pt100_2_min",
+      "display_name": "PT100 Min (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "pt100_2_avg",
+      "display_name": "PT100 Avg (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_1",
+      "display_name": "ADC 1",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_1_max",
+      "display_name": "ADC Max (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_1_min",
+      "display_name": "ADC Min (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_1_avg",
+      "display_name": "ADC Avg (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2",
+      "display_name": "ADC 2",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2_max",
+      "display_name": "ADC Max (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2_min",
+      "display_name": "ADC Min (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adc_2_avg",
+      "display_name": "ADC Avg (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_1",
+      "display_name": "ADV 1",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_1_max",
+      "display_name": "ADV Max (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_1_min",
+      "display_name": "ADV Min (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_1_avg",
+      "display_name": "ADV Avg (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_2",
+      "display_name": "ADV 2",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_2_max",
+      "display_name": "ADV Max (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_2_min",
+      "display_name": "ADV Min (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "adv_2_avg",
+      "display_name": "ADV Avg (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "text",
+      "display_name": "Text",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_1",
+      "display_name": "Modbus Channel 1",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_2",
+      "display_name": "Modbus Channel 2",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_3",
+      "display_name": "Modbus Channel 3",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_4",
+      "display_name": "Modbus Channel 4",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_5",
+      "display_name": "Modbus Channel 5",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_6",
+      "display_name": "Modbus Channel 6",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_7",
+      "display_name": "Modbus Channel 7",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_8",
+      "display_name": "Modbus Channel 8",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_9",
+      "display_name": "Modbus Channel 9",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_10",
+      "display_name": "Modbus Channel 10",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_11",
+      "display_name": "Modbus Channel 11",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_12",
+      "display_name": "Modbus Channel 12",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_13",
+      "display_name": "Modbus Channel 13",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_14",
+      "display_name": "Modbus Channel 14",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_15",
+      "display_name": "Modbus Channel 15",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_16",
+      "display_name": "Modbus Channel 16",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_17",
+      "display_name": "Modbus Channel 17",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_18",
+      "display_name": "Modbus Channel 18",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_19",
+      "display_name": "Modbus Channel 19",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_20",
+      "display_name": "Modbus Channel 20",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_21",
+      "display_name": "Modbus Channel 21",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_22",
+      "display_name": "Modbus Channel 22",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_23",
+      "display_name": "Modbus Channel 23",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_24",
+      "display_name": "Modbus Channel 24",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_25",
+      "display_name": "Modbus Channel 25",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_26",
+      "display_name": "Modbus Channel 26",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_27",
+      "display_name": "Modbus Channel 27",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_28",
+      "display_name": "Modbus Channel 28",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_29",
+      "display_name": "Modbus Channel 29",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_30",
+      "display_name": "Modbus Channel 30",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_31",
+      "display_name": "Modbus Channel 31",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_32",
+      "display_name": "Modbus Channel 32",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "timestamp",
+      "display_name": "Timestamp",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -120=UTC-12, -110=UTC-11, -100=UTC-10, -95=UTC-9:30, -90=UTC-9, -80=UTC-8, -70=UTC-7, -60=UTC-6, -50=UTC-5, -40=UTC-4, -35=UTC-3:30, -30=UTC-3, -20=UTC-2, -10=UTC-1, 0=UTC, 10=UTC+1, 20=UTC+2, 30=UTC+3, 35=UTC+3:30, 40=UTC+4, 45=UTC+4:30, 50=UTC+5, 55=UTC+5:30, 57=UTC+5:45, 60=UTC+6, 65=UTC+6:30, 70=UTC+7, 80=UTC+8, 90=UTC+9, 95=UTC+9:30, 100=UTC+10, 105=UTC+10:30, 110=UTC+11, 120=UTC+12, 127=UTC+12:45, 130=UTC+13, 140=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sniffer_config.channel_id",
+      "display_name": "Sniffer Config Channel ID (Options: 0=all, 1=gpio_input_1, 2=gpio_input_2, 3=gpio_input_3, 4=gpio_input_4, 5=gpio_output_1, 6=gpio_output_2)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sniffer_config.sniffer_interval",
+      "display_name": "Sniffer Config Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "gpio_output_2_time",
+      "display_name": "GPIO Output (Channel 2) Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "gpio_output_1_time",
+      "display_name": "GPIO Output (Channel 1) Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

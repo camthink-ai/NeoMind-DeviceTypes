@@ -1,0 +1,453 @@
+{
+  "device_type": "milesight_vs351",
+  "name": "Milesight VS351",
+  "description": "Milesight VS351 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "power_status",
+      "display_name": "Power Status (Options: 0=battery supply, 1=external power supply, 2=battery charging)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "total_in",
+      "display_name": "Total In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "total_out",
+      "display_name": "Total Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "period_in",
+      "display_name": "Period In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "period_out",
+      "display_name": "Period Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm",
+      "display_name": "Temperature Alarm (Options: 0=threshold alarm release, 1=threshold alarm, 3=high temperature alarm, 4=high temperature alarm release)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "total_count_alarm",
+      "display_name": "Total Count Alarm (Options: 0=threshold alarm release, 1=threshold alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "period_count_alarm",
+      "display_name": "Period Count Alarm (Options: 0=threshold alarm release, 1=threshold alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "timestamp",
+      "display_name": "Timestamp",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "installation_height",
+      "display_name": "Installation Height",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "reset_cumulative_enable",
+      "display_name": "Clear Cumulative Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "reset_cumulative_schedule_config.weekday",
+      "display_name": "Reset Cumulative Schedule Config (Weekday) (Options: 0=everyday, 1=sunday, 2=monday, 3=tuesday, 4=wednesday, 5=thursday, 6=friday, 7=saturday)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_cumulative_schedule_config.hour",
+      "display_name": "Reset Cumulative Schedule Config (Hour)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "h"
+    },
+    {
+      "name": "reset_cumulative_schedule_config.minute",
+      "display_name": "Reset Cumulative Schedule Config (Minute)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "report_cumulative_enable",
+      "display_name": "Report Cumulative Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_temperature_enable",
+      "display_name": "Report Temperature Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.enable",
+      "display_name": "Temperature Calibration Settings (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.calibration_value",
+      "display_name": "Temperature Calibration Settings (Calibration Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "detection_direction",
+      "display_name": "Detection Direction (Options: 0=forward, 1=reverse)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.enable",
+      "display_name": "Hibernate Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "hibernate_config.start_time",
+      "display_name": "Hibernate Config (Start Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "hibernate_config.end_time",
+      "display_name": "Hibernate Config (End Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "people_period_alarm_config.condition",
+      "display_name": "Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "people_period_alarm_config.threshold_out",
+      "display_name": "Period People Alarm Config (Threshold Out)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "people_period_alarm_config.threshold_in",
+      "display_name": "Period People Alarm Config (Threshold In)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "people_cumulative_alarm_config.condition",
+      "display_name": "Cumulative People Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "people_cumulative_alarm_config.threshold_out",
+      "display_name": "Cumulative People Alarm Config (Threshold Min)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "people_cumulative_alarm_config.threshold_in",
+      "display_name": "Cumulative People Alarm Config (Threshold Max)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.condition",
+      "display_name": "Temperature Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.threshold_min",
+      "display_name": "Temperature Alarm Config (Threshold Min)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_config.threshold_max",
+      "display_name": "Temperature Alarm Config (Threshold Max)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_interval",
+      "display_name": "Retransmit Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "d2d_key",
+      "display_name": "D2D Key",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "confirm_mode_enable",
+      "display_name": "Confirm Mode Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "adr_enable",
+      "display_name": "ADR Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lora_port",
+      "display_name": "LoRa Port",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "rejoin_config.enable",
+      "display_name": "Rejoin Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "rejoin_config.max_count",
+      "display_name": "Rejoin Config (Max Count)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "data_rate",
+      "display_name": "Data Rate",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "tx_power_level",
+      "display_name": "TX Power Level",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "lorawan_version",
+      "display_name": "LoRaWAN Version (Options: 1=v1.0.2, 2=v1.0.3)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "rx2_data_rate",
+      "display_name": "RX2 Data Rate",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "rx2_frequency",
+      "display_name": "RX2 Frequency",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "lora_join_mode",
+      "display_name": "LoRa Join Mode (Options: 0=OTAA, 1=ABP)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_type",
+      "display_name": "Report Type (Options: 0=period, 1=immediately)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "installation_scene",
+      "display_name": "Installation Scene (Options: 0=no_door_access, 1=door_controlled_access)",
+      "data_type": "String",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_device_status",
+          "display_name": "Query Device Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reset_cumulative_in",
+          "display_name": "Reset Cumulative In",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reset_cumulative_out",
+          "display_name": "Reset Cumulative Out",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_history",
+          "display_name": "Clear History",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,607 @@
+{
+  "device_type": "milesight_vs373",
+  "name": "Milesight VS373",
+  "description": "Milesight VS373 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "detection_status",
+      "display_name": "Detection Status (Options: 0=normal, 1=vacant, 2=in_bed, 3=out_of_bed, 4=fall)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "target_status",
+      "display_name": "Target Status (Options: 0=normal, 1=motionless, 2=abnormal, 3=lying_down)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "use_time_now",
+      "display_name": "Use Time Now",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "use_time_today",
+      "display_name": "Use Time Today",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "region_1_occupancy",
+      "display_name": "Region 1 Occupancy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_2_occupancy",
+      "display_name": "Region 2 Occupancy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_3_occupancy",
+      "display_name": "Region 3 Occupancy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_4_occupancy",
+      "display_name": "Region 4 Occupancy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_5_occupancy",
+      "display_name": "Region 5 Occupancy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_6_occupancy",
+      "display_name": "Region 6 Occupancy",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_1_type",
+      "display_name": "Region 1 Type (Options: 0=custom, 1=bed, 2=door, 3=ignore, 255=unset)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_2_type",
+      "display_name": "Region 2 Type (Options: 0=custom, 1=bed, 2=door, 3=ignore, 255=unset)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_3_type",
+      "display_name": "Region 3 Type (Options: 0=custom, 1=bed, 2=door, 3=ignore, 255=unset)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_4_type",
+      "display_name": "Region 4 Type (Options: 0=custom, 1=bed, 2=door, 3=ignore, 255=unset)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_5_type",
+      "display_name": "Region 5 Type (Options: 0=custom, 1=bed, 2=door, 3=ignore, 255=unset)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_6_type",
+      "display_name": "Region 6 Type (Options: 0=custom, 1=bed, 2=door, 3=ignore, 255=unset)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_1_out_of_bed_time",
+      "display_name": "Region 1 Out of Bed Time",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_2_out_of_bed_time",
+      "display_name": "Region 2 Out of Bed Time",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_3_out_of_bed_time",
+      "display_name": "Region 3 Out of Bed Time",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_4_out_of_bed_time",
+      "display_name": "Region 4 Out of Bed Time",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_5_out_of_bed_time",
+      "display_name": "Region 5 Out of Bed Time",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_6_out_of_bed_time",
+      "display_name": "Region 6 Out of Bed Time",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "respiratory_status",
+      "display_name": "Respiratory Status (Options: 1=no_data_input, 2=normal, 3=tachypnea, 4=bradypnea, 5=undetectable)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "respiratory_rate",
+      "display_name": "Respiratory Rate",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "detection_region_settings.x_min",
+      "display_name": "Detection Region (X Min)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "detection_region_settings.x_max",
+      "display_name": "Detection Region (X Max)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "detection_region_settings.y_min",
+      "display_name": "Detection Region (Y Min)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "detection_region_settings.y_max",
+      "display_name": "Detection Region (Y Max)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "detection_region_settings.z_max",
+      "display_name": "Detection Region (Z Max)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "detection_region_settings.install_height",
+      "display_name": "Detection Region (Install Height)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "detection_settings.mode",
+      "display_name": "Detection Settings (Mode) (Options: 0=default, 1=bedroom, 2=bathroom, 3=public)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "detection_settings.sensitivity",
+      "display_name": "Detection Settings (Sensitivity) (Options: 0=low, 1=high, 2=medium, 3=custom)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "fall_detection_settings.confirm_time",
+      "display_name": "Fall Detection (Confirm Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "fall_detection_settings.delay_report_time",
+      "display_name": "Fall Detection (Delay Report Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "fall_detection_settings.alarm_duration",
+      "display_name": "Fall Detection (Alarm Duration)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "dwell_detection_settings.enable",
+      "display_name": "Dwell Detection (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "dwell_detection_settings.dwell_time",
+      "display_name": "Dwell Detection (Dwell Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "motion_detection_settings.enable",
+      "display_name": "Motion Detection (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "motion_detection_settings.motionless_time",
+      "display_name": "Motion Detection (Motionless Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "sleep_detection_config.enable",
+      "display_name": "Sleep Detection (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "sleep_detection_config.start_time",
+      "display_name": "Sleep Detection (Start Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "sleep_detection_config.end_time",
+      "display_name": "Sleep Detection (End Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "sleep_detection_config.out_of_bed_enable",
+      "display_name": "Sleep Detection (Out of Bed Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "sleep_detection_config.out_of_bed_time",
+      "display_name": "Sleep Detection (Out of Bed Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "respiratory_detection_config.enable",
+      "display_name": "Respiratory Detection (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "respiratory_detection_config.min",
+      "display_name": "Respiratory Detection (Min)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "respiratory_detection_config.max",
+      "display_name": "Respiratory Detection (Max)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ai_fall_detection_enable",
+      "display_name": "AI Fall Detection Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "led_indicator_enable",
+      "display_name": "LED Indicator Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "buzzer_enable",
+      "display_name": "Buzzer Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "existence_detection_settings.exist_confirm_time",
+      "display_name": "Existence Detection (Exist Confirm Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "existence_detection_settings.leaved_confirm_time",
+      "display_name": "Existence Detection (Leaved Confirm Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_interval",
+      "display_name": "Retransmit Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "confirm_mode_enable",
+      "display_name": "Confirm Mode Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "adr_enable",
+      "display_name": "ADR Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_key",
+      "display_name": "D2D Key",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "wifi_enable",
+      "display_name": "WiFi Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "wifi_ssid_hidden",
+      "display_name": "WiFi SSID Hidden",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "rejoin_config.enable",
+      "display_name": "Rejoin Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "rejoin_config.max_count",
+      "display_name": "Rejoin Config (Max Count)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "data_rate",
+      "display_name": "Data Rate",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "tx_power_level",
+      "display_name": "TX Power Level",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "trigger_digital_output_config.enable",
+      "display_name": "Trigger Digital Output Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "trigger_digital_output_config.fall",
+      "display_name": "Trigger Digital Output Config (Fall)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "trigger_digital_output_config.lying",
+      "display_name": "Trigger Digital Output Config (Lying)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "trigger_digital_output_config.out_of_bed",
+      "display_name": "Trigger Digital Output Config (Out of Bed)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "trigger_digital_output_config.dwell",
+      "display_name": "Trigger Digital Output Config (Dwell)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "trigger_digital_output_config.motionless",
+      "display_name": "Trigger Digital Output Config (Motionless)",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "digital_output",
+          "display_name": "Digital Output",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "release_alarm",
+          "display_name": "Release Alarm",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "confirm_fall_alarm.alarm_id",
+          "display_name": "Confirm Fall Alarm (Alarm ID)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "confirm_fall_alarm.action",
+          "display_name": "Confirm Fall Alarm (Action)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "delete_region.region_1",
+          "display_name": "Delete Region (Region 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delete_region.region_2",
+          "display_name": "Delete Region (Region 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delete_region.region_3",
+          "display_name": "Delete Region (Region 3)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delete_region.region_4",
+          "display_name": "Delete Region (Region 4)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "timestamp",
+          "display_name": "Timestamp",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "time_sync_config.mode",
+          "display_name": "Time Sync Config (Mode)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "time_sync_config.timestamp",
+          "display_name": "Time Sync Config (Timestamp)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        }
+      ]
+    }
+  ]
+}

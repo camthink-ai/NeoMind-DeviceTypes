@@ -1,0 +1,165 @@
+{
+  "device_type": "milesight_ws303",
+  "name": "Milesight WS303",
+  "description": "Milesight WS303 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "leakage_status",
+      "display_name": "Leakage Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "leakage_alarm_config.enable",
+      "display_name": "Leakage Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "leakage_alarm_config.alarm_interval",
+      "display_name": "Leakage Alarm Config (Alarm Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "leakage_alarm_config.alarm_count",
+      "display_name": "Leakage Alarm Config (Alarm Count)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "buzzer_enable",
+      "display_name": "Buzzer Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "find_device_enable",
+      "display_name": "Find Device Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "find_device_time",
+      "display_name": "Find Device Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "lora_report_settings.lora_uplink_enable",
+      "display_name": "Lora Report Settings (Lora Uplink Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lora_report_settings.d2d_uplink_enable",
+      "display_name": "Lora Report Settings (D2D Uplink Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_device_status",
+          "display_name": "Query Device Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "stop_alarming",
+          "display_name": "Stop Alarming",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "device_type": "milesight_vs132",
+  "name": "Milesight VS132",
+  "description": "Milesight VS132 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "total_counter_in",
+      "display_name": "Total Counter All",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "total_counter_out",
+      "display_name": "Total Counter Out",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "periodic_counter_in",
+      "display_name": "Periodic Counter In",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "periodic_counter_out",
+      "display_name": "Periodic Counter Out",
+      "data_type": "Integer",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": []
+}

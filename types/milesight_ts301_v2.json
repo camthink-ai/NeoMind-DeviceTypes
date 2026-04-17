@@ -1,0 +1,515 @@
+{
+  "device_type": "milesight_ts301_v2",
+  "name": "Milesight TS301-V2",
+  "description": "Milesight TS301-V2 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "magnet",
+      "display_name": "Magnet",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_mutation",
+      "display_name": "Temperature Change",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm",
+      "display_name": "Temperature Alarm (Options: 0=above_threshold_alarm, 1=above_threshold_alarm_release, 2=below_threshold_alarm, 3=below_threshold_alarm_release, 4=between_threshold_alarm, 5=between_threshold_alarm_release, 6=outside_threshold_alarm, 7=outside_threshold_alarm_release, 8=mutation_alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm",
+      "display_name": "Humidity Alarm (Options: 0=above_threshold_alarm, 1=above_threshold_alarm_release, 2=below_threshold_alarm, 3=below_threshold_alarm_release, 4=between_threshold_alarm, 5=between_threshold_alarm_release, 6=outside_threshold_alarm, 7=outside_threshold_alarm_release, 8=mutation_alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_sensor_status",
+      "display_name": "Temperature Sensor Status (Options: 0=collection_failed, 1=over_range, 2=under_range)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_sensor_status",
+      "display_name": "Humidity Sensor Status (Options: 0=collection_failed, 1=over_range, 2=under_range)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sensor_type",
+      "display_name": "Sensor Type (Options: 1=PT100, 2=SHT4X, 3=DS18B20, 4=MAGNET)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sensor_sn",
+      "display_name": "Sensor SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "alarm_release_enable",
+      "display_name": "Alarm Release Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "alarm_config.alarm_interval",
+      "display_name": "Alarm Config (Alarm Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "alarm_config.alarm_counts",
+      "display_name": "Alarm Config (Alarm Counts)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -720=UTC-12, -660=UTC-11, -600=UTC-10, -570=UTC-9:30, -540=UTC-9, -480=UTC-8, -420=UTC-7, -360=UTC-6, -300=UTC-5, -240=UTC-4, -210=UTC-3:30, -180=UTC-3, -120=UTC-2, -60=UTC-1, 0=UTC, 60=UTC+1, 120=UTC+2, 180=UTC+3, 210=UTC+3:30, 240=UTC+4, 270=UTC+4:30, 300=UTC+5, 330=UTC+5:30, 345=UTC+5:45, 360=UTC+6, 390=UTC+6:30, 420=UTC+7, 480=UTC+8, 540=UTC+9, 570=UTC+9:30, 600=UTC+10, 630=UTC+10:30, 660=UTC+11, 720=UTC+12, 765=UTC+12:45, 780=UTC+13, 840=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "button_lock_config.power_button",
+      "display_name": "Button Lock Config (Power Button)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_lock_config.report_button",
+      "display_name": "Button Lock Config (Report Button)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "time_display",
+      "display_name": "Time Display (Options: 0=12_hour, 1=24_hour)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_unit_display",
+      "display_name": "Temperature Unit Display (Options: 0=celsius, 1=fahrenheit)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "display_mode",
+      "display_name": "Display Mode (Options: 0=disable, 1=enable, 255=auto)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.enable",
+      "display_name": "Temperature Calibration Settings (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.calibration_value",
+      "display_name": "Temperature Calibration Settings (Calibration Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "humidity_calibration_settings.enable",
+      "display_name": "Humidity Calibration Settings (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_calibration_settings.calibration_value",
+      "display_name": "Humidity Calibration Settings (Calibration Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "magnet_throttle",
+      "display_name": "Magnet Throttle",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "magnet_delay_time",
+      "display_name": "Magnet Delay Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "child_lock",
+      "display_name": "Child Lock",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.enable",
+      "display_name": "Temperature Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.condition",
+      "display_name": "Temperature Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.threshold_min",
+      "display_name": "Temperature Alarm Config (Min Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_config.threshold_max",
+      "display_name": "Temperature Alarm Config (Max Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_mutation_alarm_config.enable",
+      "display_name": "Temperature Mutation Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_mutation_alarm_config.mutation",
+      "display_name": "Temperature Mutation Alarm Config (Mutation)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "humidity_alarm_config.enable",
+      "display_name": "Humidity Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm_config.condition",
+      "display_name": "Humidity Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm_config.threshold_min",
+      "display_name": "Humidity Alarm Config (Min Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_alarm_config.threshold_max",
+      "display_name": "Humidity Alarm Config (Max Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_mutation_alarm_config.enable",
+      "display_name": "Humidity Mutation Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_mutation_alarm_config.mutation",
+      "display_name": "Humidity Mutation Alarm Config (Mutation)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "d2d_key",
+      "display_name": "D2D Key",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.d2d_uplink_enable",
+      "display_name": "D2D Uplink Config (D2D Uplink Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.lora_uplink_enable",
+      "display_name": "D2D Uplink Config (LoRa Uplink Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.sensor_data_config.temperature",
+      "display_name": "D2D Uplink Config (Sensor Data Config (Temperature))",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.sensor_data_config.humidity",
+      "display_name": "D2D Uplink Config (Sensor Data Config (Humidity))",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "dst_config.enable",
+      "display_name": "Daylight Saving Time (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "dst_config.offset",
+      "display_name": "Daylight Saving Time (Offset)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "dst_config.start_month",
+      "display_name": "Daylight Saving Time (Start Month) (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_week_num",
+      "display_name": "Daylight Saving Time (Start Week Number)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_week_day",
+      "display_name": "Daylight Saving Time (Start Week Day) (Options: 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_time",
+      "display_name": "Daylight Saving Time (Start Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "dst_config.end_month",
+      "display_name": "Daylight Saving Time (End Month) (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_week_num",
+      "display_name": "Daylight Saving Time (End Week Number)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_week_day",
+      "display_name": "Daylight Saving Time (End Week Day) (Options: 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_time",
+      "display_name": "Daylight Saving Time (End Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "ack_retry_times",
+      "display_name": "Ack Retry Times",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_interval",
+      "display_name": "Retransmit Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_sensor_id",
+          "display_name": "Fetch Sensor ID",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "clear_history",
+          "display_name": "Clear History",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

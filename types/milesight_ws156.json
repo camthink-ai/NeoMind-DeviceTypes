@@ -1,0 +1,177 @@
+{
+  "device_type": "milesight_ws156",
+  "name": "Milesight WS156",
+  "description": "Milesight WS156 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "button_1",
+      "display_name": "Button 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_2",
+      "display_name": "Button 2",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_3",
+      "display_name": "Button 3",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_4",
+      "display_name": "Button 4",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_5",
+      "display_name": "Button 5",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_6",
+      "display_name": "Button 6",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_1_msgid",
+      "display_name": "Button 1 Press Message Id",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_2_msgid",
+      "display_name": "Button 2 Press Message Id",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_3_msgid",
+      "display_name": "Button 3 Press Message Id",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_4_msgid",
+      "display_name": "Button 4 Press Message Id",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_5_msgid",
+      "display_name": "Button 5 Press Message Id",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_6_msgid",
+      "display_name": "Button 6 Press Message Id",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_1_d2d",
+      "display_name": "Button 1 D2D Command",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_2_d2d",
+      "display_name": "Button 2 D2D Command",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_3_d2d",
+      "display_name": "Button 3 D2D Command",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_4_d2d",
+      "display_name": "Button 4 D2D Command",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_5_d2d",
+      "display_name": "Button 5 D2D Command",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "button_6_d2d",
+      "display_name": "Button 6 D2D Command",
+      "data_type": "Integer",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": []
+}

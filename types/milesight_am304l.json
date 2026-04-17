@@ -1,0 +1,460 @@
+{
+  "device_type": "milesight_am304l",
+  "name": "Milesight AM304L",
+  "description": "Milesight AM304L LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "pir.pir_status",
+      "display_name": "PIR Status (Options: 0=vacant, 1=trigger)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pir.pir_count",
+      "display_name": "PIR Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "als_level",
+      "display_name": "Illuminance Level",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "Lux",
+      "display_name": "Illuminance Value",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "lx"
+    },
+    {
+      "name": "alarm_reporting_times",
+      "display_name": "Alarm Reporting Times",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "alarm_deactivation_enable",
+      "display_name": "Alarm Dismiss Report",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pir_status_change.status",
+      "display_name": "PIR Status (Options: 0=vacant, 1=trigger)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_collection_anomaly.type",
+      "display_name": "Abnormal temperature (Options: 0=collect abnormal, 1=collect out of range)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_collection_anomaly.type",
+      "display_name": "Abnormal humidity (Options: 0=collect abnormal, 0=collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "illuminace_collection_anomaly.type",
+      "display_name": "Abnormal illuminace Level (Options: 0=collect abnormal, 0=collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "Lux_collection_anomaly.type",
+      "display_name": "Abnormal illuminace Value (Options: 0=collect abnormal, 1=collect out of range)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.alarm_type",
+      "display_name": "Alarm Type (Options: 16=below alarm released, 17=below alarm, 18=above alarm released, 19=above alarm, 20=within alarm released, 21=within alarm, 22=exceed tolerance alarm released, 23=exceed tolerance alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "Lux_alarm.Lux",
+      "display_name": "Illuminace Value",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "lx"
+    },
+    {
+      "name": "Lux_alarm.alarm_type",
+      "display_name": "Alarm Type (Options: 16=dim, 17=bright)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval.timestamp",
+      "display_name": "Timestamp",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "historical_data_retrieval.temperature_type",
+      "display_name": "Temperature Type (Options: 0=data invalid, 1=data valid, 2=data out of range, 3=data collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "historical_data_retrieval.humidity_type",
+      "display_name": "Humidity type (Options: 0=data invalid, 1=data valid, 2=data out of range, 3=data collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval.humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "historical_data_retrieval.pir_type",
+      "display_name": "PIR type (Options: 0=data invalid, 1=data valid)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval.pir_status",
+      "display_name": "PIR Status (Options: 0=vacant, 1=trigger)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval.pir_count",
+      "display_name": "PIR Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval.als_level_type",
+      "display_name": "Illuminance Level Type (Options: 0=data invalid, 1=data valid, 2=data out of range, 3=data collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval.als_level",
+      "display_name": "Illuminance Level",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval_Lux.timestamp",
+      "display_name": "Timestamp",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "historical_data_retrieval_Lux.temperature_type",
+      "display_name": "Temperature type (Options: 0=data invalid, 1=data valid, 2=data out of range, 3=data collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval_Lux.temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "historical_data_retrieval_Lux.humidity_type",
+      "display_name": "Humidity Type (Options: 0=data invalid, 1=data valid, 2=data out of range, 3=data collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval_Lux.humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%RH"
+    },
+    {
+      "name": "historical_data_retrieval_Lux.pir_type",
+      "display_name": "PIR Type (Options: 0=data invalid, 1=data valid)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval_Lux.pir_status",
+      "display_name": "PIR Status (Options: 0=vacant, 1=trigger)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval_Lux.pir_count",
+      "display_name": "PIR Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval_Lux.Lux_type",
+      "display_name": "Illuminace Value Type (Options: 0=data invalid, 1=data valid, 2=data out of range, 3=data collect abnormal)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "historical_data_retrieval_Lux.Lux",
+      "display_name": "Illuminace Value",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "lx"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reporting_interval.interval",
+          "display_name": "Reporting Interval",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "min"
+        },
+        {
+          "name": "collecting_interval.interval",
+          "display_name": "Collecting Interval",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "min"
+        },
+        {
+          "name": "temperature_unit.unit",
+          "display_name": "Temperature Unit",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "led_mode",
+          "display_name": "LED Indicator",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "button_lock.power_off",
+          "display_name": "Power Off Lock",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "button_lock.power_on",
+          "display_name": "Power On Lock",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "temperature_alarm_rule.enable",
+          "display_name": "Threshold Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "temperature_alarm_rule.condition",
+          "display_name": "Threshold Condition",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "temperature_alarm_rule.threshold_max",
+          "display_name": "Value B",
+          "data_type": "Float",
+          "required": false,
+          "unit": "°C"
+        },
+        {
+          "name": "temperature_alarm_rule.threshold_min",
+          "display_name": "Value A",
+          "data_type": "Float",
+          "required": false,
+          "unit": "°C"
+        },
+        {
+          "name": "pir_enable.enable",
+          "display_name": "PIR Collecting Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "pir_trigger_report.enable",
+          "display_name": "PIR Trigger Reporting",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "pir_idle_report.enable",
+          "display_name": "PIR Vacant Reporting",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "pir_idle_interval",
+          "display_name": "Time To Report Vacancy",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "illuminance_collecting_enable.enable",
+          "display_name": "Illuminance Collecting Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "illuminance_mode.mode",
+          "display_name": "Illuminance Mode",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "illuminance_alarm_rule.enable",
+          "display_name": "Illuminance Threshold Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "illuminance_alarm_rule.dim_value",
+          "display_name": "Dim,Below",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "lx"
+        },
+        {
+          "name": "illuminance_alarm_rule.bright_value",
+          "display_name": "Bright,Above",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "lx"
+        },
+        {
+          "name": "temperature_calibration_settings.enable",
+          "display_name": "Calibration Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "temperature_calibration_settings.value",
+          "display_name": "Calibration Value",
+          "data_type": "Float",
+          "required": false,
+          "unit": "°C"
+        },
+        {
+          "name": "humidity_calibration_settings.enable",
+          "display_name": "Calibration Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "humidity_calibration_settings.value",
+          "display_name": "Calibration Value",
+          "data_type": "Float",
+          "required": false,
+          "unit": "%RH"
+        },
+        {
+          "name": "d2d_sending.enable",
+          "display_name": "D2D Data Transmission Enalbe",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "d2d_sending.lora_uplink_enable",
+          "display_name": "LoRa Uplink",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "d2d_sending.temperature_enable",
+          "display_name": "Temperature",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "d2d_sending.humidity_enable",
+          "display_name": "Humidity",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "d2d_master_enable",
+          "display_name": "D2D Controller Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "data_storage_enable.enable",
+          "display_name": "Data Storage Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "retransmission_enable.enable",
+          "display_name": "Data Retransmission Enable",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "retransmission_interval.interval",
+          "display_name": "Retransmission Interval",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "retrival_interval.interval",
+          "display_name": "Retrival Interval",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "device_type": "milesight_ws523",
+  "name": "Milesight WS523",
+  "description": "Milesight WS523 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "active_power",
+      "display_name": "Active Power",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "W"
+    },
+    {
+      "name": "power_factor",
+      "display_name": "Power Factor",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "power_consumption",
+      "display_name": "Power Consumption",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "Wh"
+    },
+    {
+      "name": "current",
+      "display_name": "Current",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mA"
+    },
+    {
+      "name": "socket_status",
+      "display_name": "Socket Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "over_current_protection.enable",
+      "display_name": "Over Current Protection (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "over_current_protection.trip_current",
+      "display_name": "Over Current Protection (Trip Current)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "current_alarm_config.enable",
+      "display_name": "Current Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "current_alarm_config.threshold",
+      "display_name": "Current Alarm Config (Threshold)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "A"
+    },
+    {
+      "name": "child_lock_config.enable",
+      "display_name": "Child Lock Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "child_lock_config.lock_time",
+      "display_name": "Child Lock Config (Lock Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "power_consumption_enable",
+      "display_name": "Power Consumption Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "reset_power_consumption",
+      "display_name": "Reset Power Consumption",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "led_indicator_enable",
+      "display_name": "LED Indicator Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_attribute",
+          "display_name": "Report Attribute",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_time",
+          "display_name": "Delay Time",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "cancel_delay_task",
+          "display_name": "Cancel Delay Task",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "report_interval",
+          "display_name": "Report Interval",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        }
+      ]
+    }
+  ]
+}

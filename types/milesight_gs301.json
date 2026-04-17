@@ -1,0 +1,272 @@
+{
+  "device_type": "milesight_gs301",
+  "name": "Milesight GS301",
+  "description": "Milesight GS301 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "nh3",
+      "display_name": "NH3",
+      "data_type": "Float",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "h2s",
+      "display_name": "H2S",
+      "data_type": "Float",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "nh3_sensor_status",
+      "display_name": "NH3 Sensor Status (Options: 65534=polarizing, 65535=device error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "h2s_sensor_status",
+      "display_name": "H2S Sensor Status (Options: 65534=polarizing, 65535=device error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "nh3_calibration_result.type",
+      "display_name": "NH3 Calibration Result (Type) (Options: 0=factory, 1=manual)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "nh3_calibration_result.calibration_value",
+      "display_name": "NH3 Calibration Result (Calibration Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "nh3_calibration_result.result",
+      "display_name": "NH3 Calibration Result (Result) (Options: 0=success, 1=sensor version not match, 2=i2c communication error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "h2s_calibration_result.type",
+      "display_name": "H2S Calibration Result (Type) (Options: 0=factory, 1=manual)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "h2s_calibration_result.calibration_value",
+      "display_name": "H2S Calibration Result (Calibration Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "h2s_calibration_result.result",
+      "display_name": "H2S Calibration Result (Result) (Options: 0=success, 1=sensor version not match, 2=i2c communication error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sensor_id",
+      "display_name": "Sensor ID",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "threshold_report_interval",
+      "display_name": "Threshold Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "led_indicator_enable",
+      "display_name": "LED Indicator Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "buzzer_enable",
+      "display_name": "Buzzer Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "nh3_calibration_settings.mode",
+      "display_name": "NH3 Calibration Settings (Mode) (Options: 0=factory, 1=manual)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "nh3_calibration_settings.calibration_value",
+      "display_name": "NH3 Calibration Settings (Calibration Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "h2s_calibration_settings.mode",
+      "display_name": "H2S Calibration Settings (Mode) (Options: 0=factory, 1=manual)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "h2s_calibration_settings.calibration_value",
+      "display_name": "H2S Calibration Settings (Calibration Value)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "alarm_config.enable",
+      "display_name": "Alarm Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "alarm_config.condition",
+      "display_name": "Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "alarm_config.trigger_source",
+      "display_name": "Alarm Config (Trigger Source) (Options: 1=nh3, 2=h2s, 3=nh3_d2d, 4=h2s_d2d, 5=nh3_d2d_release, 6=h2s_d2d_release, 7=h2s_v2, 8=h2s_d2d_v2, 9=h2s_release_v2)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "alarm_config.threshold_min",
+      "display_name": "Alarm Config (Threshold Min)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "alarm_config.threshold_max",
+      "display_name": "Alarm Config (Threshold Max)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ppm"
+    },
+    {
+      "name": "alarm_config.lock_time",
+      "display_name": "Alarm Config (Lock Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "alarm_config.continue_time",
+      "display_name": "Alarm Config (Continue Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_life_remain",
+          "display_name": "Query Life Remain",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

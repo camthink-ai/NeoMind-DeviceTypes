@@ -1,12 +1,16 @@
 {
   "version": "1.0",
-  "last_updated": "2025-02-26T00:00:00Z",
+  "last_updated": "2026-04-17T08:39:58.422Z",
   "device_types": [
     {
       "device_type": "ne301_camera",
       "name": "CamThink Edge AI Camera",
       "description": "CamThink NE301 Edge AI Camera with built-in YOLOv8 Nano object detection model supporting 80-class recognition. Features WiFi connectivity and battery power.",
-      "categories": ["Camera", "AI", "Edge Computing"],
+      "categories": [
+        "Camera",
+        "AI",
+        "Edge Computing"
+      ],
       "version": "1.0.0",
       "author": "CamThink",
       "homepage": "https://github.com/camthink-ai/NeoMind-DeviceTypes/tree/main/types/ne301_camera.json"
@@ -15,10 +19,1489 @@
       "device_type": "ne101_camera",
       "name": "CamThink Sensing Camera",
       "description": "CamThink NE101 sensing camera with low-power battery support and button-triggered capture. Ideal for remote monitoring and photo capture scenarios.",
-      "categories": ["Camera", "Sensing"],
+      "categories": [
+        "Camera",
+        "Sensing"
+      ],
       "version": "1.0.0",
       "author": "CamThink",
       "homepage": "https://github.com/camthink-ai/NeoMind-DeviceTypes/tree/main/types/ne101_camera.json"
+    },
+    {
+      "device_type": "milesight_am102",
+      "name": "Milesight AM102",
+      "description": "Milesight AM102 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am102"
+    },
+    {
+      "device_type": "milesight_am102l",
+      "name": "Milesight AM102L",
+      "description": "Milesight AM102L LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am102l"
+    },
+    {
+      "device_type": "milesight_am103",
+      "name": "Milesight AM103",
+      "description": "Milesight AM103 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am103"
+    },
+    {
+      "device_type": "milesight_am103l",
+      "name": "Milesight AM103L",
+      "description": "Milesight AM103L LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am103l"
+    },
+    {
+      "device_type": "milesight_am104",
+      "name": "Milesight AM104",
+      "description": "Milesight AM104 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am104"
+    },
+    {
+      "device_type": "milesight_am107",
+      "name": "Milesight AM107",
+      "description": "Milesight AM107 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am107"
+    },
+    {
+      "device_type": "milesight_am304l",
+      "name": "Milesight AM304L",
+      "description": "Milesight AM304L LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am304l"
+    },
+    {
+      "device_type": "milesight_am305l",
+      "name": "Milesight AM305L",
+      "description": "Milesight AM305L LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am305l"
+    },
+    {
+      "device_type": "milesight_am307",
+      "name": "Milesight AM307",
+      "description": "Milesight AM307 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am307"
+    },
+    {
+      "device_type": "milesight_am307l",
+      "name": "Milesight AM307L",
+      "description": "Milesight AM307L LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am307l"
+    },
+    {
+      "device_type": "milesight_am308",
+      "name": "Milesight AM308",
+      "description": "Milesight AM308 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am308"
+    },
+    {
+      "device_type": "milesight_am308l",
+      "name": "Milesight AM308L",
+      "description": "Milesight AM308L LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am308l"
+    },
+    {
+      "device_type": "milesight_am319_hcho_ir",
+      "name": "Milesight AM319-HCHO-IR",
+      "description": "Milesight AM319-HCHO-IR LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am319-hcho-ir"
+    },
+    {
+      "device_type": "milesight_am319_hcho_well",
+      "name": "Milesight AM319-HCHO-WELL",
+      "description": "Milesight AM319-HCHO-WELL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am319-hcho-well"
+    },
+    {
+      "device_type": "milesight_am319_hcho",
+      "name": "Milesight AM319-HCHO",
+      "description": "Milesight AM319-HCHO LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am319-hcho"
+    },
+    {
+      "device_type": "milesight_am319_o3",
+      "name": "Milesight AM319-O3",
+      "description": "Milesight AM319-O3 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am319-o3"
+    },
+    {
+      "device_type": "milesight_am319l_hcho_ir",
+      "name": "Milesight AM319L-HCHO-IR",
+      "description": "Milesight AM319L-HCHO-IR LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am319l-hcho-ir"
+    },
+    {
+      "device_type": "milesight_am319l_o3",
+      "name": "Milesight AM319L-O3",
+      "description": "Milesight AM319L-O3 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/am-series/am319l-o3"
+    },
+    {
+      "device_type": "milesight_at101",
+      "name": "Milesight AT101",
+      "description": "Milesight AT101 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/at-series/at101"
+    },
+    {
+      "device_type": "milesight_ct101",
+      "name": "Milesight CT101",
+      "description": "Milesight CT101 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ct-series/ct101"
+    },
+    {
+      "device_type": "milesight_ct103",
+      "name": "Milesight CT103",
+      "description": "Milesight CT103 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ct-series/ct103"
+    },
+    {
+      "device_type": "milesight_ct105",
+      "name": "Milesight CT105",
+      "description": "Milesight CT105 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ct-series/ct105"
+    },
+    {
+      "device_type": "milesight_ct303",
+      "name": "Milesight CT303",
+      "description": "Milesight CT303 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ct-series/ct303"
+    },
+    {
+      "device_type": "milesight_ct305",
+      "name": "Milesight CT305",
+      "description": "Milesight CT305 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ct-series/ct305"
+    },
+    {
+      "device_type": "milesight_ct310",
+      "name": "Milesight CT310",
+      "description": "Milesight CT310 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ct-series/ct310"
+    },
+    {
+      "device_type": "milesight_cth01_compress",
+      "name": "Milesight CTH01-COMPRESS",
+      "description": "Milesight CTH01-COMPRESS LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/cth-series/cth01-compress"
+    },
+    {
+      "device_type": "milesight_cth01",
+      "name": "Milesight CTH01",
+      "description": "Milesight CTH01 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/cth-series/cth01"
+    },
+    {
+      "device_type": "milesight_ds3604",
+      "name": "Milesight DS3604",
+      "description": "Milesight DS3604 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ds-series/ds3604"
+    },
+    {
+      "device_type": "milesight_em300_cl",
+      "name": "Milesight EM300-CL",
+      "description": "Milesight EM300-CL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-cl"
+    },
+    {
+      "device_type": "milesight_em300_di_hall",
+      "name": "Milesight EM300-DI-HALL",
+      "description": "Milesight EM300-DI-HALL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-di-hall"
+    },
+    {
+      "device_type": "milesight_em300_di",
+      "name": "Milesight EM300-DI",
+      "description": "Milesight EM300-DI LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-di"
+    },
+    {
+      "device_type": "milesight_em300_mcs",
+      "name": "Milesight EM300-MCS",
+      "description": "Milesight EM300-MCS LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-mcs"
+    },
+    {
+      "device_type": "milesight_em300_mld",
+      "name": "Milesight EM300-MLD",
+      "description": "Milesight EM300-MLD LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-mld"
+    },
+    {
+      "device_type": "milesight_em300_sld",
+      "name": "Milesight EM300-SLD",
+      "description": "Milesight EM300-SLD LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-sld"
+    },
+    {
+      "device_type": "milesight_em300_th",
+      "name": "Milesight EM300-TH",
+      "description": "Milesight EM300-TH LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-th"
+    },
+    {
+      "device_type": "milesight_em300_zld",
+      "name": "Milesight EM300-ZLD",
+      "description": "Milesight EM300-ZLD LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em300-zld"
+    },
+    {
+      "device_type": "milesight_em310_tilt",
+      "name": "Milesight EM310-TILT",
+      "description": "Milesight EM310-TILT LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em310-tilt"
+    },
+    {
+      "device_type": "milesight_em310_udl",
+      "name": "Milesight EM310-UDL",
+      "description": "Milesight EM310-UDL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em310-udl"
+    },
+    {
+      "device_type": "milesight_em320_th",
+      "name": "Milesight EM320-TH",
+      "description": "Milesight EM320-TH LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em320-th"
+    },
+    {
+      "device_type": "milesight_em320_tilt",
+      "name": "Milesight EM320-TILT",
+      "description": "Milesight EM320-TILT LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em320-tilt"
+    },
+    {
+      "device_type": "milesight_em400_mud",
+      "name": "Milesight EM400-MUD",
+      "description": "Milesight EM400-MUD LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em400-mud"
+    },
+    {
+      "device_type": "milesight_em400_tld",
+      "name": "Milesight EM400-TLD",
+      "description": "Milesight EM400-TLD LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em400-tld"
+    },
+    {
+      "device_type": "milesight_em400_udl",
+      "name": "Milesight EM400-UDL",
+      "description": "Milesight EM400-UDL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em400-udl"
+    },
+    {
+      "device_type": "milesight_em410_rdl",
+      "name": "Milesight EM410-RDL",
+      "description": "Milesight EM410-RDL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em410-rdl"
+    },
+    {
+      "device_type": "milesight_em500_co2",
+      "name": "Milesight EM500-CO2",
+      "description": "Milesight EM500-CO2 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em500-co2"
+    },
+    {
+      "device_type": "milesight_em500_lgt",
+      "name": "Milesight EM500-LGT",
+      "description": "Milesight EM500-LGT LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em500-lgt"
+    },
+    {
+      "device_type": "milesight_em500_pp",
+      "name": "Milesight EM500-PP",
+      "description": "Milesight EM500-PP LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em500-pp"
+    },
+    {
+      "device_type": "milesight_em500_pt100",
+      "name": "Milesight EM500-PT100",
+      "description": "Milesight EM500-PT100 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em500-pt100"
+    },
+    {
+      "device_type": "milesight_em500_smtc",
+      "name": "Milesight EM500-SMTC",
+      "description": "Milesight EM500-SMTC LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em500-smtc"
+    },
+    {
+      "device_type": "milesight_em500_swl",
+      "name": "Milesight EM500-SWL",
+      "description": "Milesight EM500-SWL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em500-swl"
+    },
+    {
+      "device_type": "milesight_em500_udl",
+      "name": "Milesight EM500-UDL",
+      "description": "Milesight EM500-UDL LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/em-series/em500-udl"
+    },
+    {
+      "device_type": "milesight_gs101",
+      "name": "Milesight GS101",
+      "description": "Milesight GS101 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/gs-series/gs101"
+    },
+    {
+      "device_type": "milesight_gs301",
+      "name": "Milesight GS301",
+      "description": "Milesight GS301 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/gs-series/gs301"
+    },
+    {
+      "device_type": "milesight_gs601",
+      "name": "Milesight GS601",
+      "description": "Milesight GS601 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/gs-series/gs601"
+    },
+    {
+      "device_type": "milesight_ts101",
+      "name": "Milesight TS101",
+      "description": "Milesight TS101 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts101"
+    },
+    {
+      "device_type": "milesight_ts201_v2",
+      "name": "Milesight TS201-V2",
+      "description": "Milesight TS201-V2 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts201-v2"
+    },
+    {
+      "device_type": "milesight_ts201",
+      "name": "Milesight TS201",
+      "description": "Milesight TS201 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts201"
+    },
+    {
+      "device_type": "milesight_ts301_v2",
+      "name": "Milesight TS301-V2",
+      "description": "Milesight TS301-V2 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts301-v2"
+    },
+    {
+      "device_type": "milesight_ts301",
+      "name": "Milesight TS301",
+      "description": "Milesight TS301 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts301"
+    },
+    {
+      "device_type": "milesight_ts302_v2",
+      "name": "Milesight TS302-V2",
+      "description": "Milesight TS302-V2 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts302-v2"
+    },
+    {
+      "device_type": "milesight_ts302",
+      "name": "Milesight TS302",
+      "description": "Milesight TS302 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts302"
+    },
+    {
+      "device_type": "milesight_ts601",
+      "name": "Milesight TS601",
+      "description": "Milesight TS601 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts601"
+    },
+    {
+      "device_type": "milesight_ts602",
+      "name": "Milesight TS602",
+      "description": "Milesight TS602 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ts-series/ts602"
+    },
+    {
+      "device_type": "milesight_uc100_v2",
+      "name": "Milesight UC100-V2",
+      "description": "Milesight UC100-V2 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc100-v2"
+    },
+    {
+      "device_type": "milesight_uc100",
+      "name": "Milesight UC100",
+      "description": "Milesight UC100 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc100"
+    },
+    {
+      "device_type": "milesight_uc11_n1",
+      "name": "Milesight UC11-N1",
+      "description": "Milesight UC11-N1 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc11-n1"
+    },
+    {
+      "device_type": "milesight_uc11_t1",
+      "name": "Milesight UC11-T1",
+      "description": "Milesight UC11-T1 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc11-t1"
+    },
+    {
+      "device_type": "milesight_uc11xx",
+      "name": "Milesight UC11XX",
+      "description": "Milesight UC11XX LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc11xx"
+    },
+    {
+      "device_type": "milesight_uc300",
+      "name": "Milesight UC300",
+      "description": "Milesight UC300 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc300"
+    },
+    {
+      "device_type": "milesight_uc501",
+      "name": "Milesight UC501",
+      "description": "Milesight UC501 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc501"
+    },
+    {
+      "device_type": "milesight_uc502",
+      "name": "Milesight UC502",
+      "description": "Milesight UC502 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc502"
+    },
+    {
+      "device_type": "milesight_uc511",
+      "name": "Milesight UC511",
+      "description": "Milesight UC511 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc511"
+    },
+    {
+      "device_type": "milesight_uc512",
+      "name": "Milesight UC512",
+      "description": "Milesight UC512 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc512"
+    },
+    {
+      "device_type": "milesight_uc521",
+      "name": "Milesight UC521",
+      "description": "Milesight UC521 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/uc-series/uc521"
+    },
+    {
+      "device_type": "milesight_vs121",
+      "name": "Milesight VS121",
+      "description": "Milesight VS121 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs121"
+    },
+    {
+      "device_type": "milesight_vs132",
+      "name": "Milesight VS132",
+      "description": "Milesight VS132 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs132"
+    },
+    {
+      "device_type": "milesight_vs133",
+      "name": "Milesight VS133",
+      "description": "Milesight VS133 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs133"
+    },
+    {
+      "device_type": "milesight_vs135",
+      "name": "Milesight VS135",
+      "description": "Milesight VS135 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs135"
+    },
+    {
+      "device_type": "milesight_vs321",
+      "name": "Milesight VS321",
+      "description": "Milesight VS321 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs321"
+    },
+    {
+      "device_type": "milesight_vs330",
+      "name": "Milesight VS330",
+      "description": "Milesight VS330 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs330"
+    },
+    {
+      "device_type": "milesight_vs340",
+      "name": "Milesight VS340",
+      "description": "Milesight VS340 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs340"
+    },
+    {
+      "device_type": "milesight_vs341",
+      "name": "Milesight VS341",
+      "description": "Milesight VS341 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs341"
+    },
+    {
+      "device_type": "milesight_vs350",
+      "name": "Milesight VS350",
+      "description": "Milesight VS350 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs350"
+    },
+    {
+      "device_type": "milesight_vs351",
+      "name": "Milesight VS351",
+      "description": "Milesight VS351 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs351"
+    },
+    {
+      "device_type": "milesight_vs360",
+      "name": "Milesight VS360",
+      "description": "Milesight VS360 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs360"
+    },
+    {
+      "device_type": "milesight_vs370",
+      "name": "Milesight VS370",
+      "description": "Milesight VS370 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs370"
+    },
+    {
+      "device_type": "milesight_vs373",
+      "name": "Milesight VS373",
+      "description": "Milesight VS373 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/vs-series/vs373"
+    },
+    {
+      "device_type": "milesight_ws101",
+      "name": "Milesight WS101",
+      "description": "Milesight WS101 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws101"
+    },
+    {
+      "device_type": "milesight_ws136",
+      "name": "Milesight WS136",
+      "description": "Milesight WS136 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws136"
+    },
+    {
+      "device_type": "milesight_ws156",
+      "name": "Milesight WS156",
+      "description": "Milesight WS156 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws156"
+    },
+    {
+      "device_type": "milesight_ws201",
+      "name": "Milesight WS201",
+      "description": "Milesight WS201 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws201"
+    },
+    {
+      "device_type": "milesight_ws202",
+      "name": "Milesight WS202",
+      "description": "Milesight WS202 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws202"
+    },
+    {
+      "device_type": "milesight_ws203",
+      "name": "Milesight WS203",
+      "description": "Milesight WS203 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws203"
+    },
+    {
+      "device_type": "milesight_ws301",
+      "name": "Milesight WS301",
+      "description": "Milesight WS301 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws301"
+    },
+    {
+      "device_type": "milesight_ws302",
+      "name": "Milesight WS302",
+      "description": "Milesight WS302 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws302"
+    },
+    {
+      "device_type": "milesight_ws303",
+      "name": "Milesight WS303",
+      "description": "Milesight WS303 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws303"
+    },
+    {
+      "device_type": "milesight_ws501_cn",
+      "name": "Milesight WS501-CN",
+      "description": "Milesight WS501-CN LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws501-cn"
+    },
+    {
+      "device_type": "milesight_ws501_eu",
+      "name": "Milesight WS501-EU",
+      "description": "Milesight WS501-EU LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws501-eu"
+    },
+    {
+      "device_type": "milesight_ws501_us",
+      "name": "Milesight WS501-US",
+      "description": "Milesight WS501-US LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws501-us"
+    },
+    {
+      "device_type": "milesight_ws501_v4",
+      "name": "Milesight WS501-V4",
+      "description": "Milesight WS501-V4 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws501-v4"
+    },
+    {
+      "device_type": "milesight_ws501",
+      "name": "Milesight WS501",
+      "description": "Milesight WS501 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws501"
+    },
+    {
+      "device_type": "milesight_ws502_cn",
+      "name": "Milesight WS502-CN",
+      "description": "Milesight WS502-CN LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws502-cn"
+    },
+    {
+      "device_type": "milesight_ws502_eu",
+      "name": "Milesight WS502-EU",
+      "description": "Milesight WS502-EU LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws502-eu"
+    },
+    {
+      "device_type": "milesight_ws502_v4",
+      "name": "Milesight WS502-V4",
+      "description": "Milesight WS502-V4 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws502-v4"
+    },
+    {
+      "device_type": "milesight_ws502",
+      "name": "Milesight WS502",
+      "description": "Milesight WS502 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws502"
+    },
+    {
+      "device_type": "milesight_ws503_cn",
+      "name": "Milesight WS503-CN",
+      "description": "Milesight WS503-CN LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws503-cn"
+    },
+    {
+      "device_type": "milesight_ws503_v4",
+      "name": "Milesight WS503-V4",
+      "description": "Milesight WS503-V4 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws503-v4"
+    },
+    {
+      "device_type": "milesight_ws503",
+      "name": "Milesight WS503",
+      "description": "Milesight WS503 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws503"
+    },
+    {
+      "device_type": "milesight_ws513",
+      "name": "Milesight WS513",
+      "description": "Milesight WS513 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws513"
+    },
+    {
+      "device_type": "milesight_ws515",
+      "name": "Milesight WS515",
+      "description": "Milesight WS515 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws515"
+    },
+    {
+      "device_type": "milesight_ws523",
+      "name": "Milesight WS523",
+      "description": "Milesight WS523 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws523"
+    },
+    {
+      "device_type": "milesight_ws525",
+      "name": "Milesight WS525",
+      "description": "Milesight WS525 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws525"
+    },
+    {
+      "device_type": "milesight_ws558",
+      "name": "Milesight WS558",
+      "description": "Milesight WS558 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/ws-series/ws558"
+    },
+    {
+      "device_type": "milesight_wt101",
+      "name": "Milesight WT101",
+      "description": "Milesight WT101 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt101"
+    },
+    {
+      "device_type": "milesight_wt102",
+      "name": "Milesight WT102",
+      "description": "Milesight WT102 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt102"
+    },
+    {
+      "device_type": "milesight_wt201_v2",
+      "name": "Milesight WT201-V2",
+      "description": "Milesight WT201-V2 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt201-v2"
+    },
+    {
+      "device_type": "milesight_wt201",
+      "name": "Milesight WT201",
+      "description": "Milesight WT201 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt201"
+    },
+    {
+      "device_type": "milesight_wt301",
+      "name": "Milesight WT301",
+      "description": "Milesight WT301 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt301"
+    },
+    {
+      "device_type": "milesight_wt302",
+      "name": "Milesight WT302",
+      "description": "Milesight WT302 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt302"
+    },
+    {
+      "device_type": "milesight_wt303",
+      "name": "Milesight WT303",
+      "description": "Milesight WT303 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt303"
+    },
+    {
+      "device_type": "milesight_wt304",
+      "name": "Milesight WT304",
+      "description": "Milesight WT304 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt304"
+    },
+    {
+      "device_type": "milesight_wt401",
+      "name": "Milesight WT401",
+      "description": "Milesight WT401 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wt-series/wt401"
+    },
+    {
+      "device_type": "milesight_wts506",
+      "name": "Milesight WTS506",
+      "description": "Milesight WTS506 LoRaWAN Sensor",
+      "categories": [
+        "LoRaWAN",
+        "Sensor"
+      ],
+      "version": "1.0.0",
+      "author": "Milesight",
+      "homepage": "https://github.com/Milesight-IoT/SensorDecoders/tree/main/wts-series/wts506"
     }
   ]
 }

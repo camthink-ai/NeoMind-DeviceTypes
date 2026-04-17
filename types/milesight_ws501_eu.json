@@ -1,0 +1,196 @@
+{
+  "device_type": "milesight_ws501_eu",
+  "name": "Milesight WS501-EU",
+  "description": "Milesight WS501-EU LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_1",
+      "display_name": "Switch 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_1_change",
+      "display_name": "Changing Status of Switch 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "active_power",
+      "display_name": "Active Power",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "W"
+    },
+    {
+      "name": "power_factor",
+      "display_name": "Power Factor",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "power_consumption",
+      "display_name": "Power Consumption",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "Wh"
+    },
+    {
+      "name": "current",
+      "display_name": "Current",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mA"
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "led_mode",
+      "display_name": "LED Mode (Options: 0=off, 1=on_inverted, 2=on_synced)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "child_lock_config.enable",
+      "display_name": "Child Lock Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "child_lock_config.lock_time",
+      "display_name": "Child Lock Config (Lock Time)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "power_consumption_enable",
+      "display_name": "Power Consumption Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_attribute",
+          "display_name": "Report Attribute",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_1",
+          "display_name": "Delay Task (Switch 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.frame_count",
+          "display_name": "Delay Task (Frame Count)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "delay_task.delay_time",
+          "display_name": "Delay Task (Delay Time)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "cancel_delay_task",
+          "display_name": "Cancel Delay Task",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_power_consumption",
+          "display_name": "Clear Power Consumption",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "device_type": "milesight_ws101",
+  "name": "Milesight WS101",
+  "description": "Milesight WS101 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "button_event.status",
+      "display_name": "Button Status (Options: 1=short press, 2=long press, 3=double press)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "button_event.msgid",
+      "display_name": "Button Event Message Id",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "reporting_interval",
+      "display_name": "Reporting Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "led_indicator_enable",
+      "display_name": "LED Indicator Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "double_click_enable",
+      "display_name": "Double Click Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "buzzer_enable",
+      "display_name": "Buzzer Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_device_status",
+          "display_name": "Query Device Status",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

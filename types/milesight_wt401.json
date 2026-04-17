@@ -1,0 +1,1422 @@
+{
+  "device_type": "milesight_wt401",
+  "name": "Milesight WT401",
+  "description": "Milesight WT401 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "battery_event.type",
+      "display_name": "Battery Event Type(Battery Event)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ble_enable",
+      "display_name": "Bluetooth Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "ble_event.type",
+      "display_name": "Bluetooth Event Type(Bluetooth Event)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ble_name",
+      "display_name": "Bluetooth Name",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "ble_phone_name.length",
+      "display_name": "Length(BLE Phone Name)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "ble_phone_name.value",
+      "display_name": "Name(BLE Phone Name)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "button_custom_function.enable",
+      "display_name": "Enable(Button Custom Function)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_custom_function.mode1",
+      "display_name": "Button1 Custom Function(Button Custom Function) (Options: 1=Temperature Control Mode, 2=Fan Mode, 3=Schedule Switch, 4=Status Report, 5=Filter Cleaning Reset, 6=Button Event1, 7=Temperature Unit Switch)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "button_custom_function.mode2",
+      "display_name": "Button2 Custom Function(Button Custom Function) (Options: 1=Temperature Control Mode, 2=Fan Mode, 3=Schedule Switch, 4=Status Report, 5=Filter Cleaning Reset, 6=Button Event2, 7=Temperature Unit Switch)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "button_custom_function.mode3",
+      "display_name": "Button3 Custom Function(Button Custom Function) (Options: 0=System On/Off, 3=Schedule Switch, 4=Status Report, 5=Filter Cleaning Reset, 6=Button Event3, 7=Temperature Unit Switch)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "button_custom_function.subcmd",
+      "display_name": "Subcmd ID(Button Custom Function)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "celsius_minimum_dead_zone",
+      "display_name": "Celsius DeadBand",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "celsius_target_temperature1",
+      "display_name": "Celsius Target Temperature1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "celsius_target_temperature2",
+      "display_name": "Celsius Target Temperature2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "celsius_temperature",
+      "display_name": "Celsius Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "children_lock_settings.button1_event",
+      "display_name": "Button Event 1 (Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.button2_event",
+      "display_name": "Button Event 2 (Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.button3_event",
+      "display_name": "Button Event 3 (Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.cancel_pair",
+      "display_name": "Cancel Pairing(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.enable",
+      "display_name": "Enable(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.fan_mode",
+      "display_name": "Fan Mode(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.filter_clean_alarm_release",
+      "display_name": "Filter Clean Alarm Release(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.plan_switch",
+      "display_name": "Schedule Switch(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.power_on_off",
+      "display_name": "Power On/Off(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.reboot_reset",
+      "display_name": "Reboot&Reset(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.reserved",
+      "display_name": "Reserved(Child Lock)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.status_report",
+      "display_name": "Status Report (Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.system_on_off",
+      "display_name": "System On/Off(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.temp_down",
+      "display_name": "Temperature -(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.temp_up",
+      "display_name": "Temperature +(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.temperature_control_mode",
+      "display_name": "Temperature Control Mode(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "children_lock_settings.temperature_unit_switch",
+      "display_name": "Temperature Unit Switch(Child Lock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "collection_interval.minutes_of_time",
+      "display_name": "Collecting Interval(Collecting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "collection_interval.seconds_of_time",
+      "display_name": "Collecting Interval(Collecting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "collection_interval.unit",
+      "display_name": "Collecting Interval Unit(Collecting Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "communicate_interval.ble_lora.minutes_of_time",
+      "display_name": "BLE_LORA Communicate Interval(BLE_LORA Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "communicate_interval.ble_lora.seconds_of_time",
+      "display_name": "BLE_LORA Communicate Interval(BLE_LORA Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "communicate_interval.ble_lora.unit",
+      "display_name": "BLE_LORA Communicate Interval Unit(BLE_LORA Communicate Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "communicate_interval.ble.minutes_of_time",
+      "display_name": "BLE Communicate Interval(BLE Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "communicate_interval.ble.seconds_of_time",
+      "display_name": "BLE Communicate Interval(BLE Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "communicate_interval.ble.unit",
+      "display_name": "BLE Communicate Interval Unit(BLE Communicate Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "communicate_interval.id",
+      "display_name": "Communicate Interval ID(Communicate Interval) (Options: 0=BLE, 1=LORA, 2=BLE+LORA, 3=POWERBUS+LORA)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "communicate_interval.lora.minutes_of_time",
+      "display_name": "LORA Communicate Interval(LORA Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "communicate_interval.lora.seconds_of_time",
+      "display_name": "LORA Communicate Interval(LORA Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "communicate_interval.lora.unit",
+      "display_name": "LORA Communicate Interval Unit(LORA Communicate Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "communicate_interval.power_bus.minutes_of_time",
+      "display_name": "POWERBUS_LORA Communicate Interval(POWERBUS_LORA Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "communicate_interval.power_bus.seconds_of_time",
+      "display_name": "POWERBUS_LORA Communicate Interval(POWERBUS_LORA Communicate Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "communicate_interval.power_bus.unit",
+      "display_name": "POWERBUS_LORA Communicate Interval Unit(POWERBUS_LORA Communicate Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "communication_mode",
+      "display_name": "Communication Mode (Options: 0=BLE, 1=LoRa, 2=BLE+LoRa, 3=PowerBus+LoRa)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "data_sync_timeout",
+      "display_name": "Data Timeout",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "data_sync_to_peer",
+      "display_name": "Temperature & Humidity Data Source (Options: 0=Embedded Data, 1=External Receive)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.daylight_saving_time_offset",
+      "display_name": "DST Bias(Daylight Saving Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.enable",
+      "display_name": "Daylight Saving Time(Daylight Saving Time)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_hour_min",
+      "display_name": "Time(Daylight Saving Time) (Options: 0=00:00, 60=01:00, 120=02:00, 180=03:00, 240=04:00, 300=05:00, 360=06:00, 420=07:00, 480=08:00, 540=09:00, 600=10:00, 660=11:00, 720=12:00, 780=13:00, 840=14:00, 900=15:00, 960=16:00, 1020=17:00, 1080=18:00, 1140=19:00, 1200=20:00, 1260=21:00, 1320=22:00, 1380=23:00)",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.end_month",
+      "display_name": "Month(Daylight Saving Time) (Options: 1=Jan., 2=Feb., 3=Mar., 4=Apr., 5=May, 6=Jun., 7=Jul., 8=Aug., 9=Sep., 10=Oct., 11=Nov., 12=Dec.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_week_day",
+      "display_name": "Week(Daylight Saving Time) (Options: 1=Mon., 2=Tues., 3=Wed., 4=Thurs., 5=Fri., 6=Sat., 7=Sun.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.end_week_num",
+      "display_name": "Number of Week(Daylight Saving Time) (Options: 1=1st, 2=2nd, 3=3rd, 4=4th, 5=last)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_hour_min",
+      "display_name": "Time(Daylight Saving Time) (Options: 0=00:00, 60=01:00, 120=02:00, 180=03:00, 240=04:00, 300=05:00, 360=06:00, 420=07:00, 480=08:00, 540=09:00, 600=10:00, 660=11:00, 720=12:00, 780=13:00, 840=14:00, 900=15:00, 960=16:00, 1020=17:00, 1080=18:00, 1140=19:00, 1200=20:00, 1260=21:00, 1320=22:00, 1380=23:00)",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "daylight_saving_time.start_month",
+      "display_name": "Month(Daylight Saving Time) (Options: 1=Jan., 2=Feb., 3=Mar., 4=Apr., 5=May, 6=Jun., 7=Jul., 8=Aug., 9=Sep., 10=Oct., 11=Nov., 12=Dec.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_week_day",
+      "display_name": "Week(Daylight Saving Time) (Options: 1=Mon., 2=Tues., 3=Wed., 4=Thurs., 5=Fri., 6=Sat., 7=Sun.)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "daylight_saving_time.start_week_num",
+      "display_name": "Number of Week(Daylight Saving Time) (Options: 1=1st, 2=2nd, 3=3rd, 4=4th, 5=last)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "execution_plan_id",
+      "display_name": "Schedule (Options: 0=plan0, 1=plan1, 2=plan2, 3=plan3, 4=plan4, 5=plan5, 6=plan6, 7=plan7, 8=plan8, 9=plan9, 10=plan10, 11=plan11, 12=plan12, 13=plan13, 14=plan14, 15=plan15, 255=Not executed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "fahrenheit_minimum_dead_zone",
+      "display_name": "Fahrenheit DeadBand",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "fahrenheit_target_temperature1",
+      "display_name": "Fahrenheit Target Temperature1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "fahrenheit_target_temperature2",
+      "display_name": "Fahrenheit Target Temperature2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "fahrenheit_temperature",
+      "display_name": "Fahrenheit Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "fan_control_mode",
+      "display_name": "Fan Mode (Options: 0=auto, 1=circulate, 2=on, 3=low, 4=medium, 5=high)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "fan_enable.auto",
+      "display_name": "Auto(Fan Mode Enabled)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "fan_enable.circul",
+      "display_name": "Circul(Fan Mode Enabled)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "fan_enable.high",
+      "display_name": "High(Fan Mode Enabled)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "fan_enable.low",
+      "display_name": "Low(Fan Mode Enabled)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "fan_enable.medium",
+      "display_name": "Medium(Fan Mode Enabled)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "fan_enable.on",
+      "display_name": "On(Fan Mode Enabled)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "fan_enable.reserved",
+      "display_name": "Reserved(Fan Mode Enabled)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "fan_mode",
+      "display_name": "Fan Mode (Options: 0=auto, 1=circulate, 2=on, 3=low, 4=medium, 5=high, 10=off, 11=none/keep)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "humidity_alarm.type",
+      "display_name": "Alarm Type(Humidity Alarm) (Options: 0=Humidity  Collection Error, 1=Humidity  Out of The Low Range, 2=Humidity Out of The High Range, 3=No Data)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_calibration_settings.calibration_value",
+      "display_name": "Calibration Value(Humidity Calibration Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "humidity_calibration_settings.enable",
+      "display_name": "Humidity Calibration(Humidity Calibration Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "intelligent_display_enable",
+      "display_name": "Smart Display",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "key_event.type",
+      "display_name": "Event Type(Button Report) (Options: 0=Button 1 Report, 1=Button 2 Report, 2=Button 3 Report)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_configuration_settings.mode",
+      "display_name": "LoRaWAN Work Mode(LoRaWAN  Settings) (Options: 0=ClassA, 1=ClassB, 2=ClassC, 3=ClassC to B)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "minimum_dead_zone",
+      "display_name": "DeadBand",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "mode_enable.auto",
+      "display_name": "Auto(Temperature Control Mode Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "mode_enable.cool",
+      "display_name": "Cool(Temperature Control Mode Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "mode_enable.em_heat",
+      "display_name": "EM Heat(Temperature Control Mode Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "mode_enable.heat",
+      "display_name": "Heat(Temperature Control Mode Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "mode_enable.reserved",
+      "display_name": "Reserved(Temperature Control Mode Enable)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "oem_id",
+      "display_name": "OEM ID",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pir_common.check.period",
+      "display_name": "Duration(Trigger Condition)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "pir_common.check.rate",
+      "display_name": "Trigger Ratio(Trigger Condition)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "pir_common.cmd",
+      "display_name": "Common Cmd(Occupancy Detection)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pir_common.enable",
+      "display_name": "Occupancy Detection(Occupancy Detection)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pir_common.mode",
+      "display_name": "Detection Mode(Occupancy Detection) (Options: 0=Immediate Trigger, 1=Rule Trigger)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pir_common.release_time",
+      "display_name": "Occupied to Vacant Delay(Occupancy Detection)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "pir_energy.cmd",
+      "display_name": "Energy Cmd(Energy-saving Setting)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pir_energy.enable",
+      "display_name": "Energy-Saving Enable(Energy-saving Setting)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pir_energy.plan.occupied",
+      "display_name": "Occupied Execution(Energy Saving Plan) (Options: 0=plan0, 1=plan1, 2=plan2, 3=plan3, 4=plan4, 5=plan5, 6=plan6, 7=plan7, 255=Not executed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pir_energy.plan.unoccupied",
+      "display_name": "Vacant Execution(Energy Saving Plan) (Options: 0=plan0, 1=plan1, 2=plan2, 3=plan3, 4=plan4, 5=plan5, 6=plan6, 7=plan7, 255=Not executed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pir_night.check.period",
+      "display_name": "Duration(Trigger Condition)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "pir_night.check.rate",
+      "display_name": "Trigger Ratio(Trigger Condition)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "pir_night.cmd",
+      "display_name": "Night Cmd(Night Occupancy Settings)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pir_night.enable",
+      "display_name": "Night Occupancy Settings(Night Occupancy Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pir_night.mode",
+      "display_name": "Detection Mode(Night Occupancy Settings) (Options: 0=Immediate Trigger, 1=Rule Trigger)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pir_night.night_time.start",
+      "display_name": "Start Time(Nighttime)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "pir_night.night_time.stop",
+      "display_name": "Stop Time(Nighttime)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "pir_night.occupied",
+      "display_name": "Night Occupied Execution(Night Occupancy Settings) (Options: 0=plan0, 1=plan1, 2=plan2, 3=plan3, 4=plan4, 5=plan5, 6=plan6, 7=plan7, 255=Not executed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pir_status",
+      "display_name": "Occupied Status (Options: 0=Vacant, 1=Occupied, 2=Night Occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "power_bus_event.type",
+      "display_name": "Powerbus Event Type(Powerbus Event)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "product_sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.ble_lora.minutes_of_time",
+      "display_name": "Reporting Interval(BLE_LORA Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "reporting_interval.ble_lora.seconds_of_time",
+      "display_name": "Reporting Interval(BLE_LORA Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "reporting_interval.ble_lora.unit",
+      "display_name": "Reporting Interval Unit(BLE_LORA Reporting Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.ble.minutes_of_time",
+      "display_name": "Reporting Interval(BLE Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "reporting_interval.ble.seconds_of_time",
+      "display_name": "Reporting Interval(BLE Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "reporting_interval.ble.unit",
+      "display_name": "Reporting Interval Unit(BLE Reporting Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.lora.minutes_of_time",
+      "display_name": "Reporting Interval(LORA Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "reporting_interval.lora.seconds_of_time",
+      "display_name": "Reporting Interval(LORA Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "reporting_interval.lora.unit",
+      "display_name": "Reporting Interval Unit(LORA Reporting Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.power_lora.minutes_of_time",
+      "display_name": "Reporting Interval(POWERBUS_LORA Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "reporting_interval.power_lora.seconds_of_time",
+      "display_name": "Reporting Interval(POWERBUS_LORA Reporting Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "reporting_interval.power_lora.unit",
+      "display_name": "Reporting Interval Unit(POWERBUS_LORA Reporting Interval) (Options: 0=second, 1=min)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reporting_interval.type",
+      "display_name": "Reporting Interval Type(Reporting Interval) (Options: 0=BLE, 1=LORA, 2=BLE+LORA, 3=POWERBUS+lora)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "screen_display_settings.ambient_humi",
+      "display_name": "Ambient Humidity(Screen Display Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_display_settings.ambient_temp",
+      "display_name": "Ambient Temperature(Screen Display Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_display_settings.plan_name",
+      "display_name": "Schedule Name(Screen Display Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "screen_display_settings.reserved",
+      "display_name": "Reserved(Screen Display Settings)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "screen_display_settings.target_temp",
+      "display_name": "Target Temperature(Screen Display Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "system_status",
+      "display_name": "System On/Off (Options: 0=Off, 1=On)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "target_temperature_mode",
+      "display_name": "Target Temperature Mode (Options: 0=single, 1=dual)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "target_temperature_range.auto.celsius_max",
+      "display_name": "Celsius Max Value(Auto Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.auto.celsius_min",
+      "display_name": "Celsius Min Value(Auto Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.auto.fahrenheit_max",
+      "display_name": "Fahrenheit Max Value(Auto Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.auto.fahrenheit_min",
+      "display_name": "Fahrenheit Min Value(Auto Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.auto.max",
+      "display_name": "Max Value(Auto Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.auto.min",
+      "display_name": "Min Value(Auto Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.cool.celsius_max",
+      "display_name": "Celsius Max Value(Cool Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.cool.celsius_min",
+      "display_name": "Celsius Min Value(Cool Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.cool.fahrenheit_max",
+      "display_name": "Fahrenheit Max Value(Cool Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.cool.fahrenheit_min",
+      "display_name": "Fahrenheit Min Value(Cool Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.cool.max",
+      "display_name": "Max Value(Cool Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.cool.min",
+      "display_name": "Min Value(Cool Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.em_heat.celsius_max",
+      "display_name": "Celsius Max Value(EM Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.em_heat.celsius_min",
+      "display_name": "Celsius Min Value(EM Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.em_heat.fahrenheit_max",
+      "display_name": "Fahrenheit Max Value(EM Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.em_heat.fahrenheit_min",
+      "display_name": "Fahrenheit Min Value(EM Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.em_heat.max",
+      "display_name": "Max Value(EM Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.em_heat.min",
+      "display_name": "Min Value(EM Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.heat.celsius_max",
+      "display_name": "Celsius Max Value(Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.heat.celsius_min",
+      "display_name": "Celsius Min Value(Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.heat.fahrenheit_max",
+      "display_name": "Fahrenheit Max Value(Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.heat.fahrenheit_min",
+      "display_name": "Fahrenheit Min Value(Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_range.heat.max",
+      "display_name": "Max Value(Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.heat.min",
+      "display_name": "Min Value(Heat Target Temperature Range)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.id",
+      "display_name": "Target Temperature Range ID(Target Temperature Range) (Options: 0=heat, 1=em heat, 2=cool, 3=auto)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "target_temperature_resolution",
+      "display_name": "Target Temperature Resolution (Options: 0=0.5, 1=1)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "target_temperature_settings.auto",
+      "display_name": "Auto Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.auto_cool",
+      "display_name": "Auto-Cool Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.auto_heat",
+      "display_name": "Auto-Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.celsius_auto",
+      "display_name": "Celsius Auto Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.celsius_auto_cool",
+      "display_name": "Celsius Auto-Cool Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.celsius_auto_heat",
+      "display_name": "Celsius Auto-Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.celsius_cool",
+      "display_name": "Celsius Cool Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.celsius_em_heat",
+      "display_name": "Celsius EM Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.celsius_heat",
+      "display_name": "Celsius Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.cool",
+      "display_name": "Cool Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.em_heat",
+      "display_name": "EM Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.fahrenheit_auto",
+      "display_name": "Fahrenheit Auto Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_settings.fahrenheit_auto_cool",
+      "display_name": "Fahrenheit Auto-Cool Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_settings.fahrenheit_auto_heat",
+      "display_name": "Fahrenheit Auto-Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_settings.fahrenheit_cool",
+      "display_name": "Fahrenheit Cool Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_settings.fahrenheit_em_heat",
+      "display_name": "Fahrenheit EM Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_settings.fahrenheit_heat",
+      "display_name": "Fahrenheit Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "target_temperature_settings.heat",
+      "display_name": "Heat Target Temperature(Target Temperature Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_settings.temperature_control_mode",
+      "display_name": "Temperature Control Mode(Target Temperature Settings) (Options: 0=Heat Target Temperature, 1=EM Heat Target Temperature, 2=Cool Target Temperature, 3=Auto Target Temperature, 4=Auto-Heat Target Temperature, 5=Auto-Cool Target Temperature, 6=Dehumidify Target Temperature, 7=Ventilation Target Temperature)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "target_temperature1",
+      "display_name": "Target Temperature1",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature2",
+      "display_name": "Target Temperature2",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm.type",
+      "display_name": "Alarm Type(Temperature  Alarm) (Options: 0=Collection Error, 1=Exceed the Range Lower Limit, 2=Exceed the Range Upper Limit, 3=No Data)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.calibration_value",
+      "display_name": "Calibration Value(Temperature Calibration Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_calibration_settings.celsius_calibration_value",
+      "display_name": "Celsius Calibration Value(Temperature Calibration Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_calibration_settings.enable",
+      "display_name": "Temperature Calibration(Temperature Calibration Settings)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.fahrenheit_calibration_value",
+      "display_name": "Fahrenheit Calibration Value(Temperature Calibration Settings)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "℉"
+    },
+    {
+      "name": "temperature_control_mode.mode",
+      "display_name": "Temperature Control Mode(Temperature Control Mode) (Options: 0=heat, 1=em heat, 2=cool, 3=auto, 4=dehumidify, 5=ventilation)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_control_mode.plan_mode_enable",
+      "display_name": "Plan Temperature Control Mode Enable(Temperature Control Mode) (Options: 0=disable, 1=enable)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_control_mode.subcmd",
+      "display_name": "Subcmd ID(Temperature Control Mode)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "temperature_mode",
+      "display_name": "Temperature Control Mode (Options: 0=heat, 1=em heat, 2=cool, 3=auto, 4=dehumidify, 5=ventilation, 10=off, 11=none)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_unit",
+      "display_name": "Temperature Unit (Options: 0=℃, 1=℉)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -720=UTC-12(IDLW), -660=UTC-11(SST), -600=UTC-10(HST), -570=UTC-9:30(MIT), -540=UTC-9(AKST), -480=UTC-8(PST), -420=UTC-7(MST), -360=UTC-6(CST), -300=UTC-5(EST), -240=UTC-4(AST), -210=UTC-3:30(NST), -180=UTC-3(BRT), -120=UTC-2(FNT), -60=UTC-1(CVT), 0=UTC(WET), 60=UTC+1(CET), 120=UTC+2(EET), 180=UTC+3(MSK), 210=UTC+3:30(IRST), 240=UTC+4(GST), 270=UTC+4:30(AFT), 300=UTC+5(PKT), 330=UTC+5:30(IST), 345=UTC+5:45(NPT), 360=UTC+6(BHT), 390=UTC+6:30(MMT), 420=UTC+7(ICT), 480=UTC+8(CT/CST), 540=UTC+9(JST), 570=UTC+9:30(ACST), 600=UTC+10(AEST), 630=UTC+10:30(LHST), 660=UTC+11(VUT), 720=UTC+12(NZST), 765=UTC+12:45(CHAST), 780=UTC+13(PHOT), 840=UTC+14(LINT))",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "unlock_button.enable",
+      "display_name": "Temporary Unlock Enable(Temporary Unlock)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "unlock_button.timeout",
+      "display_name": "Temporary Unlock Time(Temporary Unlock)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "unlock_combination_button_settings.button1",
+      "display_name": "Button 1(Temporary Unlock Button Combination)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "unlock_combination_button_settings.button2",
+      "display_name": "Button 2(Temporary Unlock Button Combination)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "unlock_combination_button_settings.button3",
+      "display_name": "Button 3(Temporary Unlock Button Combination)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "unlock_combination_button_settings.button4",
+      "display_name": "Button 4(Temporary Unlock Button Combination)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "unlock_combination_button_settings.button5",
+      "display_name": "Button 5(Temporary Unlock Button Combination)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "unlock_combination_button_settings.reserved",
+      "display_name": "Reserved(Temporary Unlock Button Combination)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "version.firmware_version",
+      "display_name": "Firmware Version(Product Version)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.hardware_version",
+      "display_name": "Hardware Version(Product Version)",
+      "data_type": "String",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "delete_task_plan.type",
+          "display_name": "Delete Schedule(Delete Schedule)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "fan_error_alarm.mode",
+          "display_name": "Action(Fan Error Alarm)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "filter_clean_alarm.mode",
+          "display_name": "Action(Filter Cleaning Alarm)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "frost_protection_alarm.mode",
+          "display_name": "Action(Frost Protection Alarm)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "insert_temporary_plan.id",
+          "display_name": "Plan ID(Insert Temporary Plan)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "not_wired_alarm.mode",
+          "display_name": "Action(Not Wired Alarm)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "open_window_alarm.mode",
+          "display_name": "Action(Open Window Alarm)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "origin_humidity",
+          "display_name": "External Humidity",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "origin_temperature",
+          "display_name": "External Temperature",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_device_status",
+          "display_name": "Query Device Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reconnect",
+          "display_name": "Network Reconnection",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "synchronize_time",
+          "display_name": "Time Synchronize",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "system_status_control.mode",
+          "display_name": "Temperature Control Mode(System Status Control)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "system_status_control.on_off",
+          "display_name": "System On/Off(System Status Control)",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "system_status_control.temperature1",
+          "display_name": "Heat Temperature(System Status Control)",
+          "data_type": "Float",
+          "required": false
+        },
+        {
+          "name": "system_status_control.temperature2",
+          "display_name": "Cool Temperature(System Status Control)",
+          "data_type": "Float",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "device_type": "milesight_uc502",
+  "name": "Milesight UC502",
+  "description": "Milesight UC502 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "gpio_input_1",
+      "display_name": "GPIO Input (Channel 1)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_input_2",
+      "display_name": "GPIO Input (Channel 2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_counter_1",
+      "display_name": "GPIO Counter (Channel 1)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "gpio_counter_2",
+      "display_name": "GPIO Counter (Channel 2)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "gpio_output_1",
+      "display_name": "GPIO Output (Channel 1)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_output_2",
+      "display_name": "GPIO Output (Channel 2)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "analog_input_1_type",
+      "display_name": "Analog Input Type (Channel 1) (Options: 0=current, 1=voltage)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "analog_input_1",
+      "display_name": "Analog Input (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_1_max",
+      "display_name": "Analog Input Max (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_1_min",
+      "display_name": "Analog Input Min (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_1_avg",
+      "display_name": "Analog Input Avg (Channel 1)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_1_alarm",
+      "display_name": "Analog Input Alarm (Channel 1) (Options: 1=threshold alarm, 2=value change alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "analog_input_2_type",
+      "display_name": "Analog Input Type (Channel 2) (Options: 0=current, 1=voltage)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "analog_input_2",
+      "display_name": "Analog Input (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_2_max",
+      "display_name": "Analog Input Max (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_2_min",
+      "display_name": "Analog Input Min (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_2_avg",
+      "display_name": "Analog Input Avg (Channel 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "analog_input_2_alarm",
+      "display_name": "Analog Input Alarm (Channel 2) (Options: 1=threshold alarm, 2=value change alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sid12",
+      "display_name": "SID-12",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_1",
+      "display_name": "Modbus Channel 1",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_2",
+      "display_name": "Modbus Channel 2",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_3",
+      "display_name": "Modbus Channel 3",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_4",
+      "display_name": "Modbus Channel 4",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_5",
+      "display_name": "Modbus Channel 5",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_6",
+      "display_name": "Modbus Channel 6",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_7",
+      "display_name": "Modbus Channel 7",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_8",
+      "display_name": "Modbus Channel 8",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_9",
+      "display_name": "Modbus Channel 9",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_10",
+      "display_name": "Modbus Channel 10",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_11",
+      "display_name": "Modbus Channel 11",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_12",
+      "display_name": "Modbus Channel 12",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_13",
+      "display_name": "Modbus Channel 13",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_14",
+      "display_name": "Modbus Channel 14",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_15",
+      "display_name": "Modbus Channel 15",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_16",
+      "display_name": "Modbus Channel 16",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -120=UTC-12, -110=UTC-11, -100=UTC-10, -95=UTC-9:30, -90=UTC-9, -80=UTC-8, -70=UTC-7, -60=UTC-6, -50=UTC-5, -40=UTC-4, -35=UTC-3:30, -30=UTC-3, -20=UTC-2, -10=UTC-1, 0=UTC, 10=UTC+1, 20=UTC+2, 30=UTC+3, 35=UTC+3:30, 40=UTC+4, 45=UTC+4:30, 50=UTC+5, 55=UTC+5:30, 57=UTC+5:45, 60=UTC+6, 65=UTC+6:30, 70=UTC+7, 80=UTC+8, 90=UTC+9, 95=UTC+9:30, 100=UTC+10, 105=UTC+10:30, 110=UTC+11, 120=UTC+12, 127=UTC+12:45, 130=UTC+13, 140=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_interval",
+      "display_name": "Retransmit Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "timestamp",
+          "display_name": "History (Timestamp)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "clear_history",
+          "display_name": "Clear History",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

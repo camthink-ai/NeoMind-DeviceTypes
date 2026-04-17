@@ -1,0 +1,828 @@
+{
+  "device_type": "milesight_uc521",
+  "name": "Milesight UC521",
+  "description": "Milesight UC521 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "valve_1_type",
+      "display_name": "Valve 1 Type (Options: 0=2_way_ball_valve, 1=3_way_ball_valve)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_opening",
+      "display_name": "Valve 1 Opening",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "valve_1_direction",
+      "display_name": "Valve 1 Direction (Options: 0=left, 1=right)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_type",
+      "display_name": "Valve 2 Type (Options: 0=2_way_ball_valve, 1=3_way_ball_valve)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_opening",
+      "display_name": "Valve 2 Opening",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "valve_2_direction",
+      "display_name": "Valve 2 Direction (Options: 0=left, 1=right)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_pulse",
+      "display_name": "Valve 1 Pulse",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_2_pulse",
+      "display_name": "Valve 2 Pulse",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "gpio_1",
+      "display_name": "GPIO 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_2",
+      "display_name": "GPIO 2",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_1",
+      "display_name": "Pressure 1",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_2",
+      "display_name": "Pressure 2",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_1_alarm_event.source",
+      "display_name": "Pressure 1 Alarm Event (Source) (Options: 0=every change, 1=valve 1 opening, 2=valve 2 opening, 3=valve 1 opening or valve 2 opening)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_1_alarm_event.condition",
+      "display_name": "Pressure 1 Alarm Event (Condition) (Options: 0=none, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_1_alarm_event.threshold_min",
+      "display_name": "Pressure 1 Alarm Event (Min Threshold)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_1_alarm_event.threshold_max",
+      "display_name": "Pressure 1 Alarm Event (Max Threshold)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_1_alarm_event.pressure",
+      "display_name": "Pressure 1 Alarm Event (Pressure)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_1_alarm_event.alarm",
+      "display_name": "Pressure 1 Alarm Event (Alarm) (Options: 0=pipe pressure threshold alarm release, 1=pipe pressure threshold alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_2_alarm_event.source",
+      "display_name": "Pressure 2 Alarm Event (Source) (Options: 0=every change, 1=valve 1 opening, 2=valve 2 opening, 3=valve 1 opening or valve 2 opening)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_2_alarm_event.condition",
+      "display_name": "Pressure 2 Alarm Event (Condition) (Options: 0=none, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_2_alarm_event.threshold_min",
+      "display_name": "Pressure 2 Alarm Event (Min Threshold)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_2_alarm_event.threshold_max",
+      "display_name": "Pressure 2 Alarm Event (Max Threshold)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_2_alarm_event.pressure",
+      "display_name": "Pressure 2 Alarm Event (Pressure)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_2_alarm_event.alarm",
+      "display_name": "Pressure 2 Alarm Event (Alarm) (Options: 0=pipe pressure threshold alarm release, 1=pipe pressure threshold alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_calibration_event.source_value",
+      "display_name": "Valve 1 Calibration Event (Source Value)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "valve_1_calibration_event.target_value",
+      "display_name": "Valve 1 Calibration Event (Target Value)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "valve_1_calibration_event.result",
+      "display_name": "Valve 1 Calibration Event (Result) (Options: 0=success, 1=failed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_sensor_status",
+      "display_name": "Valve 1 Sensor Status (Options: 0=low battery power, 1=shutdown after getting io feedback, 2=incorrect opening time, 3=timeout, 4=valve stall)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_sensor_status",
+      "display_name": "Valve 2 Sensor Status (Options: 0=low battery power, 1=shutdown after getting io feedback, 2=incorrect opening time, 3=timeout, 4=valve stall)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_1_sensor_status",
+      "display_name": "Pressure 1 Sensor Status (Options: 1=read error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_2_sensor_status",
+      "display_name": "Pressure 2 Sensor Status (Options: 1=read error)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_opening_duration",
+      "display_name": "Valve 1 Opening Duration",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_2_opening_duration",
+      "display_name": "Valve 2 Opening Duration",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "custom_message",
+      "display_name": "Custom Message",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "pressure_1_collection_interval.enable",
+      "display_name": "Pressure 1 Collection Interval (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_1_collection_interval.collection_interval",
+      "display_name": "Pressure 1 Collection Interval (Collection Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "pressure_2_collection_interval.enable",
+      "display_name": "Pressure 2 Collection Interval (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_2_collection_interval.collection_interval",
+      "display_name": "Pressure 2 Collection Interval (Collection Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -720=UTC-12, -660=UTC-11, -600=UTC-10, -570=UTC-9:30, -540=UTC-9, -480=UTC-8, -420=UTC-7, -360=UTC-6, -300=UTC-5, -240=UTC-4, -210=UTC-3:30, -180=UTC-3, -120=UTC-2, -60=UTC-1, 0=UTC, 60=UTC+1, 120=UTC+2, 180=UTC+3, 210=UTC+3:30, 240=UTC+4, 270=UTC+4:30, 300=UTC+5, 330=UTC+5:30, 345=UTC+5:45, 360=UTC+6, 390=UTC+6:30, 420=UTC+7, 480=UTC+8, 540=UTC+9, 570=UTC+9:30, 600=UTC+10, 630=UTC+10:30, 660=UTC+11, 720=UTC+12, 765=UTC+12:45, 780=UTC+13, 840=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_task.task_id",
+      "display_name": "Valve 1 Task (Task ID)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_1_task.valve_opening",
+      "display_name": "Valve 1 Task (Valve Opening)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_1_task.time",
+      "display_name": "Valve 1 Task (Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "valve_1_task.pulse",
+      "display_name": "Valve 1 Task (Pulse)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_2_task.task_id",
+      "display_name": "Valve 2 Task (Task ID)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_2_task.valve_opening",
+      "display_name": "Valve 2 Task (Valve Opening)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_2_task.time",
+      "display_name": "Valve 2 Task (Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "valve_2_task.pulse",
+      "display_name": "Valve 2 Task (Pulse)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "valve_1_config.valve_type",
+      "display_name": "Valve 1 Config (Valve Type) (Options: 0=2_way_ball_valve, 1=3_way_ball_valve)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_config.auto_calibration_enable",
+      "display_name": "Valve 1 Config (Auto Calibration Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_1_config.report_after_calibration_enable",
+      "display_name": "Valve 1 Config (Report After Calibration Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_1_config.stall_strategy",
+      "display_name": "Valve 1 Config (Stall Strategy) (Options: 0=close, 1=keep)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_1_config.open_time_1",
+      "display_name": "Valve 1 Config (Open Time 1)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_1_config.open_time_2",
+      "display_name": "Valve 1 Config (Open Time 2)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_1_config.stall_current",
+      "display_name": "Valve 1 Config (Stall Current)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mA"
+    },
+    {
+      "name": "valve_1_config.stall_time",
+      "display_name": "Valve 1 Config (Stall Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "valve_1_config.protect_time",
+      "display_name": "Valve 1 Config (Protect Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_1_config.close_delay_time",
+      "display_name": "Valve 1 Config (Close Delay Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_1_config.open_delay_time",
+      "display_name": "Valve 1 Config (Open Delay Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_2_config.valve_type",
+      "display_name": "Valve 2 Config (Valve Type) (Options: 0=2_way_ball_valve, 1=3_way_ball_valve)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_config.auto_calibration_enable",
+      "display_name": "Valve 2 Config (Auto Calibration Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_2_config.report_after_calibration_enable",
+      "display_name": "Valve 2 Config (Report After Calibration Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_2_config.stall_strategy",
+      "display_name": "Valve 2 Config (Stall Strategy) (Options: 0=close, 1=keep)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_2_config.open_time_1",
+      "display_name": "Valve 2 Config (Open Time 1)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_2_config.open_time_2",
+      "display_name": "Valve 2 Config (Open Time 2)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_2_config.stall_current",
+      "display_name": "Valve 2 Config (Stall Current)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mA"
+    },
+    {
+      "name": "valve_2_config.stall_time",
+      "display_name": "Valve 2 Config (Stall Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "valve_2_config.protect_time",
+      "display_name": "Valve 2 Config (Protect Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_2_config.close_delay_time",
+      "display_name": "Valve 2 Config (Close Delay Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_2_config.open_delay_time",
+      "display_name": "Valve 2 Config (Open Delay Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "valve_filter_config.mode",
+      "display_name": "Valve Filter Config (Mode) (Options: 1=hardware, 2=software)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "valve_filter_config.time",
+      "display_name": "Valve Filter Config (Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "pressure_1_calibration_settings.enable",
+      "display_name": "Pressure 1 Calibration (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_1_calibration_settings.calibration_value",
+      "display_name": "Pressure 1 Calibration (Calibration)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "pressure_2_calibration_settings.enable",
+      "display_name": "Pressure 2 Calibration (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_2_calibration_settings.calibration_value",
+      "display_name": "Pressure 2 Calibration (Calibration)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "kPa"
+    },
+    {
+      "name": "wiring_switch_enable",
+      "display_name": "Wiring Switch Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "valve_change_report_enable",
+      "display_name": "Valve Change Report Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "gpio_1_type",
+      "display_name": "GPIO 1 Type (Options: 0=counter, 1=feedback)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "gpio_2_type",
+      "display_name": "GPIO 2 Type (Options: 0=counter, 1=feedback)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.enable",
+      "display_name": "Pressure 1 Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.collection_interval",
+      "display_name": "Pressure 1 Config (Collection Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "pressure_1_config.display_unit",
+      "display_name": "Pressure 1 Config (Display Unit) (Options: 0=kPa, 1=Bar, 2=MPa)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.mode",
+      "display_name": "Pressure 1 Config (Mode) (Options: 0=standard, 1=custom)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.signal_type",
+      "display_name": "Pressure 1 Config (Signal Type) (Options: 0=voltage, 1=current)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.osl",
+      "display_name": "Pressure 1 Config (OSL)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.osh",
+      "display_name": "Pressure 1 Config (OSH)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.power_supply_time",
+      "display_name": "Pressure 1 Config (Power Supply Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "pressure_1_config.range_min",
+      "display_name": "Pressure 1 Config (Range Min)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pressure_1_config.range_max",
+      "display_name": "Pressure 1 Config (Range Max)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.enable",
+      "display_name": "Pressure 2 Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.collection_interval",
+      "display_name": "Pressure 2 Config (Collection Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "pressure_2_config.display_unit",
+      "display_name": "Pressure 2 Config (Display Unit) (Options: 0=kPa, 1=Bar, 2=MPa)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.mode",
+      "display_name": "Pressure 2 Config (Mode) (Options: 0=standard, 1=custom)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.signal_type",
+      "display_name": "Pressure 2 Config (Signal Type) (Options: 0=voltage, 1=current)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.osl",
+      "display_name": "Pressure 2 Config (OSL)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.osh",
+      "display_name": "Pressure 2 Config (OSH)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.power_supply_time",
+      "display_name": "Pressure 2 Config (Power Supply Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "ms"
+    },
+    {
+      "name": "pressure_2_config.range_min",
+      "display_name": "Pressure 2 Config (Range Min)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "pressure_2_config.range_max",
+      "display_name": "Pressure 2 Config (Range Max)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "d2d_key",
+      "display_name": "D2D Key",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "response_enable",
+      "display_name": "Response Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "class_a_response_time",
+      "display_name": "Class A Response Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "gpio_jitter_time",
+      "display_name": "GPIO Jitter Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_valve_1_pulse",
+          "display_name": "Clear Valve 1 Pulse",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "clear_valve_2_pulse",
+          "display_name": "Clear Valve 2 Pulse",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_valve_opening_duration.valve_1",
+          "display_name": "Query Valve Opening Duration (Valve 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_valve_opening_duration.valve_2",
+          "display_name": "Query Valve Opening Duration (Valve 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_device_config",
+          "display_name": "Query Device Config",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_pressure_calibration_settings",
+          "display_name": "Query Pressure Calibration Config",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_gpio_type",
+          "display_name": "Query GPIO Type",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_valve_config",
+          "display_name": "Query Valve Config",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_pressure_config",
+          "display_name": "Query Pressure Config",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_rule_config",
+          "display_name": "Query Rule Config",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

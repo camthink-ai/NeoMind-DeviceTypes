@@ -1,0 +1,245 @@
+{
+  "device_type": "milesight_em400_mud",
+  "name": "Milesight EM400-MUD",
+  "description": "Milesight EM400-MUD LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "distance",
+      "display_name": "Distance",
+      "data_type": "Float",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "position",
+      "display_name": "Position",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm",
+      "display_name": "Temperature Alarm (Options: 0=threshold_alarm_release, 1=threshold_alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "distance_alarm",
+      "display_name": "Distance Alarm (Options: 0=threshold_alarm_release, 1=threshold_alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "people_existing_height",
+      "display_name": "People Existing Height",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "install_height",
+      "display_name": "Install Height",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "install_height_enable",
+      "display_name": "Install Height Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "working_mode",
+      "display_name": "Working Mode (Options: 0=standard, 1=bin, 2=parking)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tilt_linkage_distance_enable",
+      "display_name": "Tilt Linkage Distance Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "tof_detection_enable",
+      "display_name": "TOF Detection Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "standard_mode_alarm_config.condition",
+      "display_name": "Standard Mode Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "standard_mode_alarm_config.alarm_release_enable",
+      "display_name": "Standard Mode Alarm Config (Alarm Release Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "standard_mode_alarm_config.threshold_min",
+      "display_name": "Standard Mode Alarm Config (Threshold Min)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "standard_mode_alarm_config.threshold_max",
+      "display_name": "Standard Mode Alarm Config (Threshold Max)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "bin_mode_alarm_config.condition",
+      "display_name": "Bin Mode Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "bin_mode_alarm_config.alarm_release_enable",
+      "display_name": "Bin Mode Alarm Config (Alarm Release Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "bin_mode_alarm_config.threshold_min",
+      "display_name": "Bin Mode Alarm Config (Threshold Min)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "bin_mode_alarm_config.threshold_max",
+      "display_name": "Bin Mode Alarm Config (Threshold Max)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mm"
+    },
+    {
+      "name": "recollection_config.counts",
+      "display_name": "Recollection Config (Counts)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "recollection_config.interval",
+      "display_name": "Recollection Config (Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_device_status",
+          "display_name": "Query Device Status",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

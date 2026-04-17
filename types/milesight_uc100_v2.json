@@ -1,0 +1,1365 @@
+{
+  "device_type": "milesight_uc100_v2",
+  "name": "Milesight UC100-V2",
+  "description": "Milesight UC100-V2 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_1",
+      "display_name": "Modbus Channel 1",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_2",
+      "display_name": "Modbus Channel 2",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_3",
+      "display_name": "Modbus Channel 3",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_4",
+      "display_name": "Modbus Channel 4",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_5",
+      "display_name": "Modbus Channel 5",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_6",
+      "display_name": "Modbus Channel 6",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_7",
+      "display_name": "Modbus Channel 7",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_8",
+      "display_name": "Modbus Channel 8",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_9",
+      "display_name": "Modbus Channel 9",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_10",
+      "display_name": "Modbus Channel 10",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_11",
+      "display_name": "Modbus Channel 11",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_12",
+      "display_name": "Modbus Channel 12",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_13",
+      "display_name": "Modbus Channel 13",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_14",
+      "display_name": "Modbus Channel 14",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_15",
+      "display_name": "Modbus Channel 15",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_16",
+      "display_name": "Modbus Channel 16",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_17",
+      "display_name": "Modbus Channel 17",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_18",
+      "display_name": "Modbus Channel 18",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_19",
+      "display_name": "Modbus Channel 19",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_20",
+      "display_name": "Modbus Channel 20",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_21",
+      "display_name": "Modbus Channel 21",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_22",
+      "display_name": "Modbus Channel 22",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_23",
+      "display_name": "Modbus Channel 23",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_24",
+      "display_name": "Modbus Channel 24",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_25",
+      "display_name": "Modbus Channel 25",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_26",
+      "display_name": "Modbus Channel 26",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_27",
+      "display_name": "Modbus Channel 27",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_28",
+      "display_name": "Modbus Channel 28",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_29",
+      "display_name": "Modbus Channel 29",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_30",
+      "display_name": "Modbus Channel 30",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_31",
+      "display_name": "Modbus Channel 31",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_32",
+      "display_name": "Modbus Channel 32",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_1_reg_2",
+      "display_name": "Modbus Channel 1 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_2_reg_2",
+      "display_name": "Modbus Channel 2 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_3_reg_2",
+      "display_name": "Modbus Channel 3 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_4_reg_2",
+      "display_name": "Modbus Channel 4 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_5_reg_2",
+      "display_name": "Modbus Channel 5 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_6_reg_2",
+      "display_name": "Modbus Channel 6 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_7_reg_2",
+      "display_name": "Modbus Channel 7 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_8_reg_2",
+      "display_name": "Modbus Channel 8 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_9_reg_2",
+      "display_name": "Modbus Channel 9 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_10_reg_2",
+      "display_name": "Modbus Channel 10 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_11_reg_2",
+      "display_name": "Modbus Channel 11 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_12_reg_2",
+      "display_name": "Modbus Channel 12 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_13_reg_2",
+      "display_name": "Modbus Channel 13 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_14_reg_2",
+      "display_name": "Modbus Channel 14 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_15_reg_2",
+      "display_name": "Modbus Channel 15 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_16_reg_2",
+      "display_name": "Modbus Channel 16 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_17_reg_2",
+      "display_name": "Modbus Channel 17 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_18_reg_2",
+      "display_name": "Modbus Channel 18 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_19_reg_2",
+      "display_name": "Modbus Channel 19 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_20_reg_2",
+      "display_name": "Modbus Channel 20 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_21_reg_2",
+      "display_name": "Modbus Channel 21 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_22_reg_2",
+      "display_name": "Modbus Channel 22 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_23_reg_2",
+      "display_name": "Modbus Channel 23 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_24_reg_2",
+      "display_name": "Modbus Channel 24 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_25_reg_2",
+      "display_name": "Modbus Channel 25 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_26_reg_2",
+      "display_name": "Modbus Channel 26 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_27_reg_2",
+      "display_name": "Modbus Channel 27 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_28_reg_2",
+      "display_name": "Modbus Channel 28 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_29_reg_2",
+      "display_name": "Modbus Channel 29 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_30_reg_2",
+      "display_name": "Modbus Channel 30 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_31_reg_2",
+      "display_name": "Modbus Channel 31 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_32_reg_2",
+      "display_name": "Modbus Channel 32 (Register 2)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_1_mutation",
+      "display_name": "Modbus Channel 1 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_2_mutation",
+      "display_name": "Modbus Channel 2 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_3_mutation",
+      "display_name": "Modbus Channel 3 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_4_mutation",
+      "display_name": "Modbus Channel 4 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_5_mutation",
+      "display_name": "Modbus Channel 5 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_6_mutation",
+      "display_name": "Modbus Channel 6 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_7_mutation",
+      "display_name": "Modbus Channel 7 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_8_mutation",
+      "display_name": "Modbus Channel 8 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_9_mutation",
+      "display_name": "Modbus Channel 9 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_10_mutation",
+      "display_name": "Modbus Channel 10 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_11_mutation",
+      "display_name": "Modbus Channel 11 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_12_mutation",
+      "display_name": "Modbus Channel 12 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_13_mutation",
+      "display_name": "Modbus Channel 13 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_14_mutation",
+      "display_name": "Modbus Channel 14 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_15_mutation",
+      "display_name": "Modbus Channel 15 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_16_mutation",
+      "display_name": "Modbus Channel 16 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_17_mutation",
+      "display_name": "Modbus Channel 17 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_18_mutation",
+      "display_name": "Modbus Channel 18 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_19_mutation",
+      "display_name": "Modbus Channel 19 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_20_mutation",
+      "display_name": "Modbus Channel 20 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_21_mutation",
+      "display_name": "Modbus Channel 21 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_22_mutation",
+      "display_name": "Modbus Channel 22 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_23_mutation",
+      "display_name": "Modbus Channel 23 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_24_mutation",
+      "display_name": "Modbus Channel 24 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_25_mutation",
+      "display_name": "Modbus Channel 25 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_26_mutation",
+      "display_name": "Modbus Channel 26 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_27_mutation",
+      "display_name": "Modbus Channel 27 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_28_mutation",
+      "display_name": "Modbus Channel 28 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_29_mutation",
+      "display_name": "Modbus Channel 29 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_30_mutation",
+      "display_name": "Modbus Channel 30 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_31_mutation",
+      "display_name": "Modbus Channel 31 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_32_mutation",
+      "display_name": "Modbus Channel 32 (Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_1_reg_2_mutation",
+      "display_name": "Modbus Channel 1 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_2_reg_2_mutation",
+      "display_name": "Modbus Channel 2 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_3_reg_2_mutation",
+      "display_name": "Modbus Channel 3 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_4_reg_2_mutation",
+      "display_name": "Modbus Channel 4 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_5_reg_2_mutation",
+      "display_name": "Modbus Channel 5 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_6_reg_2_mutation",
+      "display_name": "Modbus Channel 6 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_7_reg_2_mutation",
+      "display_name": "Modbus Channel 7 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_8_reg_2_mutation",
+      "display_name": "Modbus Channel 8 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_9_reg_2_mutation",
+      "display_name": "Modbus Channel 9 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_10_reg_2_mutation",
+      "display_name": "Modbus Channel 10 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_11_reg_2_mutation",
+      "display_name": "Modbus Channel 11 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_12_reg_2_mutation",
+      "display_name": "Modbus Channel 12 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_13_reg_2_mutation",
+      "display_name": "Modbus Channel 13 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_14_reg_2_mutation",
+      "display_name": "Modbus Channel 14 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_15_reg_2_mutation",
+      "display_name": "Modbus Channel 15 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_16_reg_2_mutation",
+      "display_name": "Modbus Channel 16 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_17_reg_2_mutation",
+      "display_name": "Modbus Channel 17 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_18_reg_2_mutation",
+      "display_name": "Modbus Channel 18 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_19_reg_2_mutation",
+      "display_name": "Modbus Channel 19 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_20_reg_2_mutation",
+      "display_name": "Modbus Channel 20 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_21_reg_2_mutation",
+      "display_name": "Modbus Channel 21 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_22_reg_2_mutation",
+      "display_name": "Modbus Channel 22 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_23_reg_2_mutation",
+      "display_name": "Modbus Channel 23 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_24_reg_2_mutation",
+      "display_name": "Modbus Channel 24 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_25_reg_2_mutation",
+      "display_name": "Modbus Channel 25 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_26_reg_2_mutation",
+      "display_name": "Modbus Channel 26 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_27_reg_2_mutation",
+      "display_name": "Modbus Channel 27 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_28_reg_2_mutation",
+      "display_name": "Modbus Channel 28 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_29_reg_2_mutation",
+      "display_name": "Modbus Channel 29 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_30_reg_2_mutation",
+      "display_name": "Modbus Channel 30 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_31_reg_2_mutation",
+      "display_name": "Modbus Channel 31 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "modbus_chn_32_reg_2_mutation",
+      "display_name": "Modbus Channel 32 (Register 2 Mutation)",
+      "data_type": "Float",
+      "required": false
+    },
+    {
+      "name": "custom_message",
+      "display_name": "Custom Message",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "confirm_mode_enable",
+      "display_name": "Confirm Mode Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -720=UTC-12, -660=UTC-11, -600=UTC-10, -570=UTC-9:30, -540=UTC-9, -480=UTC-8, -420=UTC-7, -360=UTC-6, -300=UTC-5, -240=UTC-4, -210=UTC-3:30, -180=UTC-3, -120=UTC-2, -60=UTC-1, 0=UTC, 60=UTC+1, 120=UTC+2, 180=UTC+3, 210=UTC+3:30, 240=UTC+4, 270=UTC+4:30, 300=UTC+5, 330=UTC+5:30, 345=UTC+5:45, 360=UTC+6, 390=UTC+6:30, 420=UTC+7, 480=UTC+8, 540=UTC+9, 570=UTC+9:30, 600=UTC+10, 630=UTC+10:30, 660=UTC+11, 720=UTC+12, 765=UTC+12:45, 780=UTC+13, 840=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.enable",
+      "display_name": "Daylight Saving Time (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "dst_config.offset",
+      "display_name": "Daylight Saving Time (Offset)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "dst_config.start_month",
+      "display_name": "Daylight Saving Time (Start Month) (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_week_num",
+      "display_name": "Daylight Saving Time (Start Week Number)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_week_day",
+      "display_name": "Daylight Saving Time (Start Week Day) (Options: 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_time",
+      "display_name": "Daylight Saving Time (Start Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "dst_config.end_month",
+      "display_name": "Daylight Saving Time (End Month) (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_week_num",
+      "display_name": "Daylight Saving Time (End Week Number)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_week_day",
+      "display_name": "Daylight Saving Time (End Week Day) (Options: 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_time",
+      "display_name": "Daylight Saving Time (End Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "modbus_serial_port_config.baud_rate",
+      "display_name": "Modbus Serial Port Config (Baud Rate)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "modbus_serial_port_config.data_bits",
+      "display_name": "Modbus Serial Port Config (Data Bits)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "modbus_serial_port_config.stop_bits",
+      "display_name": "Modbus Serial Port Config (Stop Bits)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "modbus_serial_port_config.parity",
+      "display_name": "Modbus Serial Port Config (Parity)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "modbus_config.exec_interval",
+      "display_name": "Modbus Config (Exec Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "modbus_config.max_response_time",
+      "display_name": "Modbus Config (Max Response Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "modbus_config.retry_times",
+      "display_name": "Modbus Config (Retry Times)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "modbus_config.pass_through_enable",
+      "display_name": "Modbus Config (Pass Through Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "modbus_config.pass_through_direct",
+      "display_name": "Modbus Config (Pass Through Direct)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "modbus_config.pass_through_port",
+      "display_name": "Modbus Config (Pass Through Port)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "retransmit_config.enable",
+      "display_name": "Retransmit Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_config.interval",
+      "display_name": "Retransmit Config (Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_modbus_serial_port_config",
+          "display_name": "Query Modbus Serial Port Config",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_modbus_config",
+          "display_name": "Query Modbus Config",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "clear_history",
+          "display_name": "Clear History",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_1",
+          "display_name": "Batch Enable Rules (Rule 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_2",
+          "display_name": "Batch Enable Rules (Rule 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_3",
+          "display_name": "Batch Enable Rules (Rule 3)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_4",
+          "display_name": "Batch Enable Rules (Rule 4)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_5",
+          "display_name": "Batch Enable Rules (Rule 5)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_6",
+          "display_name": "Batch Enable Rules (Rule 6)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_7",
+          "display_name": "Batch Enable Rules (Rule 7)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_8",
+          "display_name": "Batch Enable Rules (Rule 8)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_9",
+          "display_name": "Batch Enable Rules (Rule 9)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_10",
+          "display_name": "Batch Enable Rules (Rule 10)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_11",
+          "display_name": "Batch Enable Rules (Rule 11)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_12",
+          "display_name": "Batch Enable Rules (Rule 12)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_13",
+          "display_name": "Batch Enable Rules (Rule 13)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_14",
+          "display_name": "Batch Enable Rules (Rule 14)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_15",
+          "display_name": "Batch Enable Rules (Rule 15)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_enable_rules.rule_16",
+          "display_name": "Batch Enable Rules (Rule 16)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_1",
+          "display_name": "Batch Disable Rules (Rule 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_2",
+          "display_name": "Batch Disable Rules (Rule 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_3",
+          "display_name": "Batch Disable Rules (Rule 3)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_4",
+          "display_name": "Batch Disable Rules (Rule 4)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_5",
+          "display_name": "Batch Disable Rules (Rule 5)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_6",
+          "display_name": "Batch Disable Rules (Rule 6)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_7",
+          "display_name": "Batch Disable Rules (Rule 7)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_8",
+          "display_name": "Batch Disable Rules (Rule 8)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_9",
+          "display_name": "Batch Disable Rules (Rule 9)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_10",
+          "display_name": "Batch Disable Rules (Rule 10)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_11",
+          "display_name": "Batch Disable Rules (Rule 11)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_12",
+          "display_name": "Batch Disable Rules (Rule 12)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_13",
+          "display_name": "Batch Disable Rules (Rule 13)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_14",
+          "display_name": "Batch Disable Rules (Rule 14)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_15",
+          "display_name": "Batch Disable Rules (Rule 15)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_disable_rules.rule_16",
+          "display_name": "Batch Disable Rules (Rule 16)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_1",
+          "display_name": "Batch Remove Rules (Rule 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_2",
+          "display_name": "Batch Remove Rules (Rule 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_3",
+          "display_name": "Batch Remove Rules (Rule 3)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_4",
+          "display_name": "Batch Remove Rules (Rule 4)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_5",
+          "display_name": "Batch Remove Rules (Rule 5)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_6",
+          "display_name": "Batch Remove Rules (Rule 6)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_7",
+          "display_name": "Batch Remove Rules (Rule 7)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_8",
+          "display_name": "Batch Remove Rules (Rule 8)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_9",
+          "display_name": "Batch Remove Rules (Rule 9)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_10",
+          "display_name": "Batch Remove Rules (Rule 10)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_11",
+          "display_name": "Batch Remove Rules (Rule 11)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_12",
+          "display_name": "Batch Remove Rules (Rule 12)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_13",
+          "display_name": "Batch Remove Rules (Rule 13)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_14",
+          "display_name": "Batch Remove Rules (Rule 14)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_15",
+          "display_name": "Batch Remove Rules (Rule 15)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "batch_remove.rule_16",
+          "display_name": "Batch Remove Rules (Rule 16)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "query_rule_config",
+          "display_name": "Query Rule Config",
+          "data_type": "Integer",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

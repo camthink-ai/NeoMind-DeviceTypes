@@ -1,0 +1,376 @@
+{
+  "device_type": "milesight_ts201_v2",
+  "name": "Milesight TS201-V2",
+  "description": "Milesight TS201-V2 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "sensor_1_type",
+      "display_name": "Sensor 1 (Type) (Options: 1=DS18B20, 2=SHT4X)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sensor_1_sn",
+      "display_name": "Sensor 1 (SN)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_unit",
+      "display_name": "Temperature Unit (Options: 0=celsius, 1=fahrenheit)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "alarm_report_counts",
+      "display_name": "Alarm Count",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.condition",
+      "display_name": "Temperature Threshold Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.threshold_max",
+      "display_name": "Temperature Threshold Config (Max)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_config.threshold_min",
+      "display_name": "Temperature Threshold Config (Min)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_config.enable",
+      "display_name": "Temperature Threshold Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm_config.condition",
+      "display_name": "Humidity Threshold Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm_config.threshold_max",
+      "display_name": "Humidity Threshold Config (Max)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_alarm_config.threshold_min",
+      "display_name": "Humidity Threshold Config (Min)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_alarm_config.enable",
+      "display_name": "Humidity Threshold Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_mutation_alarm_config.mutation",
+      "display_name": "Temperature Mutation Config (Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_mutation_alarm_config.enable",
+      "display_name": "Temperature Mutation Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "humidity_mutation_alarm_config.mutation",
+      "display_name": "Humidity Mutation Config (Threshold)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_mutation_alarm_config.enable",
+      "display_name": "Humidity Mutation Config (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "alarm_release_enable",
+      "display_name": "Threshold Alarm Release Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_config.interval",
+      "display_name": "Retransmit Config (Interval)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.d2d_uplink_enable",
+      "display_name": "D2D Uplink Config (D2D Uplink Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.lora_uplink_enable",
+      "display_name": "D2D Uplink Config (LoRa Uplink Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.sensor_data_config.temperature",
+      "display_name": "D2D Uplink Config (Sensor Data Config (Temperature))",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "d2d_uplink_config.sensor_data_config.humidity",
+      "display_name": "D2D Uplink Config (Sensor Data Config (Humidity))",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_lock_config.power_button",
+      "display_name": "Button Lock Config (Power Button)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "button_lock_config.report_button",
+      "display_name": "Button Lock Config (Report Button)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "led_indicator_enable",
+      "display_name": "Led Indicator Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "temperature_calibration_settings.enable",
+          "display_name": "Temperature Calibrate (Enable)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "temperature_calibration_settings.calibration_value",
+          "display_name": "Temperature Calibrate (Calibration Value)",
+          "data_type": "Float",
+          "required": false,
+          "unit": "°C"
+        },
+        {
+          "name": "humidity_calibration_settings.enable",
+          "display_name": "Humidity Calibrate (Enable)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "humidity_calibration_settings.calibration_value",
+          "display_name": "Humidity Calibrate (Calibration Value)",
+          "data_type": "Float",
+          "required": false,
+          "unit": "%r.h."
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "clear_history",
+          "display_name": "Clear History",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "retransmit_config.enable",
+          "display_name": "Retransmit Config (enable)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_sensor_id",
+          "display_name": "Fetch Sensor ID",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "ack_retry_times",
+          "display_name": "Ack Retry Times",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "d2d_key",
+          "display_name": "D2D Key",
+          "data_type": "String",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "device_type": "milesight_wt101",
+  "name": "Milesight WT101",
+  "description": "Milesight WT101 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "Tsl Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Ambient Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature",
+      "display_name": "Target Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "valve_opening",
+      "display_name": "Valve Opening",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "tamper_status",
+      "display_name": "Tamper Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "window_detection",
+      "display_name": "Window Detection",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "motor_calibration_result",
+      "display_name": "Motor Stroke Calibration Result (Options: 0=success, 1=fail: out of range, 2=fail: uninstalled, 3=calibration cleared, 4=temperature control disabled)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "motor_stroke",
+      "display_name": "Motor Stroke",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "freeze_protection",
+      "display_name": "Freeze Protection",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "motor_position",
+      "display_name": "Motor Position",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "time_sync_enable",
+      "display_name": "Time Sync Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "time_zone",
+      "display_name": "Time Zone (Options: -720=UTC-12, -660=UTC-11, -600=UTC-10, -570=UTC-9:30, -540=UTC-9, -480=UTC-8, -420=UTC-7, -360=UTC-6, -300=UTC-5, -240=UTC-4, -210=UTC-3:30, -180=UTC-3, -120=UTC-2, -60=UTC-1, 0=UTC, 60=UTC+1, 120=UTC+2, 180=UTC+3, 210=UTC+3:30, 240=UTC+4, 270=UTC+4:30, 300=UTC+5, 330=UTC+5:30, 345=UTC+5:45, 360=UTC+6, 390=UTC+6:30, 420=UTC+7, 480=UTC+8, 540=UTC+9, 570=UTC+9:30, 600=UTC+10, 630=UTC+10:30, 660=UTC+11, 720=UTC+12, 765=UTC+12:45, 780=UTC+13, 840=UTC+14)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "temperature_calibration_settings.enable",
+      "display_name": "Temperature Calibration Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_calibration_settings.calibration_value",
+      "display_name": "Temperature Calibration Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_control.enable",
+      "display_name": "Temperature Control Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_control.mode",
+      "display_name": "Temperature Control Mode (Options: 0=auto, 1=manual)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_tolerance",
+      "display_name": "Temperature Tolerance",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.min",
+      "display_name": "Target Temperature Range (Min)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "target_temperature_range.max",
+      "display_name": "Target Temperature Range (Max)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "open_window_detection.enable",
+      "display_name": "Open Window Detection Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "open_window_detection.temperature_threshold",
+      "display_name": "Open Window Detection Temperature Threshold",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "open_window_detection.time",
+      "display_name": "Open Window Detection Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "valve_control_algorithm",
+      "display_name": "Valve Control Algorithm (Options: 0=rate, 1=pid)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "freeze_protection_config.enable",
+      "display_name": "Freeze Protection Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "freeze_protection_config.temperature",
+      "display_name": "Freeze Protection Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "child_lock_config.enable",
+      "display_name": "Child Lock Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "offline_control_mode",
+      "display_name": "Offline Control Mode (Options: 0=keep, 1=embedded temperature control, 2=off)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "outside_temperature",
+      "display_name": "Outside Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "outside_temperature_control.enable",
+      "display_name": "Outside Temperature Control Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "outside_temperature_control.timeout",
+      "display_name": "Outside Temperature Control Timeout",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "display_ambient_temperature",
+      "display_name": "Display Ambient Temperature",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "window_detection_valve_strategy",
+      "display_name": "Window Detection Valve Strategy (Options: 0=keep, 1=close)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.enable",
+      "display_name": "Daylight Saving Time Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "dst_config.offset",
+      "display_name": "Daylight Saving Time Offset",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "dst_config.start_month",
+      "display_name": "Daylight Saving Time Start Month (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_week_num",
+      "display_name": "Daylight Saving Time Start Week Number",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_week_day",
+      "display_name": "Daylight Saving Time Start Week Day (Options: 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.start_time",
+      "display_name": "Daylight Saving Time Start Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "dst_config.end_month",
+      "display_name": "Daylight Saving Time End Month (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_week_num",
+      "display_name": "Daylight Saving Time End Week Number",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_week_day",
+      "display_name": "Daylight Saving Time End Week Day (Options: 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "dst_config.end_time",
+      "display_name": "Daylight Saving Time End Time",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "effective_stroke.enable",
+      "display_name": "Effective Stroke Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "effective_stroke.rate",
+      "display_name": "Effective Stroke Rate",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "heating_date.enable",
+      "display_name": "Heating Date Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "heating_date.report_interval",
+      "display_name": "Heating Date Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "heating_date.start_month",
+      "display_name": "Heating Date Start Month (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "heating_date.start_day",
+      "display_name": "Heating Date Start Day",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "heating_date.end_month",
+      "display_name": "Heating Date End Month (Options: 1=January, 2=February, 3=March, 4=April, 5=May, 6=June, 7=July, 8=August, 9=September, 10=October, 11=November, 12=December)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "heating_date.end_day",
+      "display_name": "Heating Date End Day",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "change_report_enable",
+      "display_name": "Change Report Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "sync_time",
+          "display_name": "Sync Time",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_heating_date",
+          "display_name": "Report Heating Date",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_heating_schedule",
+          "display_name": "Report Heating Schedule",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "restore_open_window_detection",
+          "display_name": "Restore Open Window Detection",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "valve_calibration",
+          "display_name": "Valve Calibration",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

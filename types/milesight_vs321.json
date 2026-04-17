@@ -1,0 +1,477 @@
+{
+  "device_type": "milesight_vs321",
+  "name": "Milesight VS321",
+  "description": "Milesight VS321 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "tsl_version",
+      "display_name": "TSL Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "reset_event",
+      "display_name": "Reset Event",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "battery",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    },
+    {
+      "name": "temperature",
+      "display_name": "Temperature",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm",
+      "display_name": "Temperature Alarm (Options: 0=threshold_alarm_release, 1=threshold_alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_sensor_status",
+      "display_name": "Temperature Sensor Status (Options: 0=normal, 1=over_range, 2=read_failed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity",
+      "display_name": "Humidity",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_alarm",
+      "display_name": "Humidity Alarm (Options: 0=threshold_alarm_release, 1=threshold_alarm)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_sensor_status",
+      "display_name": "Humidity Sensor Status (Options: 0=normal, 1=over_range, 2=read_failed)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "people_total_counts",
+      "display_name": "People Total Counts",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "region_1_enable",
+      "display_name": "Region 1 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_1",
+      "display_name": "Region 1 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_2_enable",
+      "display_name": "Region 2 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_2",
+      "display_name": "Region 2 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_3_enable",
+      "display_name": "Region 3 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_3",
+      "display_name": "Region 3 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_4_enable",
+      "display_name": "Region 4 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_4",
+      "display_name": "Region 4 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_5_enable",
+      "display_name": "Region 5 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_5",
+      "display_name": "Region 5 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_6_enable",
+      "display_name": "Region 6 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_6",
+      "display_name": "Region 6 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_7_enable",
+      "display_name": "Region 7 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_7",
+      "display_name": "Region 7 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_8_enable",
+      "display_name": "Region 8 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_8",
+      "display_name": "Region 8 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_9_enable",
+      "display_name": "Region 9 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_9",
+      "display_name": "Region 9 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "region_10_enable",
+      "display_name": "Region 10 (Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "region_10",
+      "display_name": "Region 10 (Status) (Options: 0=vacant, 1=occupied)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "illuminance_status",
+      "display_name": "Illuminance Status (Options: 0=dim, 1=bright)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "detection_status",
+      "display_name": "Detection Status (Options: 0=normal, 1=unavailable)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "timestamp",
+      "display_name": "Timestamp",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "collection_interval",
+      "display_name": "Collection Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "report_type",
+      "display_name": "Report Type (Options: 0=period, 1=immediately)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "detection_mode",
+      "display_name": "Detection Mode (Options: 0=auto, 1=on)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "adr_enable",
+      "display_name": "ADR Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.condition",
+      "display_name": "Temperature Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "temperature_alarm_config.threshold_min",
+      "display_name": "Temperature Alarm Config (Threshold Min)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_config.threshold_max",
+      "display_name": "Temperature Alarm Config (Threshold Max)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "°C"
+    },
+    {
+      "name": "temperature_alarm_config.lock_time",
+      "display_name": "Temperature Alarm Config (Lock Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "temperature_alarm_config.continue_time",
+      "display_name": "Temperature Alarm Config (Continue Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "humidity_alarm_config.condition",
+      "display_name": "Humidity Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "humidity_alarm_config.threshold_min",
+      "display_name": "Humidity Alarm Config (Threshold Min)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_alarm_config.threshold_max",
+      "display_name": "Humidity Alarm Config (Threshold Max)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "%r.h."
+    },
+    {
+      "name": "humidity_alarm_config.lock_time",
+      "display_name": "Humidity Alarm Config (Lock Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "humidity_alarm_config.continue_time",
+      "display_name": "Humidity Alarm Config (Continue Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "illuminance_alarm_config.condition",
+      "display_name": "Illuminance Alarm Config (Condition) (Options: 0=disable, 1=below, 2=above, 3=between, 4=outside)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "illuminance_alarm_config.threshold_min",
+      "display_name": "Illuminance Alarm Config (Threshold Min)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "lx"
+    },
+    {
+      "name": "illuminance_alarm_config.threshold_max",
+      "display_name": "Illuminance Alarm Config (Threshold Max)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "lx"
+    },
+    {
+      "name": "illuminance_alarm_config.lock_time",
+      "display_name": "Illuminance Alarm Config (Lock Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "illuminance_alarm_config.continue_time",
+      "display_name": "Illuminance Alarm Config (Continue Time)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "min"
+    },
+    {
+      "name": "d2d_key",
+      "display_name": "D2D Key",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "d2d_enable",
+      "display_name": "D2D Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "history_enable",
+      "display_name": "History Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_enable",
+      "display_name": "Retransmit Enable",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "retransmit_interval",
+      "display_name": "Retransmit Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "resend_interval",
+      "display_name": "Resend Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "lora_port",
+      "display_name": "LoRa Port",
+      "data_type": "Integer",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "detect",
+          "display_name": "Detect",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reset",
+          "display_name": "Reset",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "fetch_history.start_time",
+          "display_name": "Fetch History (Start Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "fetch_history.end_time",
+          "display_name": "Fetch History (End Time)",
+          "data_type": "Integer",
+          "required": false,
+          "unit": "s"
+        },
+        {
+          "name": "stop_transmit",
+          "display_name": "Stop Transmit",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

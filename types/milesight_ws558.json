@@ -1,0 +1,238 @@
+{
+  "device_type": "milesight_ws558",
+  "name": "Milesight WS558",
+  "description": "Milesight WS558 LoRaWAN Sensor",
+  "categories": [
+    "LoRaWAN",
+    "Sensor"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "ipso_version",
+      "display_name": "IPSO Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "device_status",
+      "display_name": "Device Status",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "lorawan_class",
+      "display_name": "LoRaWAN Class Type (Options: 0=Class A, 1=Class B, 2=Class C, 3=Class CtoB)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "sn",
+      "display_name": "SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "voltage",
+      "display_name": "Voltage",
+      "data_type": "Float",
+      "required": false,
+      "unit": "V"
+    },
+    {
+      "name": "active_power",
+      "display_name": "Active Power",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "W"
+    },
+    {
+      "name": "power_factor",
+      "display_name": "Power Factor",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "power_consumption",
+      "display_name": "Power Consumption",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "Wh"
+    },
+    {
+      "name": "current",
+      "display_name": "Current",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "mA"
+    },
+    {
+      "name": "switch_1",
+      "display_name": "Switch 1",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_2",
+      "display_name": "Switch 2",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_3",
+      "display_name": "Switch 3",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_4",
+      "display_name": "Switch 4",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_5",
+      "display_name": "Switch 5",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_6",
+      "display_name": "Switch 6",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_7",
+      "display_name": "Switch 7",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "switch_8",
+      "display_name": "Switch 8",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "report_interval",
+      "display_name": "Report Interval",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "power_consumption_enable",
+      "display_name": "Power Consumption Enable",
+      "data_type": "Boolean",
+      "required": false
+    }
+  ],
+  "uplink_samples": [],
+  "commands": [
+    {
+      "name": "configure",
+      "display_name": "Configure",
+      "description": "Configure device parameters",
+      "payload_template": "{}",
+      "parameters": [
+        {
+          "name": "reboot",
+          "display_name": "Reboot",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "report_status",
+          "display_name": "Report Status",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_1",
+          "display_name": "Delay Task (Switch 1)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_2",
+          "display_name": "Delay Task (Switch 2)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_3",
+          "display_name": "Delay Task (Switch 3)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_4",
+          "display_name": "Delay Task (Switch 4)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_5",
+          "display_name": "Delay Task (Switch 5)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_6",
+          "display_name": "Delay Task (Switch 6)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_7",
+          "display_name": "Delay Task (Switch 7)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.switch_8",
+          "display_name": "Delay Task (Switch 8)",
+          "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "delay_task.task_id",
+          "display_name": "Delay Task (Task ID)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "delay_task.delay_time",
+          "display_name": "Delay Task (Delay Time)",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "cancel_delay_task",
+          "display_name": "Cancel Delay Task",
+          "data_type": "Integer",
+          "required": false
+        },
+        {
+          "name": "clear_power_consumption",
+          "display_name": "Clear Power Consumption",
+          "data_type": "Boolean",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
