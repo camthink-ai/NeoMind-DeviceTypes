@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_em300_mcs",
   "name": "Milesight EM300-MCS",
-  "description": "Milesight EM300-MCS LoRaWAN Sensor",
+  "description": "EM300-MCS LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

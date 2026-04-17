@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs321",
   "name": "Milesight VS321",
-  "description": "Milesight VS321 LoRaWAN Sensor",
+  "description": "Wireless AI Occupancy Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

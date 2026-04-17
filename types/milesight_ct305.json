@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ct305",
   "name": "Milesight CT305",
-  "description": "Milesight CT305 LoRaWAN Sensor",
+  "description": "Smart Current Transformer",
   "categories": [
     "LoRaWAN",
     "Sensor"

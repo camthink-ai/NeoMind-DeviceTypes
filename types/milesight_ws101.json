@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws101",
   "name": "Milesight WS101",
-  "description": "Milesight WS101 LoRaWAN Sensor",
+  "description": "Smart Button",
   "categories": [
     "LoRaWAN",
     "Sensor"

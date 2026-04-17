@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_gs601",
   "name": "Milesight GS601",
-  "description": "Milesight GS601 LoRaWAN Sensor",
+  "description": "Vape Detector",
   "categories": [
     "LoRaWAN",
     "Sensor"

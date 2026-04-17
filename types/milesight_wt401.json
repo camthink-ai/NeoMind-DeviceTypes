@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_wt401",
   "name": "Milesight WT401",
-  "description": "Milesight WT401 LoRaWAN Sensor",
+  "description": "Wireless Smart Thermostat",
   "categories": [
     "LoRaWAN",
     "Sensor"

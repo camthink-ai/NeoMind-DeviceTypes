@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws501_us",
   "name": "Milesight WS501-US",
-  "description": "Milesight WS501-US LoRaWAN Sensor",
+  "description": "WS501-US LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

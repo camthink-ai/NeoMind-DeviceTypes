@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws301",
   "name": "Milesight WS301",
-  "description": "Milesight WS301 LoRaWAN Sensor",
+  "description": "Magnetic Contact Switch",
   "categories": [
     "LoRaWAN",
     "Sensor"

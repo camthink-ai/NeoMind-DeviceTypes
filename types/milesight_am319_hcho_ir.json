@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_am319_hcho_ir",
   "name": "Milesight AM319-HCHO-IR",
-  "description": "Milesight AM319-HCHO-IR LoRaWAN Sensor",
+  "description": "AM319-HCHO-IR LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

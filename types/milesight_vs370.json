@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs370",
   "name": "Milesight VS370",
-  "description": "Milesight VS370 LoRaWAN Sensor",
+  "description": "Radar Human Presence Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

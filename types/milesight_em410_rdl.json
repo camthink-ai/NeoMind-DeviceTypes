@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_em410_rdl",
   "name": "Milesight EM410-RDL",
-  "description": "Milesight EM410-RDL LoRaWAN Sensor",
+  "description": "EM410-RDL LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ts301",
   "name": "Milesight TS301",
-  "description": "Milesight TS301 LoRaWAN Sensor",
+  "description": "Temperature Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

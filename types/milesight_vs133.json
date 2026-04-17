@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs133",
   "name": "Milesight VS133",
-  "description": "Milesight VS133 LoRaWAN Sensor",
+  "description": "AI ToF People Counting Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

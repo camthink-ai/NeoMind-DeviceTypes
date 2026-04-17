@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs351",
   "name": "Milesight VS351",
-  "description": "Milesight VS351 LoRaWAN Sensor",
+  "description": "Mini AI Thermopile People Counter",
   "categories": [
     "LoRaWAN",
     "Sensor"

@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs360",
   "name": "Milesight VS360",
-  "description": "Milesight VS360 LoRaWAN Sensor",
+  "description": "IR BreakBeam People Counter",
   "categories": [
     "LoRaWAN",
     "Sensor"

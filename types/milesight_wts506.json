@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_wts506",
   "name": "Milesight WTS506",
-  "description": "Milesight WTS506 LoRaWAN Sensor",
+  "description": "Weather Station",
   "categories": [
     "LoRaWAN",
     "Sensor"

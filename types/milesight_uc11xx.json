@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_uc11xx",
   "name": "Milesight UC11XX",
-  "description": "Milesight UC11XX LoRaWAN Sensor",
+  "description": "UC11XX LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

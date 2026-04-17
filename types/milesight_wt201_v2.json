@@ -1,13 +1,37 @@
 {
   "device_type": "milesight_wt201_v2",
   "name": "Milesight WT201-V2",
-  "description": "Milesight WT201-V2 LoRaWAN Sensor",
+  "description": "WT201-V2 LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"
   ],
   "mode": "simple",
   "metrics": [
+    {
+      "name": "product_sn",
+      "display_name": "Product SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "oem_id",
+      "display_name": "OEM ID",
+      "data_type": "String",
+      "required": false
+    },
     {
       "name": "ipso_version",
       "display_name": "IPSO Version",
@@ -130,7 +154,7 @@
       "display_name": "Humidity",
       "data_type": "Float",
       "required": false,
-      "unit": "%r.h."
+      "unit": "%RH"
     },
     {
       "name": "wires_relay.y1",
@@ -353,7 +377,7 @@
       "display_name": "Humidity Calibration Humidity",
       "data_type": "Float",
       "required": false,
-      "unit": "%r.h."
+      "unit": "%RH"
     },
     {
       "name": "temperature_tolerance.target_temperature_tolerance",
@@ -391,26 +415,6 @@
     {
       "name": "target_temperature_range_config.max",
       "display_name": "Target Temperature Range Max",
-      "data_type": "Float",
-      "required": false,
-      "unit": "°C"
-    },
-    {
-      "name": "temperature_level_up_condition.type",
-      "display_name": "Temperature Level Up Condition Type (Options: 0=heat, 1=cool)",
-      "data_type": "String",
-      "required": false
-    },
-    {
-      "name": "temperature_level_up_condition.time",
-      "display_name": "Temperature Level Up Condition Time",
-      "data_type": "Integer",
-      "required": false,
-      "unit": "min"
-    },
-    {
-      "name": "temperature_level_up_condition.temperature_control_tolerance",
-      "display_name": "Temperature Level Up Condition Temperature Control Tolerance",
       "data_type": "Float",
       "required": false,
       "unit": "°C"
@@ -459,14 +463,14 @@
       "display_name": "Humidity Range (Min)",
       "data_type": "Integer",
       "required": false,
-      "unit": "%r.h."
+      "unit": "%RH"
     },
     {
       "name": "humidity_range.max",
       "display_name": "Humidity Range (Max)",
       "data_type": "Integer",
       "required": false,
-      "unit": "%r.h."
+      "unit": "%RH"
     },
     {
       "name": "temperature_dehumidify.enable",
@@ -911,22 +915,17 @@
       "required": false
     },
     {
-      "name": "dual_temperature_tolerance.heat_tolerance",
-      "display_name": "Dual Temperature Tolerance (Heat Tolerance)",
-      "data_type": "Float",
-      "required": false
-    },
-    {
-      "name": "dual_temperature_tolerance.cool_tolerance",
-      "display_name": "Dual Temperature Tolerance (Cool Tolerance)",
-      "data_type": "Float",
-      "required": false
-    },
-    {
       "name": "target_temperature_dual_enable",
       "display_name": "Target Temperature Dual Enable",
       "data_type": "Boolean",
       "required": false
+    },
+    {
+      "name": "offline_timeout.value",
+      "display_name": "Offline Timeout (BACNET) (Options: 8=disable, 1=5, 2=10, 3=20, 4=30, 5=40, 6=50, 7=60)",
+      "data_type": "String",
+      "required": false,
+      "unit": "min"
     }
   ],
   "uplink_samples": [],
@@ -953,6 +952,12 @@
           "name": "current_temperature_control_mode",
           "display_name": "Temperature Control Mode",
           "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "down_heart",
+          "display_name": "Down Heart",
+          "data_type": "Integer",
           "required": false
         }
       ]

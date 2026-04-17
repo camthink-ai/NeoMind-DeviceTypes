@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws523",
   "name": "Milesight WS523",
-  "description": "Milesight WS523 LoRaWAN Sensor",
+  "description": "Portable Socket",
   "categories": [
     "LoRaWAN",
     "Sensor"

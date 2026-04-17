@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_em310_tilt",
   "name": "Milesight EM310-TILT",
-  "description": "Milesight EM310-TILT LoRaWAN Sensor",
+  "description": "EM310-TILT LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

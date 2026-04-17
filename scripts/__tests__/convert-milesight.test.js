@@ -177,7 +177,7 @@ function testFullConversion() {
 
   assert.strictEqual(result.device_type, "milesight_em300_th");
   assert.strictEqual(result.name, "Milesight EM300-TH");
-  assert.strictEqual(result.description, "Milesight EM300-TH LoRaWAN Sensor");
+  assert.strictEqual(result.description, "EM300-TH LoRaWAN Sensor");
   assert.deepStrictEqual(result.categories, ["LoRaWAN", "Sensor"]);
   assert.strictEqual(result.mode, "simple");
   assert.strictEqual(result.metrics.length, 2);
@@ -249,6 +249,35 @@ function testIndexEntry() {
   assert.ok(entry.homepage.includes("em-series/em300-th"));
 }
 
+// --- deviceInfo tests ---
+
+function testDeviceInfoUsedInConversion() {
+  const codecJson = {
+    version: "1.0.0",
+    object: [
+      { id: "battery", name: "Battery", unit: "%", access_mode: "R", data_type: "NUMBER", value_type: "UINT8" },
+    ],
+  };
+  const deviceInfo = { id: "em300-th", name: "EM300-TH", description: "Temperature & Humidity Sensor" };
+  const result = convertCodecToNeoMind("em300-th", "em-series", codecJson, deviceInfo);
+  assert.strictEqual(result.name, "Milesight EM300-TH");
+  assert.strictEqual(result.description, "Temperature & Humidity Sensor");
+}
+
+function testDeviceInfoInIndexEntry() {
+  const deviceInfo = { id: "am307", name: "AM307", description: "Indoor Ambience Monitoring Sensor" };
+  const entry = buildIndexEntry("am307", "am-series", deviceInfo);
+  assert.strictEqual(entry.name, "Milesight AM307");
+  assert.strictEqual(entry.description, "Indoor Ambience Monitoring Sensor");
+}
+
+function testDeviceInfoNullFallback() {
+  const codecJson = { version: "1.0.0", object: [] };
+  const result = convertCodecToNeoMind("em300-th", "em-series", codecJson, null);
+  assert.strictEqual(result.name, "Milesight EM300-TH");
+  assert.strictEqual(result.description, "EM300-TH LoRaWAN Sensor");
+}
+
 // --- Run all tests ---
 
 const tests = [
@@ -260,6 +289,7 @@ const tests = [
   testFullConversion, testNoWriteFields, testRWFieldsGoToMetrics,
   testEmptyObjectArray, testNullObjectField, testMalformedFieldSkipped,
   testIndexEntry,
+  testDeviceInfoUsedInConversion, testDeviceInfoInIndexEntry, testDeviceInfoNullFallback,
 ];
 
 let passed = 0;

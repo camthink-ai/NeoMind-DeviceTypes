@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_wt101",
   "name": "Milesight WT101",
-  "description": "Milesight WT101 LoRaWAN Sensor",
+  "description": "Wireless Thermostat",
   "categories": [
     "LoRaWAN",
     "Sensor"

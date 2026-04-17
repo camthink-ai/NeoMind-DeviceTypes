@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_at101",
   "name": "Milesight AT101",
-  "description": "Milesight AT101 LoRaWAN Sensor",
+  "description": "Outdoor Asset Tracker",
   "categories": [
     "LoRaWAN",
     "Sensor"

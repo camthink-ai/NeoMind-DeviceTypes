@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws303",
   "name": "Milesight WS303",
-  "description": "Milesight WS303 LoRaWAN Sensor",
+  "description": "Mini Leak Detection Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

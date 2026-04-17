@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_uc100_v2",
   "name": "Milesight UC100-V2",
-  "description": "Milesight UC100-V2 LoRaWAN Sensor",
+  "description": "UC100-V2 LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

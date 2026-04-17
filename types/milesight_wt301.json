@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_wt301",
   "name": "Milesight WT301",
-  "description": "Milesight WT301 LoRaWAN Sensor",
+  "description": "Smart Fan Coil Thermostat",
   "categories": [
     "LoRaWAN",
     "Sensor"

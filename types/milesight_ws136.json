@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws136",
   "name": "Milesight WS136",
-  "description": "Milesight WS136 LoRaWAN Sensor",
+  "description": "Smart Scene Panel",
   "categories": [
     "LoRaWAN",
     "Sensor"

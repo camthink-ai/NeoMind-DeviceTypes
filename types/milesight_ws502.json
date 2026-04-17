@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws502",
   "name": "Milesight WS502",
-  "description": "Milesight WS502 LoRaWAN Sensor",
+  "description": "Wall Switch",
   "categories": [
     "LoRaWAN",
     "Sensor"

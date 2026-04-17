@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_em400_mud",
   "name": "Milesight EM400-MUD",
-  "description": "Milesight EM400-MUD LoRaWAN Sensor",
+  "description": "EM400-MUD LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

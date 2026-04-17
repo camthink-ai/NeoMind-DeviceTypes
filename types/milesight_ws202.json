@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws202",
   "name": "Milesight WS202",
-  "description": "Milesight WS202 LoRaWAN Sensor",
+  "description": "PIR & Light Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

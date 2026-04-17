@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_uc521",
   "name": "Milesight UC521",
-  "description": "Milesight UC521 LoRaWAN Sensor",
+  "description": "Electric Valve Controller",
   "categories": [
     "LoRaWAN",
     "Sensor"

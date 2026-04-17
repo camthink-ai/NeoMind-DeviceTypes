@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs341",
   "name": "Milesight VS341",
-  "description": "Milesight VS341 LoRaWAN Sensor",
+  "description": "Desk & Seat Occupancy Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

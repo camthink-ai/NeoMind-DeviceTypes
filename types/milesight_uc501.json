@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_uc501",
   "name": "Milesight UC501",
-  "description": "Milesight UC501 LoRaWAN Sensor",
+  "description": "Multi-interface Controller",
   "categories": [
     "LoRaWAN",
     "Sensor"

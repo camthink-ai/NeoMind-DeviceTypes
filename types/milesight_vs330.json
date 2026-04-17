@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs330",
   "name": "Milesight VS330",
-  "description": "Milesight VS330 LoRaWAN Sensor",
+  "description": "Bathroom Occupancy Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

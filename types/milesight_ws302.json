@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws302",
   "name": "Milesight WS302",
-  "description": "Milesight WS302 LoRaWAN Sensor",
+  "description": "Sound Level Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

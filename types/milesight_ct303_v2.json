@@ -1,13 +1,37 @@
 {
-  "device_type": "milesight_ct303",
-  "name": "Milesight CT303",
-  "description": "Smart Current Transformer",
+  "device_type": "milesight_ct303_v2",
+  "name": "Milesight CT303-V2",
+  "description": "CT303-V2 LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"
   ],
   "mode": "simple",
   "metrics": [
+    {
+      "name": "product_sn",
+      "display_name": "Product SN",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.hardware_version",
+      "display_name": "Hardware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "version.firmware_version",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "oem_id",
+      "display_name": "OEM ID",
+      "data_type": "String",
+      "required": false
+    },
     {
       "name": "ipso_version",
       "display_name": "IPSO Version",
@@ -373,6 +397,33 @@
       "data_type": "Integer",
       "required": false,
       "unit": "min"
+    },
+    {
+      "name": "ch1_sumkwh",
+      "display_name": "Phase A Sum Kwh",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "ch2_sumkwh",
+      "display_name": "Phase B Sum Kwh",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "ch3_sumkwh",
+      "display_name": "Phase C Sum Kwh",
+      "data_type": "Float",
+      "required": false,
+      "unit": "kWh"
+    },
+    {
+      "name": "low_voltage_alarm.alarm_type",
+      "display_name": "Alarm Type (Options: 0=low voltage alarm, 0=low voltage alarm)",
+      "data_type": "String",
+      "required": false
     }
   ],
   "uplink_samples": [],
@@ -411,6 +462,25 @@
           "name": "clear_current_chn3_cumulative",
           "display_name": "Clear Current Channel 3 Cumulative",
           "data_type": "Boolean",
+          "required": false
+        },
+        {
+          "name": "reporting_type",
+          "display_name": "Reporting Type",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "voltage",
+          "display_name": "Voltage",
+          "data_type": "Float",
+          "required": false,
+          "unit": "V"
+        },
+        {
+          "name": "power_factor",
+          "display_name": "Power Factor",
+          "data_type": "Float",
           "required": false
         }
       ]

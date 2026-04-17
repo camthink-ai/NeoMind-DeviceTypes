@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws513",
   "name": "Milesight WS513",
-  "description": "Milesight WS513 LoRaWAN Sensor",
+  "description": "Wall Socket",
   "categories": [
     "LoRaWAN",
     "Sensor"

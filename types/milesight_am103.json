@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_am103",
   "name": "Milesight AM103",
-  "description": "Milesight AM103 LoRaWAN Sensor",
+  "description": "Indoor Ambience Monitoring Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

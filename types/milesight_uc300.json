@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_uc300",
   "name": "Milesight UC300",
-  "description": "Milesight UC300 LoRaWAN Sensor",
+  "description": "Controller",
   "categories": [
     "LoRaWAN",
     "Sensor"
@@ -495,7 +495,7 @@
       "unit": "ms"
     },
     {
-      "name": "gpio_output_1_time",
+      "name": "gpio_output_1_control",
       "display_name": "GPIO Output (Channel 1) Time",
       "data_type": "Integer",
       "required": false,

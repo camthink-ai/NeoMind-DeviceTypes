@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws558",
   "name": "Milesight WS558",
-  "description": "Milesight WS558 LoRaWAN Sensor",
+  "description": "Smart Light Controller",
   "categories": [
     "LoRaWAN",
     "Sensor"

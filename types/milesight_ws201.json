@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ws201",
   "name": "Milesight WS201",
-  "description": "Milesight WS201 LoRaWAN Sensor",
+  "description": "Smart Fill Level Monitoring Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

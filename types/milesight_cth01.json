@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_cth01",
   "name": "Milesight CTH01",
-  "description": "Milesight CTH01 LoRaWAN Sensor",
+  "description": "Intelligent power monitoring terminal",
   "categories": [
     "LoRaWAN",
     "Sensor"

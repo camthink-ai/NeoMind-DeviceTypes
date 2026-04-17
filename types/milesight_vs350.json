@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs350",
   "name": "Milesight VS350",
-  "description": "Milesight VS350 LoRaWAN Sensor",
+  "description": "Passage People Counter",
   "categories": [
     "LoRaWAN",
     "Sensor"
@@ -262,6 +262,50 @@
       "data_type": "Integer",
       "required": false,
       "unit": "s"
+    },
+    {
+      "name": "install_config.install_method",
+      "display_name": "Install Config (Install Method) (Options: 0=side, 1=top)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "install_config.install_height",
+      "display_name": "Install Config (Install Height)",
+      "data_type": "Float",
+      "required": false,
+      "unit": "m"
+    },
+    {
+      "name": "install_config.compensation",
+      "display_name": "Install Config (Compensation)",
+      "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "install_config.sensitivity_report_enable",
+      "display_name": "Install Config (Sensitivity Report Enable)",
+      "data_type": "Boolean",
+      "required": false
+    },
+    {
+      "name": "install_config.manual_gain",
+      "display_name": "Install Config (Manual Gain)",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "dB"
+    },
+    {
+      "name": "people_threshold_trigger_mode",
+      "display_name": "People Threshold Trigger Mode (Options: 0=threshold, 1=multiple)",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "current_sensitivity",
+      "display_name": "Current Sensitivity",
+      "data_type": "Integer",
+      "required": false
     }
   ],
   "uplink_samples": [],

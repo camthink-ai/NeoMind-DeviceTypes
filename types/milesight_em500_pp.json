@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_em500_pp",
   "name": "Milesight EM500-PP",
-  "description": "Milesight EM500-PP LoRaWAN Sensor",
+  "description": "EM500-PP LoRaWAN Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"

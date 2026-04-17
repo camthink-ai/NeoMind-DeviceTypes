@@ -49,7 +49,7 @@ function buildCommandParameter(field) {
   return param;
 }
 
-function convertCodecToNeoMind(modelName, seriesDir, codecJson) {
+function convertCodecToNeoMind(modelName, seriesDir, codecJson, deviceInfo) {
   const fields = codecJson.object || [];
   const metrics = [];
   const commandParams = [];
@@ -68,10 +68,13 @@ function convertCodecToNeoMind(modelName, seriesDir, codecJson) {
     }
   }
 
+  const deviceName = deviceInfo ? deviceInfo.name : modelName.toUpperCase();
+  const description = deviceInfo ? deviceInfo.description : `${modelName.toUpperCase()} LoRaWAN Sensor`;
+
   const result = {
     device_type: `milesight_${modelName.toLowerCase().replace(/-/g, "_")}`,
-    name: `Milesight ${modelName.toUpperCase()}`,
-    description: `Milesight ${modelName.toUpperCase()} LoRaWAN Sensor`,
+    name: `Milesight ${deviceName}`,
+    description,
     categories: ["LoRaWAN", "Sensor"],
     mode: "simple",
     metrics,
@@ -92,15 +95,17 @@ function convertCodecToNeoMind(modelName, seriesDir, codecJson) {
   return result;
 }
 
-function buildIndexEntry(modelName, seriesDir) {
+function buildIndexEntry(modelName, seriesDir, deviceInfo) {
+  const deviceName = deviceInfo ? deviceInfo.name : modelName.toUpperCase();
+  const description = deviceInfo ? deviceInfo.description : `${modelName.toUpperCase()} LoRaWAN Sensor`;
   return {
     device_type: `milesight_${modelName.toLowerCase().replace(/-/g, "_")}`,
-    name: `Milesight ${modelName.toUpperCase()}`,
-    description: `Milesight ${modelName.toUpperCase()} LoRaWAN Sensor`,
+    name: `Milesight ${deviceName}`,
+    description,
     categories: ["LoRaWAN", "Sensor"],
     version: "1.0.0",
     author: "Milesight",
-    homepage: `https://github.com/Milesight-IoT/SensorDecoders/tree/main/${seriesDir}/${modelName}`,
+    homepage: `https://github.com/Milesight-IoT/codec/tree/main/vendors/milesight-iot/${seriesDir}/${modelName}`,
   };
 }
 
@@ -132,9 +137,22 @@ function findCodecFile(files) {
 function main() {
   const filter = process.argv[2] || null;
   const typesDir = path.join(__dirname, "..", "types");
+  const REPO = "Milesight-IoT/codec";
+  const VENDOR_PREFIX = "vendors/milesight-iot";
+
+  // Fetch devices.json for metadata
+  console.log("Fetching device metadata from devices.json...");
+  const devicesRaw = ghApi(`repos/${REPO}/contents/${VENDOR_PREFIX}/devices.json`);
+  const devicesContent = Buffer.from(devicesRaw.content, "base64").toString("utf-8");
+  const devicesRegistry = JSON.parse(devicesContent);
+  const deviceMap = {};
+  for (const d of devicesRegistry.devices) {
+    deviceMap[d.id] = d;
+  }
+  console.log(`  Found ${Object.keys(deviceMap).length} devices in registry`);
 
   console.log("Fetching Milesight device series...");
-  const rootContents = ghApi("repos/Milesight-IoT/SensorDecoders/contents");
+  const rootContents = ghApi(`repos/${REPO}/contents/${VENDOR_PREFIX}`);
   const seriesDirs = rootContents.filter(
     (item) => item.type === "dir" && item.name.endsWith("-series")
   );
@@ -145,7 +163,7 @@ function main() {
     console.log(`\nProcessing ${series.name}...`);
     let devices;
     try {
-      devices = ghApi(`repos/Milesight-IoT/SensorDecoders/contents/${series.name}`);
+      devices = ghApi(`repos/${REPO}/contents/${VENDOR_PREFIX}/${series.name}`);
     } catch (e) {
       console.warn(`  Failed to list ${series.name}: ${e.message}`);
       continue;
@@ -162,7 +180,7 @@ function main() {
 
       let files;
       try {
-        files = ghApi(`repos/Milesight-IoT/SensorDecoders/contents/${series.name}/${modelName}`);
+        files = ghApi(`repos/${REPO}/contents/${VENDOR_PREFIX}/${series.name}/${modelName}`);
       } catch (e) {
         console.warn(`    Failed to list files: ${e.message}`);
         continue;
@@ -176,7 +194,7 @@ function main() {
 
       let codecJson;
       try {
-        const raw = ghApi(`repos/Milesight-IoT/SensorDecoders/contents/${series.name}/${modelName}/${codecFile.name}`);
+        const raw = ghApi(`repos/${REPO}/contents/${VENDOR_PREFIX}/${series.name}/${modelName}/${codecFile.name}`);
         const content = Buffer.from(raw.content, "base64").toString("utf-8");
         codecJson = JSON.parse(content);
       } catch (e) {
@@ -184,7 +202,8 @@ function main() {
         continue;
       }
 
-      const neoMindType = convertCodecToNeoMind(modelName, series.name, codecJson);
+      const deviceInfo = deviceMap[modelName] || null;
+      const neoMindType = convertCodecToNeoMind(modelName, series.name, codecJson, deviceInfo);
       const outputPath = path.join(typesDir, `${neoMindType.device_type}.json`);
 
       fs.writeFileSync(outputPath, JSON.stringify(neoMindType, null, 2) + "\n");
@@ -205,7 +224,7 @@ function main() {
   );
 
   const milesightEntries = allConverted.map((c) =>
-    buildIndexEntry(c.modelName, c.seriesDir)
+    buildIndexEntry(c.modelName, c.seriesDir, deviceMap[c.modelName] || null)
   );
 
   existingIndex.device_types = [...otherEntries, ...milesightEntries];

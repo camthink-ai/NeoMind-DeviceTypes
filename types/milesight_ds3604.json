@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_ds3604",
   "name": "Milesight DS3604",
-  "description": "Milesight DS3604 LoRaWAN Sensor",
+  "description": "Smart Eink Display",
   "categories": [
     "LoRaWAN",
     "Sensor"

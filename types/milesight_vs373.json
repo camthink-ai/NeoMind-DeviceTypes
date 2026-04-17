@@ -1,7 +1,7 @@
 {
   "device_type": "milesight_vs373",
   "name": "Milesight VS373",
-  "description": "Milesight VS373 LoRaWAN Sensor",
+  "description": "Radar Fall Detection Sensor",
   "categories": [
     "LoRaWAN",
     "Sensor"
