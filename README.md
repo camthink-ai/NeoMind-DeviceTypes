@@ -10,6 +10,7 @@ This repository contains device type definitions for the NeoMind platform. Each 
 
 | Device Type | Model | Description | Categories |
 |-------------|-------|-------------|------------|
+| `ne302_camera` | NE302 | Edge AI Camera with YOLOv8 object detection | Camera, AI, Edge Computing |
 | `ne301_camera` | NE301 | Edge AI Camera with YOLOv8 object detection | Camera, AI, Edge Computing |
 | `ne101_camera` | NE101 | Sensing Camera with low-power battery support | Camera, Sensing |
 
@@ -135,6 +136,7 @@ If a command has no user-tunable inputs, leave `parameters: []` and embed all co
 
 ```
 types/
+├── ne302_camera.json
 ├── ne301_camera.json
 ├── ne101_camera.json
 └── {device_type}.json

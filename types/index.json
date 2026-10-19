@@ -1,7 +1,20 @@
 {
   "version": "1.0",
-  "last_updated": "2026-04-17T09:17:29.717Z",
+  "last_updated": "2026-10-19T06:24:36.000Z",
   "device_types": [
+    {
+      "device_type": "ne302_camera",
+      "name": "CamThink Edge AI Camera",
+      "description": "CamThink NE302 Edge AI Camera with built-in YOLOv8 Nano object detection model supporting 80-class recognition. Features WiFi connectivity and battery power.",
+      "categories": [
+        "Camera",
+        "AI",
+        "Edge Computing"
+      ],
+      "version": "1.0.0",
+      "author": "CamThink",
+      "homepage": "https://github.com/camthink-ai/NeoMind-DeviceTypes/tree/main/types/ne302_camera.json"
+    },
     {
       "device_type": "ne301_camera",
       "name": "CamThink Edge AI Camera",
