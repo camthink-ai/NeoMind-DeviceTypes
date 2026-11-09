@@ -1,7 +1,7 @@
 {
   "device_type": "ne302_camera",
-  "name": "CamThink Edge AI Camera",
-  "description": "CamThink NE302 Edge AI Camera with built-in YOLOv8 Nano object detection model supporting 80-class recognition. Features WiFi connectivity and battery power.",
+  "name": "CamThink NE302 Edge AI Camera",
+  "description": "CamThink NE302 Edge AI Camera with built-in object detection. Features WiFi HaLow connectivity and external power. Data protocol is compatible with the NE301.",
   "categories": ["Camera", "AI", "Edge Computing"],
   "mode": "full",
   "store_raw": false,
@@ -49,6 +49,12 @@
       "name": "metadata.quality",
       "display_name": "Image Quality",
       "data_type": "Integer",
+      "required": false
+    },
+    {
+      "name": "metadata.trigger_type",
+      "display_name": "Trigger Type",
+      "data_type": "String",
       "required": false
     },
     {
@@ -191,23 +197,24 @@
   "uplink_samples": [
     {
       "metadata": {
-        "image_id": "cam01_1766132582",
-        "timestamp": 1766132582,
+        "image_id": "cam01_1792113477",
+        "timestamp": 1792113477,
         "format": "jpeg",
         "width": 1280,
         "height": 720,
-        "size": 61880,
-        "quality": 60
+        "size": 71684,
+        "quality": 60,
+        "trigger_type": "rtc"
       },
       "device_info": {
-        "device_name": "NE302-2A207D",
-        "mac_address": "44:9f:da:2a:20:7d",
+        "device_name": "NE302-2681D1",
+        "mac_address": "44:9f:da:26:81:d1",
         "serial_number": "SN202500001",
         "hardware_version": "V1.1",
-        "software_version": "1.0.1.1064",
-        "power_supply_type": "battery",
-        "battery_percent": 41,
-        "communication_type": "wifi"
+        "software_version": "4.3.1.22",
+        "power_supply_type": "external_power",
+        "battery_percent": 0,
+        "communication_type": "halow"
       },
       "ai_result": {
         "model_name": "YOLOv8 Nano Object Detection Model - COCO 80 Classes (Int8)",
@@ -221,11 +228,11 @@
             {
               "index": 0,
               "class_name": "bottle",
-              "confidence": 0.57646054029464722,
+              "confidence": 0.5764605402946472,
               "x": 0.11801555752754211,
-              "y": 0.052199184894561768,
+              "y": 0.05219918489456177,
               "width": 0.27234357595443726,
-              "height": 0.93958532810211182
+              "height": 0.9395853281021118
             }
           ],
           "detection_count": 1,
