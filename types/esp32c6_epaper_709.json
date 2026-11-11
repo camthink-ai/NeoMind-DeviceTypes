@@ -1,0 +1,166 @@
+{
+  "device_type": "esp32c6_epaper_709",
+  "name": "ESP32-C6 E-Paper 7.09\" (1200x1600)",
+  "description": "7.09-inch six-color spectral e-paper (1200x1600, dual driver IC, QSPI) driven by ESP32-C6. Renders text and raw 4bpp frames pushed from NeoMind over MQTT. Raw frame format: 960000 bytes, CS0 top half then CS1 bottom half, 600 bytes per line, 2 pixels per byte, color codes black=0x0 white=0x1 yellow=0x2 red=0x3 blue=0x5 green=0x6.",
+  "categories": [
+    "MQTT",
+    "Display"
+  ],
+  "mode": "simple",
+  "metrics": [
+    {
+      "name": "rssi_dbm",
+      "display_name": "WiFi RSSI",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "dBm"
+    },
+    {
+      "name": "heap_free",
+      "display_name": "Free Heap",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "B"
+    },
+    {
+      "name": "uptime_s",
+      "display_name": "Uptime",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "s"
+    },
+    {
+      "name": "fw",
+      "display_name": "Firmware Version",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "panel",
+      "display_name": "Panel",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "last_cmd",
+      "display_name": "Last Command",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "cmd_status",
+      "display_name": "Command Status",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "detail",
+      "display_name": "Command Detail",
+      "data_type": "String",
+      "required": false
+    },
+    {
+      "name": "battery_percent",
+      "display_name": "Battery",
+      "data_type": "Integer",
+      "required": false,
+      "unit": "%"
+    }
+  ],
+  "commands": [
+    {
+      "name": "clear",
+      "display_name": "Clear / Fill Color",
+      "description": "Fill the whole panel with one color and refresh",
+      "payload_template": "{\"cmd\": \"clear\", \"params\": ${params}}",
+      "parameters": [
+        {
+          "name": "color",
+          "display_name": "Color",
+          "data_type": "String",
+          "required": false,
+          "description": "black / white / yellow / red / blue / green (default white)"
+        }
+      ]
+    },
+    {
+      "name": "render_text",
+      "display_name": "Render Text",
+      "description": "Render ASCII text (newline-separated lines, centered) and refresh. A full refresh takes 20-40 seconds on this panel.",
+      "payload_template": "{\"cmd\": \"render_text\", \"params\": ${params}}",
+      "parameters": [
+        {
+          "name": "text",
+          "display_name": "Text",
+          "data_type": "String",
+          "required": true
+        },
+        {
+          "name": "color",
+          "display_name": "Text Color",
+          "data_type": "String",
+          "required": false,
+          "description": "default black"
+        },
+        {
+          "name": "bg",
+          "display_name": "Background Color",
+          "data_type": "String",
+          "required": false,
+          "description": "default white"
+        },
+        {
+          "name": "scale",
+          "display_name": "Font Scale",
+          "data_type": "Integer",
+          "required": false,
+          "description": "1-8, default 3 (48px tall glyphs)"
+        }
+      ]
+    },
+    {
+      "name": "render_canvas",
+      "display_name": "Render Canvas (text/rect/QR)",
+      "description": "Draw-list canvas: items of type text{x,y,text,color,scale}, rect{x,y,w,h,color,thickness,fill}, qr{x,y,text,color,scale}. Max 24 items, QR payload <= ~200 chars. Origin top-left, panel 1200x1600.",
+      "payload_template": "{\"cmd\": \"render_canvas\", \"params\": ${params}}",
+      "parameters": [
+        {
+          "name": "bg",
+          "display_name": "Background",
+          "data_type": "String",
+          "required": false
+        },
+        {
+          "name": "items",
+          "display_name": "Items[]",
+          "data_type": "String",
+          "required": true,
+          "description": "JSON array of draw items, see description"
+        }
+      ]
+    },
+    {
+      "name": "display_url",
+      "display_name": "Display Frame from URL",
+      "description": "Stream a raw 960000-byte 4bpp frame over HTTP and refresh. Generate with tools/frame_convert.py and serve with any HTTP file server.",
+      "payload_template": "{\"cmd\": \"display_url\", \"params\": ${params}}",
+      "parameters": [
+        {
+          "name": "url",
+          "display_name": "Frame URL",
+          "data_type": "String",
+          "required": true,
+          "description": "http://<host>/<file>.bin, exact size 960000 bytes"
+        }
+      ]
+    },
+    {
+      "name": "reboot",
+      "display_name": "Reboot",
+      "description": "Reboot the device",
+      "payload_template": "{\"cmd\": \"reboot\"}",
+      "parameters": []
+    }
+  ],
+  "default_offline_timeout_secs": 180
+}
