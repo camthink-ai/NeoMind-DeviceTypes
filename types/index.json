@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-11-10T07:43:18.000Z",
+  "last_updated": "2026-11-11T02:33:40.000Z",
   "device_types": [
     {
       "device_type": "ne302_camera",
@@ -1551,16 +1551,6 @@
       "version": "1.0.0",
       "author": "Milesight",
       "homepage": "https://github.com/Milesight-IoT/codec/tree/main/vendors/milesight-iot/wts-series/wts506"
-    },
-    {
-      "device_type": "esp32c6_epaper_709",
-      "name": "ESP32-C6 E-Paper 7.09\" (1200x1600)",
-      "description": "7.09-inch six-color spectral e-paper (1200x1600, dual driver IC, QSPI) driven by ESP32-C6. Renders text and raw 4bpp fra",
-      "categories": [
-        "MQTT",
-        "Display"
-      ],
-      "version": "1.0.0"
     }
   ]
 }
